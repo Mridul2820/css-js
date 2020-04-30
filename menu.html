@@ -4,7 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Open Sans Condensed', sans-serif;
+            background: #fffde7;
+        }
+
+        .heading{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: .5rem;
+            font-size: 3rem;
+            color: #e65100;
+        }
+
+        .bottom-padding--big {
+            padding-bottom: 30em;
+        }
+
+        .bottom-padding--small {
+            padding-bottom: 1em;
+        }
+
+        .container {
+            margin: 2rem 7rem;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-auto-rows: minmax(50px, min-content);
+            justify-content: center;
+            grid-gap: 1.2rem;
+        }
+
+        @media only screen and (max-width: 70em) {
+            .container {
+                grid-template-columns: repeat(3, 1fr); 
+            } 
+        }
+
+        @media only screen and (max-width: 55em) {
+            .container {
+                grid-template-columns: repeat(2, 1fr); 
+            }
+        }
+
+        @media only screen and (max-width: 35em) {
+            .container {
+                grid-template-columns: repeat(1, 1fr); 
+            }
+        }
+
+        .container .projects {
+            display: flex;
+            align-items: center;
+            border: 3px solid #1b5e20;
+            transition: all .2s;
+        }
+
+        .container .projects:hover{
+            transform: translateY(-5px) scale(1.05);
+            border: 3px solid #43a047;
+        }
+
+        .container .projects a{
+            font-size: 1.7em;
+            color: #43a047;
+            text-decoration: none;
+            padding: 1rem;
+            transition: all .2;
+        }
+
+        .container .projects:hover a{
+            color: #2e7d32;
+        }
+
+        .container a:visited {
+            text-decoration: none;
+        }
+    </style>
+</head>
 <body>
-    
+
+    <h1 class="heading">Vanila JS</h1>
+    <div class="container bottom-padding--big">
+        <div class="projects">
+            <a target="_blank" href="./Vanila JS/form-validator/index.html">
+                Form Validator
+            </a>
+        </div>
+    </div>
 </body> 
 </html>
