@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+  background: #000;
+}
+
+h2 {
+  position: relative;
+  margin: 20px 0 0;
+  font-size: 4em;
+  font-weight: 700;
+  color: #fff;
+  z-index: 1;
+  overflow: hidden;
+}
+
+h2:before {
+  content: '';
+  position: absolute;
+  left: 120%;
+  width: 120%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(5%, #000), to(#000));
+  background: linear-gradient(90deg, transparent 0%, #000 5%, #000 100%);
+  -webkit-animation: animate 5.5s linear forwards;
+          animation: animate 5.5s linear forwards;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+h2 span {
+  color: #ff022c;
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 2;
+  pointer-events: none;
+  mix-blend-mode: screen;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    left: 110%;
+  }
+  100% {
+    left: -20%;
+  }
+}
+
+@keyframes animate {
+  0% {
+    left: 110%;
+  }
+  100% {
+    left: -20%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
