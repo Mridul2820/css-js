@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap");
+body {
+  background: #262626;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper-container {
+  width: 500px;
+  height: 380px;
+  padding: 50px;
+  padding-top: 150px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 380px;
+  background: #fff;
+}
+
+.swiper-slide .imgbox {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.swiper-slide .imgbox img {
+  width: 100%;
+}
+
+.swiper-slide .details {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 20px;
+}
+
+.swiper-slide .details h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  text-align: center;
+  line-height: 20px;
+}
+
+.swiper-slide .details h3 span {
+  font-size: 20px;
+  color: #f44336;
+}
+
+.arrow-icon {
+  padding-top: 50px;
+}
+/*# sourceMappingURL=style.css.map */
