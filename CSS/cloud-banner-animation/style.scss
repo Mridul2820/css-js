@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(assets/bg.jpg);
+    background-size: cover;
+    background-position: bottom;
+
+    .clouds {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+
+        img {
+            position: absolute;
+            bottom: 0;
+            max-width: 100%;
+            animation: animate calc(8s * var(--i)) linear infinite;
+        }
+    }
+}
+
+section {
+    position: relative;
+    padding: 75px 100px;
+
+    h2 {
+        font-size: 2.5em;
+        margin-bottom: 20px;
+    }
+}
+
+@keyframes animate {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
