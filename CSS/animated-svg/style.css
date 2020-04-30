@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  background: #06181f;
+}
+
+.container {
+  position: relative;
+  width: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .icon {
+  width: 200px;
+}
+
+.container .icon path {
+  fill: transparent;
+  stroke-width: 5;
+  stroke: #31e8ff;
+}
+
+.container .icon.heart path {
+  stroke-dasharray: 1560;
+  stroke-dashoffset: 0;
+}
+
+.container .icon.heart:hover path {
+  -webkit-animation: animate-heart 2s linear forwards;
+          animation: animate-heart 2s linear forwards;
+}
+
+.container .icon.star path {
+  stroke-dasharray: 1810;
+  stroke-dashoffset: 0;
+}
+
+.container .icon.star:hover path {
+  -webkit-animation: animate-star 2s linear forwards;
+          animation: animate-star 2s linear forwards;
+}
+
+.container .icon.moon path {
+  stroke-dasharray: 1810;
+  stroke-dashoffset: 0;
+}
+
+.container .icon.moon:hover path {
+  -webkit-animation: animate-moon 2s linear forwards;
+          animation: animate-moon 2s linear forwards;
+}
+
+@-webkit-keyframes animate-heart {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  40% {
+    stroke-dashoffset: 1560;
+  }
+  80% {
+    stroke-dashoffset: 3120;
+    fill: transparent;
+  }
+  100% {
+    stroke-dashoffset: 1560;
+    fill: #31e8ff;
+  }
+}
+
+@keyframes animate-heart {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  40% {
+    stroke-dashoffset: 1560;
+  }
+  80% {
+    stroke-dashoffset: 3120;
+    fill: transparent;
+  }
+  100% {
+    stroke-dashoffset: 1560;
+    fill: #31e8ff;
+  }
+}
+
+@-webkit-keyframes animate-star {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  40% {
+    stroke-dashoffset: 1560;
+  }
+  80% {
+    stroke-dashoffset: 3620;
+    fill: transparent;
+  }
+  100% {
+    stroke-dashoffset: 3620;
+    fill: #31e8ff;
+  }
+}
+
+@keyframes animate-star {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  40% {
+    stroke-dashoffset: 1560;
+  }
+  80% {
+    stroke-dashoffset: 3620;
+    fill: transparent;
+  }
+  100% {
+    stroke-dashoffset: 3620;
+    fill: #31e8ff;
+  }
+}
+
+@-webkit-keyframes animate-moon {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  40% {
+    stroke-dashoffset: 1560;
+  }
+  80% {
+    stroke-dashoffset: 3620;
+    fill: transparent;
+  }
+  100% {
+    stroke-dashoffset: 3620;
+    fill: #31e8ff;
+  }
+}
+
+@keyframes animate-moon {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  40% {
+    stroke-dashoffset: 1560;
+  }
+  80% {
+    stroke-dashoffset: 3620;
+    fill: transparent;
+  }
+  100% {
+    stroke-dashoffset: 3620;
+    fill: #31e8ff;
+  }
+}
+/*# sourceMappingURL=style.css.map */
