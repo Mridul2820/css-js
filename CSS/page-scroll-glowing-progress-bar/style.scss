@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+
+section {
+    padding: 50px;
+    background: #000;
+
+    h2 {
+        text-align: center;
+        margin-bottom: 10px;
+        color: #fff;
+        font-size: 2.8em;
+    }
+
+    p {
+        color: #fff;
+        font-size: 1.3em;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+#progressbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    border-radius: 10px;
+    background: linear-gradient(to top, #fcb045, #833ab4);
+    animation: animate 5s linear infinite;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to top, #fcb045, #833ab4);
+        filter: blur(10px);
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to top, #fcb045, #833ab4);
+        filter: blur(30px);
+    }
+}
+
+#scrollpath {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, .05);
+}
+
+@keyframes animate {
+    0%, 100% {
+        filter: hue-rotate(0deg);
+    }
+
+    50% {
+        filter: hue-rotate(360deg);
+    }
+}

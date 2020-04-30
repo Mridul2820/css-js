@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+section {
+  padding: 100px;
+  background: #000;
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 3em;
+}
+
+section p {
+  color: #fff;
+  font-size: 1.5em;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+#progressbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 15px;
+  border-radius: 10px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#fcb045), color-stop(#fd1d1d), to(#833ab4));
+  background: linear-gradient(to top, #fcb045, #fd1d1d, #833ab4);
+}
+/*# sourceMappingURL=style.css.map */
