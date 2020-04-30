@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    position: relative;
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    .box {
+        position: relative;
+        width: 280px;
+        height: 400px;
+        margin: 20px 0;
+        overflow: hidden;
+
+        .imgbox {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #000;
+            clip-path: circle(400px at center 100px);
+            transition: all .5s;
+            transition-delay: .5s;
+
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                transition: all 1s;
+                transition-delay: .2s;
+            }
+        }
+
+        &:hover {
+
+            .imgbox {
+                clip-path: circle(100px at center 100px);
+                transition-delay: 0s;
+            }
+
+            .moveup {
+                transform: translateY(-80px);
+            }
+
+            .content {
+                h2 {
+                    opacity: 1;
+                    transform: translateY(0px);
+                    transition-delay: .5s;
+                }
+
+                p {
+                    opacity: 1;
+                    transform: translateY(0px);
+                    transition-delay: .7s;
+                }
+
+                a {
+                    opacity: 1;
+                    transform: translateY(0px);
+                    transition-delay: .9s;
+                }
+            }
+        }
+
+        .content {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 55%;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+
+            h2 {
+                margin: 0;
+                padding: 0;
+
+            }
+
+            a {
+                text-decoration: none;
+                background: #000;
+                color: #fff;
+                padding: 5px;
+                display: inline-block;
+            }
+
+            h2,
+            p,
+            a {
+                opacity: 0;
+                transition: all .5s;
+                transform: translateY(20px);
+            }
+        }
+    }
+}
