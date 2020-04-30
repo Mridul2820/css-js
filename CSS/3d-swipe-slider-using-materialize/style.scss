@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+}
+
+.carousel {
+    position: relative;
+    height: 600px;
+
+    .carousel-item {
+        width: 250px;
+
+        img {
+            max-width: 250px;
+        }
+    }
+}
