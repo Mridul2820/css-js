@@ -1,0 +1,28 @@
+.container{
+    max-width: 960px;
+    margin: 0 auto;
+    background: #f9f9f9;
+    font-size: 24px;
+    padding: 25px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.parallax-window {
+    padding: 100px 35px; 
+    background: transparent;
+}
+
+// .parallax{
+//     background: url("assets/sunsate_29_apr_from_helipad.jpg") no-repeat center;
+//     background-size: cover;
+//     background-attachment: fixed;
+//     height: 500px;
+// }
+
+
+.info {
+    color: white;
+    z-index: 2;
+    position: relative;
+    font-size: 15px;
+}

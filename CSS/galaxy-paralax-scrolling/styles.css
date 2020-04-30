@@ -1,0 +1,21 @@
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  background: #f9f9f9;
+  font-size: 24px;
+  padding: 25px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.parallax-window {
+  padding: 100px 35px;
+  background: transparent;
+}
+
+.info {
+  color: white;
+  z-index: 2;
+  position: relative;
+  font-size: 15px;
+}
+/*# sourceMappingURL=styles.css.map */
