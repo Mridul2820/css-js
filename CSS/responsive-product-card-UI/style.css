@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;600;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  background: #131313;
+}
+
+.container {
+  position: relative;
+}
+
+.container .card {
+  position: relative;
+  width: 320px;
+  height: 450px;
+  background: #232323;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.container .card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #9bdc28;
+  -webkit-clip-path: circle(150px at 80% 20%);
+          clip-path: circle(150px at 80% 20%);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.container .card:hover::before {
+  -webkit-clip-path: circle(300px at 80% -20%);
+          clip-path: circle(300px at 80% -20%);
+}
+
+.container .card::after {
+  content: 'Nike';
+  position: absolute;
+  top: 30%;
+  left: -20%;
+  font-size: 12em;
+  font-weight: 800;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.04);
+}
+
+.container .card .imgbox {
+  position: absolute;
+  top: -50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 1000;
+  width: 100%;
+  height: 220px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.container .card .imgbox img {
+  width: 270px;
+  position: absolute;
+  top: 250%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotatex(180deg) rotate(205deg);
+          transform: translate(-50%, -50%) rotatex(180deg) rotate(205deg);
+}
+
+.container .card:hover .imgbox {
+  top: -100%;
+  -webkit-transform: translateY(10%);
+          transform: translateY(10%);
+}
+
+.container .card .contentbox {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  -webkit-transition: 1s;
+  transition: 1s;
+  z-index: 10;
+  margin-bottom: -10px;
+}
+
+.container .card .contentbox h2 {
+  position: relative;
+  font-weight: normal;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.container .card .contentbox .size,
+.container .card .contentbox .color {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 8px 20px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.container .card .contentbox .size h3,
+.container .card .contentbox .color h3 {
+  color: #fff;
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-right: 10px;
+}
+
+.container .card .contentbox .size span {
+  width: 26px;
+  height: 26px;
+  text-align: center;
+  line-height: 26px;
+  font-size: 14px;
+  display: inline-block;
+  color: #111;
+  background: #fff;
+  margin: 0 5px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.container .card .contentbox .size span:hover {
+  background: #9bdc28;
+}
+
+.container .card .contentbox .color span {
+  height: 20px;
+  width: 20px;
+  background: #ff0;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.container .card .contentbox .color span:nth-child(2) {
+  background: #d84315;
+}
+
+.container .card .contentbox .color span:nth-child(3) {
+  background: #2e7d32;
+}
+
+.container .card .contentbox .color span:nth-child(4) {
+  background: #01579b;
+}
+
+.container .card .contentbox a {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #fff;
+  border-radius: 4px;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #111;
+  opacity: 0;
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.container .card:hover .contentbox {
+  height: 210px;
+}
+
+.container .card:hover .contentbox .size {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition-delay: .5s;
+          transition-delay: .5s;
+}
+
+.container .card:hover .contentbox .color {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition-delay: .5s;
+          transition-delay: .5s;
+}
+
+.container .card:hover .contentbox a {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  -webkit-transition-delay: .75s;
+          transition-delay: .75s;
+}
+/*# sourceMappingURL=style.css.map */
