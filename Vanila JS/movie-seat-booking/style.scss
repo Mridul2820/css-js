@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+body {
+    background: #242333;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.movie-container{
+    margin: 20px 0;
+
+    select {
+        background-color: #fff;
+        border: 0;
+        border-radius: 5px;
+        font-size: 14px;
+        margin-left: 10px;
+        padding: 5px 15px 5px 15px;
+        appearance: none;
+    }
+}
+
+.container {
+    perspective: 1000px;
+    margin-bottom:30px;
+}
+
+.seat {
+    background-color: #444451;
+    height: 12px;
+    width: 15px;
+    margin: 3px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    &.selected {
+        background-color: #6feaf6;
+    }
+
+    &.occupied {
+        background-color: #fff;
+    }
+
+    &:nth-of-type(2) {
+        margin-right: 18px;
+    }
+
+    &:nth-last-of-type(2) {
+        margin-left: 18px;
+    }
+
+    &:not(.occupied){
+        transition: all .1s;
+    
+
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.2);
+        }
+    }
+
+    .showcase &:not(.occupied):hover {
+        cursor: default;
+        transform: scale(1);
+    }
+}
+
+.showcase {
+    background-color: rgba(0, 0, 0, .1);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #777; 
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+
+    li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 10px;
+
+        small {
+            margin-left: 2px;
+        }
+    }
+}
+
+.row {
+    display: flex;
+}
+
+.screen {
+    background-color: #fff;
+    height: 70px;
+    width: 100%;
+    margin: 15px 0;
+    transform: rotateX(-45deg);
+    box-shadow: 0 3px 10px rgba(255, 255, 255, .7);
+
+}
+
+p.text{
+    margin: 5px 0;
+    
+    span{
+        color: #6feaf6;
+    }
+} 
