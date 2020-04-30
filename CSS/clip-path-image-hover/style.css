@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  background: #111;
+}
+
+.container {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  border: 4px solid #fff;
+}
+
+.container .box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.container .box:nth-child(1) {
+  background: url(assets/Mohana.jpg);
+  background-size: cover;
+}
+
+.container .box:nth-child(1):hover ~ .box:nth-child(2) {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+          clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+
+.container .box:nth-child(2) {
+  background: url(assets/sunsate_29_apr_from_helipad.jpg);
+  background-size: cover;
+  z-index: 2;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 0, 0 100%);
+}
+
+.container .box:nth-child(2):hover {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+/*# sourceMappingURL=style.css.map */
