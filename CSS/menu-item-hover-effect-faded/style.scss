@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #0d0f1b;
+    overflow: hidden;
+}
+
+ul {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    &:hover {
+        li {
+            a {
+                opacity: 0;
+            }
+        }
+    }
+
+    li {
+        list-style: none;
+
+        &::before {
+            content: attr(data-text);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            font-size: 6em;
+            font-weight: 700;
+            pointer-events: none;
+            opacity: 0;
+            letter-spacing: 20px;
+            transition: .5s;
+            white-space: nowrap;
+        }
+
+        &:hover::before {
+            opacity: .05;
+            letter-spacing: 0;
+        }
+
+        a {
+            position: relative;
+            display: inline-block;
+            padding: 6px 15px;
+            text-decoration: none;
+            font-weight: normal;
+            background: #2196f3;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            overflow: hidden;
+            transition: all .5s;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: -100px;
+                width: 80px;
+                height: 100%;
+                background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .8), transparent);
+                transform: skewX(35deg);
+                transition: 0s;
+            }
+
+            &:hover {
+                transform: scale(1.4);
+                z-index: 1000;
+                background: #ff3f81;
+                opacity: 1;
+
+                &::before { 
+                    left: calc(100% + 100px);
+                    transition: all .5s;
+                    transition-delay: .2s;
+                }
+            }
+        }
+    }
+
+
+}
