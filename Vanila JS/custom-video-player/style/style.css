@@ -21,8 +21,9 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  min-height: 100vh;
+  min-height: 100vh !important;
   background: #ffee58;
+  margin: 0;
 }
 
 h1 {
@@ -72,6 +73,7 @@ h1 {
   border: 0;
   background: transparent;
   cursor: pointer;
+  padding-right: 10px;
 }
 
 .controls .button:focus {
