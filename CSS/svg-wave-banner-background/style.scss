@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+    box-sizing: border-box;
+    background: linear-gradient(180deg, #008aff, #ff137d), url(assets/digha_station.jpg);
+    background-blend-mode: screen;
+
+    .content {
+        max-width: 700px;
+
+        h2 {
+            font-size: 3em;
+            color: #fff;
+        }
+
+        p {
+            font-size: 1.2em;
+        }
+    }
+
+    img {
+        position: relative;
+        max-width: 350px;
+        opacity: .8;
+        padding-left: 50px;
+        z-index: 1000;
+    }
+
+    .wave {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+}

@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 100px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: -webkit-gradient(linear, left top, left bottom, from(#008aff), to(#ff137d)), url(assets/digha_station.jpg);
+  background: linear-gradient(180deg, #008aff, #ff137d), url(assets/digha_station.jpg);
+  background-blend-mode: screen;
+}
+
+section .content {
+  max-width: 700px;
+}
+
+section .content h2 {
+  font-size: 3em;
+  color: #fff;
+}
+
+section .content p {
+  font-size: 1.2em;
+}
+
+section img {
+  position: relative;
+  max-width: 350px;
+  opacity: .8;
+  padding-left: 50px;
+  z-index: 1000;
+}
+
+section .wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+/*# sourceMappingURL=style.css.map */
