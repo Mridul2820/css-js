@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+}
+
+.red-cube {
+    background: red;
+    margin: 0 auto;
+    display: block;
+    padding: 40px 0;
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    opacity: 0;
+    width: 0%;
+    transition: all 1s;
+
+    &.show {
+        opacity: 1;
+        width: 100%;
+    }
+}
+
