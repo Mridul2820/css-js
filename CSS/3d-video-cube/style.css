@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #000;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+section video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-filter: blur(20px);
+          filter: blur(20px);
+}
+
+section .box {
+  position: absolute;
+  top: calc(50% - 200px);
+  left: calc(50% - 200px);
+  width: 400px;
+  height: 400px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+section .box .sides {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: rotateX(-20deg) rotateY(25deg) translate3d(-75px, -50px, 150px);
+          transform: rotateX(-20deg) rotateY(25deg) translate3d(-75px, -50px, 150px);
+}
+
+section .box .sides span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #ccc;
+}
+
+section .box .sides span video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-filter: blur(0);
+          filter: blur(0);
+}
+
+section .box .sides span:nth-child(1) {
+  -webkit-transform: rotateX(0deg) translate3d(0, 0, 200px);
+          transform: rotateX(0deg) translate3d(0, 0, 200px);
+}
+
+section .box .sides span:nth-child(2) {
+  -webkit-transform: rotateY(90deg) translate3d(0, 0, -200px);
+          transform: rotateY(90deg) translate3d(0, 0, -200px);
+}
+
+section .box .sides span:nth-child(2) video {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+section .box .sides span:nth-child(3) {
+  -webkit-transform: rotateX(90deg) translate3d(0, 0, 200px);
+          transform: rotateX(90deg) translate3d(0, 0, 200px);
+}
+/*# sourceMappingURL=style.css.map */
