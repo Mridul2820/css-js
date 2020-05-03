@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap');
+
+// Responsive Breakpoint
+$bp-largest: 75em;  //1200px
+$bp-large: 62em;    //992px
+$bp-medium: 48em;   //768px
+$bp-small: 42em;    //672px
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #112128;
+}
+
+.container {
+    position: relative;
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @media only screen and (max-width: $bp-large){
+        flex-direction: column;
+    }
+
+    .card {
+        position: relative;
+        max-width: 450px;
+        background: #fff;
+        margin: 10px;
+        padding: 15px;
+        display: flex;
+
+        @media only screen and (max-width: $bp-medium){
+            flex-direction: column;
+            min-width: 350px;
+        }
+
+
+        .imgbox {
+            max-width: 150px;
+            flex: 0 0 150px;
+
+            @media only screen and (max-width: $bp-medium){
+                min-width: 100%;
+            }
+    
+
+            img {
+                max-width: 100%;
+            }
+        }
+
+        .content {
+            margin-left: 20px;
+
+            @media only screen and (max-width: $bp-medium){
+                margin-left: 0;
+            }
+        }
+    }
+}
