@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+  background: #fada3e;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  position: relative;
+  width: 1000px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+@media only screen and (max-width: 62.5em) {
+  .container {
+    width: 800px;
+    -ms-grid-columns: (minmax(100%, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    margin: 50px;
+  }
+}
+
+@media only screen and (max-width: 50em) {
+  .container {
+    width: 700px;
+  }
+}
+
+@media only screen and (max-width: 43.75em) {
+  .container {
+    width: 600px;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .container {
+    width: 350px;
+  }
+}
+
+@media only screen and (max-width: 25em) {
+  .container {
+    width: 300px;
+  }
+}
+
+.container .card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #fff;
+}
+
+@media only screen and (max-width: 62.5em) {
+  .container .card {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 10px 0;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .container .card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.container .card:nth-child(even) {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+@media only screen and (max-width: 62.5em) {
+  .container .card:nth-child(even) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .container .card:nth-child(even) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.container .card .imgbox {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background: #000;
+}
+
+@media only screen and (max-width: 62.5em) {
+  .container .card .imgbox {
+    height: 400px;
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 50em) {
+  .container .card .imgbox {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+@media only screen and (max-width: 43.75em) {
+  .container .card .imgbox {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .container .card .imgbox {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+@media only screen and (max-width: 25em) {
+  .container .card .imgbox {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+.container .card .imgbox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.container .card .content {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (max-width: 62.5em) {
+  .container .card .content {
+    height: 400px;
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 50em) {
+  .container .card .content {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+@media only screen and (max-width: 43.75em) {
+  .container .card .content {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .container .card .content {
+    width: 350px;
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: 25em) {
+  .container .card .content {
+    width: 300px;
+    height: 200px;
+  }
+}
+
+.container .card .content .contentBox {
+  padding: 20px;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */

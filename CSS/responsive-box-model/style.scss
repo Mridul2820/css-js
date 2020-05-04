@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
+
+// Responsive Breakpoint
+$bp-largest: 62.5em;  //1000px
+$bp-large: 50em;      //800px
+$bp-medium: 43.75em;     //700px
+$bp-small: 37.5em;    //600px
+$bp-smallest: 25em;    //400px
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #fada3e;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    position: relative;
+    width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    @media only screen and (max-width: $bp-largest){
+        width: 800px;
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+        margin: 50px;
+    }
+
+    @media only screen and (max-width: $bp-large){
+        width: 700px;
+    }
+
+    @media only screen and (max-width: $bp-medium){
+        width: 600px;
+    }
+
+    @media only screen and (max-width: $bp-small){
+        width: 350px;
+    }
+
+    @media only screen and (max-width: $bp-smallest){
+        width: 300px;
+    }
+
+    .card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+
+        @media only screen and (max-width: $bp-largest){
+            flex-direction: row;
+            margin: 10px 0;
+        }
+
+        @media only screen and (max-width: $bp-small){
+            flex-direction: column;
+        }
+
+        &:nth-child(even) {
+            flex-direction: column-reverse;
+
+            @media only screen and (max-width: $bp-largest){
+                flex-direction: row-reverse;
+            }
+
+            @media only screen and (max-width: $bp-small){
+                flex-direction: column;
+            }
+        }
+
+        .imgbox {
+            position: relative;
+            width: 250px;
+            height: 250px;
+            background: #000;
+
+            @media only screen and (max-width: $bp-largest){
+                height: 400px;
+                width: 400px;
+            }
+
+            @media only screen and (max-width: $bp-large){
+                width: 350px;
+                height: 350px;
+            }
+
+            @media only screen and (max-width: $bp-medium){
+                width: 300px;
+                height: 300px;
+            }
+
+            @media only screen and (max-width: $bp-small){
+                width: 350px;
+                height: 350px;
+            }
+
+            @media only screen and (max-width: $bp-smallest){
+                width: 300px;
+                height: 300px;
+            }
+
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .content {
+            position: relative;
+            width: 250px;
+            height: 250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            @media only screen and (max-width: $bp-largest){
+                height: 400px;
+                width: 400px;
+            }
+
+            @media only screen and (max-width: $bp-large){
+                width: 350px;
+                height: 350px;
+            }
+
+            @media only screen and (max-width: $bp-medium){
+                width: 300px;
+                height: 300px;
+            }
+
+            @media only screen and (max-width: $bp-small){
+                width: 350px;
+                height: 200px;
+            }
+
+            @media only screen and (max-width: $bp-smallest){
+                width: 300px;
+                height: 200px;
+            }
+
+            .contentBox {
+                padding: 20px;
+                text-align: center;
+            }
+        }
+    }
+
+}
