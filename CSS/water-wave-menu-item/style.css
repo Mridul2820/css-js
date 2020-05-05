@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+  background: #111;
+}
+
+ul {
+  position: relative;
+}
+
+ul li {
+  position: relative;
+  list-style: none;
+}
+
+ul li a {
+  position: relative;
+  display: block;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 4em;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.1);
+}
+
+ul li a::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(assets/wave.png);
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-repeat: repeat-x;
+  -webkit-animation: animate 2s linear infinite;
+          animation: animate 2s linear infinite;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+ul li a:hover::before {
+  width: 100%;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: 200px;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: 200px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
