@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Dosis', sans-serif;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  background: #222;
+}
+
+.container {
+  position: relative;
+  max-width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  -ms-grid-rows: minmax(100px, auto);
+      grid-template-rows: minmax(100px, auto);
+  margin: 40px;
+  grid-auto-flow: dense;
+  grid-gap: 10px;
+}
+
+@media only screen and (max-width: 62em) {
+  .container {
+    -ms-grid-columns: (minmax(50%, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+    -ms-grid-rows: minmax(auto, auto);
+        grid-template-rows: minmax(auto, auto);
+  }
+}
+
+.container .box {
+  background: #333;
+  padding: 10px;
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  place-items: center;
+  text-align: center;
+  color: #fff;
+  -webkit-transform: all .5s;
+          transform: all .5s;
+}
+
+@media only screen and (max-width: 62em) {
+  .container .box {
+    grid-column: unset !important;
+    grid-row: unset !important;
+  }
+}
+
+.container .box:hover {
+  background: #e91e63;
+}
+
+.container .box:nth-child(1) {
+  grid-column: span 2;
+}
+
+.container .box:nth-child(2) {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.container .box:nth-child(3) {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.container .box:nth-child(4) {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.container .box:nth-child(5) {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.container .box:nth-child(6) {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.container .box:nth-child(7) {
+  grid-column: span 3;
+}
+
+.container .box img {
+  position: relative;
+  max-width: 100px;
+  margin-bottom: 10px;
+}
+/*# sourceMappingURL=style.css.map */
