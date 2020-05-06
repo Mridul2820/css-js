@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+body {
+  min-height: 200vh;
+}
+
+section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+section .side {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(assets/gobattleleague-season2.jpg);
+  background-size: cover;
+}
+
+section .side#side1 {
+  -webkit-clip-path: polygon(0% 0%, 57.4% 0%, 44.8% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 57.4% 0%, 44.8% 100%, 0% 100%);
+}
+
+section .side#side2 {
+  -webkit-clip-path: polygon(100% 0, 56.4% 0%, 43.8% 100%, 100% 100%);
+          clip-path: polygon(100% 0, 56.4% 0%, 43.8% 100%, 100% 100%);
+}
+
+.contentbox {
+  background: #000;
+  color: #fff;
+  padding: 50px 200px;
+  padding-top: 150vh;
+}
+
+.contentbox h2 {
+  position: relative;
+  font-size: 4em;
+}
+
+li {
+  list-style: none;
+}
+/*# sourceMappingURL=style.css.map */
