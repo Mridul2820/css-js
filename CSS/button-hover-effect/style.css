@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+}
+
+.container a {
+  position: relative;
+  width: 300px;
+  height: 75px;
+  margin: 20px 0;
+  font-size: 24px;
+  color: #000;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.container a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.container a:nth-child(1)::before {
+  background: url(assets/btn-bg1.png);
+  background-size: cover;
+}
+
+.container a:nth-child(2)::before {
+  background: url(assets/btn-bg2.png);
+  background-size: cover;
+}
+
+.container a:hover {
+  color: #fff;
+}
+
+.container a:hover::before {
+  width: 100%;
+}
+
+.container a span {
+  position: relative;
+  z-index: 1;
+}
+/*# sourceMappingURL=style.css.map */
