@@ -30,7 +30,7 @@ body {
       grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   -ms-grid-rows: minmax(100px, auto);
       grid-template-rows: minmax(100px, auto);
-  margin: 40px;
+  margin: 20px;
   grid-auto-flow: dense;
   grid-gap: 10px;
 }
@@ -108,6 +108,5 @@ body {
 .container .box img {
   position: relative;
   max-width: 100px;
-  margin-bottom: 10px;
 }
 /*# sourceMappingURL=style.css.map */
