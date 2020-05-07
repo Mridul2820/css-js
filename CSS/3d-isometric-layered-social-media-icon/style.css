@@ -23,7 +23,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  min-height: 100vh;
   background: #222;
 }
 
@@ -32,6 +31,12 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-transform: rotate(-25deg) skew(25deg);
@@ -74,103 +79,23 @@ ul li::after {
           transform: skewY(-49deg);
 }
 
-ul li:nth-child(1):hover span {
+ul li.facebook:hover span {
   background: #3b5999;
 }
 
-ul li:nth-child(2):hover span {
+ul li.instagram:hover span {
   background: #e4405f;
 }
 
-ul li:nth-child(3):hover span {
+ul li.twitter:hover span {
   background: #55acee;
 }
 
-ul li:nth-child(4):hover span {
+ul li.reddit:hover span {
   background: #ff5700;
 }
 
-ul li:nth-child(5):hover span {
-  background: #25D366;
-}
-
-ul li:nth-child(6):hover span {
-  background: #3b5999;
-}
-
-ul li:nth-child(7):hover span {
-  background: #e4405f;
-}
-
-ul li:nth-child(8):hover span {
-  background: #55acee;
-}
-
-ul li:nth-child(9):hover span {
-  background: #ff5700;
-}
-
-ul li:nth-child(10):hover span {
-  background: #25D366;
-}
-
-ul li:nth-child(11):hover span {
-  background: #3b5999;
-}
-
-ul li:nth-child(12):hover span {
-  background: #e4405f;
-}
-
-ul li:nth-child(13):hover span {
-  background: #55acee;
-}
-
-ul li:nth-child(14):hover span {
-  background: #ff5700;
-}
-
-ul li:nth-child(15):hover span {
-  background: #25D366;
-}
-
-ul li:nth-child(16):hover span {
-  background: #3b5999;
-}
-
-ul li:nth-child(17):hover span {
-  background: #e4405f;
-}
-
-ul li:nth-child(18):hover span {
-  background: #55acee;
-}
-
-ul li:nth-child(19):hover span {
-  background: #ff5700;
-}
-
-ul li:nth-child(20):hover span {
-  background: #25D366;
-}
-
-ul li:nth-child(21):hover span {
-  background: #3b5999;
-}
-
-ul li:nth-child(22):hover span {
-  background: #e4405f;
-}
-
-ul li:nth-child(23):hover span {
-  background: #55acee;
-}
-
-ul li:nth-child(24):hover span {
-  background: #ff5700;
-}
-
-ul li:nth-child(25):hover span {
+ul li.whatsapp:hover span {
   background: #25D366;
 }
 
@@ -233,9 +158,5 @@ ul li:hover span:nth-child(1) {
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
   opacity: .2;
-}
-
-::-webkit-scrollbar {
-  width: 0;
 }
 /*# sourceMappingURL=style.css.map */
