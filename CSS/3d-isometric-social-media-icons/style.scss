@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    background: #ccc;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+ul {
+    display: flex;
+    margin: 60px 0;
+
+    li {
+        list-style: none;
+        margin: 0 40px;
+
+        a {
+            position: relative;
+            display: block;
+            width: 80px;
+            height: 80px;
+            background: #fff;
+            text-align: center;
+            transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0,0);
+            box-shadow: -20px 20px 10px rgba(0, 0, 0, .5);
+            transition: .5s;
+
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 10px;
+                left: -20px;
+                height: 100%;
+                width: 20px;
+                background: #b1b1b1;
+                transition: .5s;
+                transform: rotate(0deg) skewY(-45deg);
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: -20px;
+                left: -10px;
+                height: 20px;
+                width: 100%;
+                background: #b1b1b1;
+                transition: .5s;
+                transform: rotate(0deg) skewX(-45deg);
+            }
+
+
+            &:hover {
+                transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(20px,-20px);
+                box-shadow: -50px 50px 50px rgba(0, 0, 0, .5);
+            }
+
+
+            i {
+                background: #fff;
+            }
+
+
+            .fa {
+                font-size: 40px;
+                color: #262626;
+                line-height: 80px;
+                transition: .5s;
+            }
+        }
+    }
+
+    &.colored {
+        li {
+
+            &:nth-child(1) {
+                a {
+                    background: #3b5999;
+                }
+
+                i {
+                    background: #3b5999;
+                }
+            }
+
+            &:nth-child(2) {
+                a {
+                    background: #e4405f;
+                }
+
+                i {
+                    background: #e4405f;
+                }
+            }
+
+            &:nth-child(3) {
+                a {
+                    background: #55acee;
+                }
+
+                i {
+                    background: #55acee;
+                }
+            }
+
+            &:nth-child(4) {
+                a {
+                    background: #ff5700;
+                }
+
+                i {
+                    background: #ff5700;
+                }
+            }
+
+            &:nth-child(5) {
+                a {
+                    background: #25D366;
+                }
+
+                i {
+                    background: #25D366;
+                }
+            }
+
+            &:hover {
+                .fa {
+                    color: #fff;
+                }
+
+                &:nth-child(1) {
+                    a{
+                        &::before {
+                            background: #36528e;
+                        }
+                        &::after{
+                            background: #2d4b8a;
+                        }
+                    }
+                }
+    
+                &:nth-child(2) {
+                    a{
+                        &::before {
+                            background: #ce546b;
+                        }
+                        &::after{
+                            background: #bf4a60;
+                        }
+                    }
+                }
+    
+                &:nth-child(3) {
+                    a{
+                        &::before {
+                            background: #5c94bf;
+                        }
+                        &::after{
+                            background: #4fa1de;
+                        }
+                    }
+                }
+    
+                &:nth-child(4) {
+                    a{
+                        &::before {
+                            background: #d85917;
+                        }
+                        &::after{
+                            background: #e26422;
+                        }
+                    }
+                }
+    
+                &:nth-child(5) {
+                    a{
+                        &::before {
+                            background: #29b95f;
+                        }
+                        &::after{
+                            background: #19b754;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
