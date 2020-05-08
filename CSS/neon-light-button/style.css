@@ -11,6 +11,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -21,7 +25,14 @@ body {
   background: #000;
 }
 
-a {
+.squre-border {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 50px 0;
+}
+
+.squre-border a {
   position: relative;
   padding: 10px 30px;
   margin: 0 20px;
@@ -36,17 +47,17 @@ a {
   -webkit-box-reflect: below 1px linear-gradient(transparent, #0003);
 }
 
-a:nth-child(1) {
+.squre-border a:nth-child(1) {
   -webkit-filter: hue-rotate(115deg);
           filter: hue-rotate(115deg);
 }
 
-a:nth-child(3) {
+.squre-border a:nth-child(3) {
   -webkit-filter: hue-rotate(270deg);
           filter: hue-rotate(270deg);
 }
 
-a::before {
+.squre-border a::before {
   content: '';
   position: absolute;
   top: 0;
@@ -59,7 +70,7 @@ a::before {
   transition: all .5s;
 }
 
-a::after {
+.squre-border a::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -72,7 +83,7 @@ a::after {
   transition: all .5s;
 }
 
-a:hover {
+.squre-border a:hover {
   background: #21ebff;
   color: #111;
   -webkit-box-shadow: 0 0 50px #21ebff;
@@ -81,13 +92,205 @@ a:hover {
           transition-delay: .5s;
 }
 
-a:hover::before {
+.squre-border a:hover::before {
   width: 100%;
   height: 100%;
 }
 
-a:hover::after {
+.squre-border a:hover::after {
   width: 100%;
   height: 100%;
+}
+
+.snake-border {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 50px 0;
+}
+
+.snake-border a {
+  position: relative;
+  padding: 10px 30px;
+  margin: 0 20px;
+  color: #21ebff;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 20px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  overflow: hidden;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0003);
+}
+
+.snake-border a:nth-child(1) {
+  -webkit-filter: hue-rotate(115deg);
+          filter: hue-rotate(115deg);
+}
+
+.snake-border a:nth-child(3) {
+  -webkit-filter: hue-rotate(270deg);
+          filter: hue-rotate(270deg);
+}
+
+.snake-border a:hover {
+  background: #21ebff;
+  color: #111;
+  -webkit-box-shadow: 0 0 50px #21ebff;
+          box-shadow: 0 0 50px #21ebff;
+  -webkit-transition-delay: .5s;
+          transition-delay: .5s;
+}
+
+.snake-border a:hover span {
+  opacity: 0;
+}
+
+.snake-border a span {
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-transition-delay: .3s;
+          transition-delay: .3s;
+}
+
+.snake-border a span:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2.5px;
+  background: -webkit-gradient(linear, left top, right top, from(#0c002b), to(#1779ff));
+  background: linear-gradient(to right, #0c002b, #1779ff);
+  -webkit-animation: animate1 2s linear infinite;
+          animation: animate1 2s linear infinite;
+}
+
+.snake-border a span:nth-child(2) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 2.5px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#0c002b), to(#1779ff));
+  background: linear-gradient(to bottom, #0c002b, #1779ff);
+  -webkit-animation: animate2 2s linear infinite;
+          animation: animate2 2s linear infinite;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.snake-border a span:nth-child(3) {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2.5px;
+  background: -webkit-gradient(linear, right top, left top, from(#0c002b), to(#1779ff));
+  background: linear-gradient(to left, #0c002b, #1779ff);
+  -webkit-animation: animate3 2s linear infinite;
+          animation: animate3 2s linear infinite;
+}
+
+.snake-border a span:nth-child(4) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 2.5px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#0c002b), to(#1779ff));
+  background: linear-gradient(to top, #0c002b, #1779ff);
+  -webkit-animation: animate4 2s linear infinite;
+          animation: animate4 2s linear infinite;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+@-webkit-keyframes animate1 {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+
+@keyframes animate1 {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+
+@-webkit-keyframes animate2 {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+}
+
+@keyframes animate2 {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+}
+
+@-webkit-keyframes animate3 {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+@keyframes animate3 {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+@-webkit-keyframes animate4 {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  100% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+}
+
+@keyframes animate4 {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  100% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
 }
 /*# sourceMappingURL=style.css.map */
