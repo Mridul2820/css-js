@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Slider</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <video id="slider" autoplay loop>
+            <source src="assets/Jaane_Na_Dunga_Kahin.mp4" type="video/mp4">
+        </video>
+        <ul class="navigation">
+            <li onclick="videoURL('assets/Jaane_Na_Dunga_Kahin.mp4')"><img src="assets/Jaane_Na_Dunga_Kahin.jpg" alt=""></li>
+            <li onclick="videoURL('assets/Ek_Tukda_Dhoop.mp4')"><img src="assets/Ek_Tukda_Dhoop.jpg" alt=""></li>
+            <li onclick="videoURL('assets/Ek_Zindagi.mp4')"><img src="assets/Ek_Zindagi.jpg" alt=""></li>
+            <li onclick="videoURL('assets/Maheroo.mp4')"><img src="assets/Maheroo.jpg" alt=""></li>
+            <li onclick="videoURL('assets/Tere_Sang.mp4')"><img src="assets/Tere_Sang.jpg" alt=""></li>
+        </ul>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
