@@ -25,8 +25,8 @@ section video {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-transform: scale(1.13);
-          transform: scale(1.13);
+  -webkit-transform: scaleX(1.04) scaleY(1.13);
+          transform: scaleX(1.04) scaleY(1.13);
 }
 
 section .navigation {
