@@ -12,6 +12,7 @@ $bp-smallest: 25em;   //600px
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    position: relative;
     font-family: 'Jost', sans-serif;
 }
 
@@ -43,12 +44,12 @@ $bp-smallest: 25em;   //600px
     justify-content: center;
     align-items: center;
 
-    @media only screen and (max-width: $bp-small){
-        padding: 20px;
-    }
-
     @media only screen and (max-width: $bp-large){
         height: 80vh;
+    }
+
+    @media only screen and (max-width: $bp-small){
+        padding: 20px;
     }
 
     header {
@@ -73,15 +74,11 @@ $bp-smallest: 25em;   //600px
 
             .logo {
                 position: absolute;
-                top: 25px;
-                left: 40px;
                 height: 60px;
                 width: 60px;
                 opacity: 1;
 
                 @media only screen and (max-width: $bp-large){
-                    top: 25px;
-                    left: 30px;
                     height: 45px;
                     width: 45px;
                 }
@@ -93,7 +90,8 @@ $bp-smallest: 25em;   //600px
                 font-size: 24px;
                 font-weight: 600;
                 letter-spacing: 1px;
-                padding-left: 20px;
+                padding-left: 80px;
+                padding-top: 10px;
 
                 @media only screen and (max-width: $bp-large){
                     padding-left: 30px;
@@ -152,6 +150,8 @@ $bp-smallest: 25em;   //600px
     position: relative;
     width: 100%;
     display: flex;
+    background: #162c3b;
+
 
     @media only screen and (max-width: $bp-medium){
         flex-direction: column;
@@ -179,6 +179,10 @@ $bp-smallest: 25em;   //600px
         span {
             @media only screen and (max-width: $bp-large){
                 display: none;
+            }
+
+            @media only screen and (max-width: $bp-medium){
+                display: block;
             }
         }
     }
@@ -208,6 +212,7 @@ $bp-smallest: 25em;   //600px
     padding: 50px;
     text-align: center;
 
+
     @media only screen and (max-width: $bp-small){
         padding: 20px;
     }
@@ -236,6 +241,7 @@ $bp-smallest: 25em;   //600px
             display: flex;
             justify-content: center;
             align-items: center;
+            z-index: 100;
 
             @media only screen and (max-width: $bp-largest){
                 margin: 20px;
@@ -258,25 +264,26 @@ $bp-smallest: 25em;   //600px
     background: #1565c0;
     width: 100%;
     padding: 100px;
-    padding-top: 300px;
-    margin-top: -300px;
+    padding-top: 200px;
+    margin-top: -200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     @media only screen and (max-width: $bp-large){
         padding: 50px;
-        padding-top: 300px;
-    }
-
-    @media only screen and (max-width: $bp-small){
-        padding: 20px;
-        padding-top: 300px;
+        padding-top: 200px;
     }
 
     @media only screen and (max-width: $bp-medium){
         flex-direction: column;
         justify-content: center;
+        padding-top: 200px;
+    }
+
+    @media only screen and (max-width: $bp-small){
+        padding: 20px;
+        padding-top: 250px;
     }
 
     .contentBox {
@@ -516,7 +523,7 @@ $bp-smallest: 25em;   //600px
 // footer
 .footer {
     background: #162c3b;
-    padding: 20px 100px;
+    padding: 50px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;

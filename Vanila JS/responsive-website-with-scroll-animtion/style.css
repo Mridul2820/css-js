@@ -4,6 +4,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  position: relative;
   font-family: 'Jost', sans-serif;
 }
 
@@ -37,15 +38,15 @@
           align-items: center;
 }
 
-@media only screen and (max-width: 37.5em) {
-  .banner {
-    padding: 20px;
-  }
-}
-
 @media only screen and (max-width: 62em) {
   .banner {
     height: 80vh;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .banner {
+    padding: 20px;
   }
 }
 
@@ -87,8 +88,6 @@
 
 .banner header .brand .logo {
   position: absolute;
-  top: 25px;
-  left: 40px;
   height: 60px;
   width: 60px;
   opacity: 1;
@@ -96,8 +95,6 @@
 
 @media only screen and (max-width: 62em) {
   .banner header .brand .logo {
-    top: 25px;
-    left: 30px;
     height: 45px;
     width: 45px;
   }
@@ -109,7 +106,8 @@
   font-size: 24px;
   font-weight: 600;
   letter-spacing: 1px;
-  padding-left: 20px;
+  padding-left: 80px;
+  padding-top: 10px;
 }
 
 @media only screen and (max-width: 62em) {
@@ -172,6 +170,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background: #162c3b;
 }
 
 @media only screen and (max-width: 50em) {
@@ -212,6 +211,12 @@
 @media only screen and (max-width: 62em) {
   .about .contentBox span {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 50em) {
+  .about .contentBox span {
+    display: block;
   }
 }
 
@@ -293,6 +298,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 100;
 }
 
 @media only screen and (max-width: 68.25em) {
@@ -315,8 +321,8 @@
   background: #1565c0;
   width: 100%;
   padding: 100px;
-  padding-top: 300px;
-  margin-top: -300px;
+  padding-top: 200px;
+  margin-top: -200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -331,14 +337,7 @@
 @media only screen and (max-width: 62em) {
   .technology {
     padding: 50px;
-    padding-top: 300px;
-  }
-}
-
-@media only screen and (max-width: 37.5em) {
-  .technology {
-    padding: 20px;
-    padding-top: 300px;
+    padding-top: 200px;
   }
 }
 
@@ -351,6 +350,14 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    padding-top: 200px;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .technology {
+    padding: 20px;
+    padding-top: 250px;
   }
 }
 
@@ -679,7 +686,7 @@
 
 .footer {
   background: #162c3b;
-  padding: 20px 100px;
+  padding: 50px 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
