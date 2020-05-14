@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  min-height: 2000px;
+}
+
+.banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.banner video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.banner #bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #fff url(heart.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100px;
+  mix-blend-mode: screen;
+}
+/*# sourceMappingURL=style.css.map */

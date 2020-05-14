@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: url(assets/communityday-may2020.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  -webkit-clip-path: circle(0px at center);
+          clip-path: circle(0px at center);
+}
+
+.container {
+  position: relative;
+  margin-top: 200vh;
+  background: #ffffff;
+  padding: 100px;
+}
+
+.container h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.titel {
+  position: relative;
+  top: 250px;
+  z-index: 1;
+  font-size: 3em;
+  text-align: center;
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */
