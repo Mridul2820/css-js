@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    scroll-behavior: smooth;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+
+    .section {
+        width: 100%;
+        height: 100vh;
+        scroll-snap-align: start;
+
+
+
+        &:nth-child(1) {
+            background: url(assets/Colourful_Lamp.jpg);
+            background-size: cover;
+        }
+        &:nth-child(2) {
+            background: url(assets/Fishing_nets.jpg);
+            background-size: cover;
+        }
+        &:nth-child(3) {
+            background: url(assets/bird_sky_2.jpg);
+            background-size: cover;
+        }
+        &:nth-child(4) {
+            background: url(assets/clouds_road_reflection.jpg);
+            background-size: cover;
+        }
+        &:nth-child(5) {
+            background: url(assets/trees_sunset_field.jpg);
+            background-size: cover;
+        }
+        &:nth-child(6) {
+            background: url(assets/jit_sunset_reflection.jpg);
+            background-size: cover;
+        }
+
+
+    }
+}
