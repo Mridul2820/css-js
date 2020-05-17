@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: url(assets/sunsate_29_apr_from_helipad.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.box {
+    width: 400px;
+    padding: 40px;
+    background: rgba(0, 0, 0, .7);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .5);
+    border-radius: 5px;
+
+    h2 {
+        margin: 0 0 30px;
+        padding: 0;
+        color: #fff;
+        text-align: center;
+    }
+
+    form {
+        .inputBox {
+            position: relative;
+
+            input {
+                width: 100%;
+                padding: 10px 0;
+                font-size: 16px;
+                color: #ffffff;
+                letter-spacing: 1px;
+                margin-bottom: 30px;
+                border: none;
+                border-bottom: 2px solid #aaa;
+                outline: none;
+                background: transparent;
+
+                &:valid ~ label,
+                &:focus ~ label {
+                    top: -25px;
+                    left: 0;
+                    color: #03a9f4;
+                    font-size: 12px;
+                }
+            }
+
+            label {
+                position: absolute;
+                top: 0;
+                left: 0;
+                padding: 10px 0;
+                font-size: 16px;
+                color: #ffffff;
+                letter-spacing: 1px;
+                pointer-events: none;
+                transition: .5s;
+            }
+        }
+
+        input[type="submit"] {
+            background: transparent;
+            border: none;
+            outline: none;
+            color: #ffffff;
+            background: #03a9f4;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    }
+}
