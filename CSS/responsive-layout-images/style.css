@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: #333;
+}
+
+.container {
+  width: 1200px;
+  margin: 20px auto;
+  -webkit-columns: 4;
+          columns: 4;
+  -webkit-column-gap: 40px;
+          column-gap: 40px;
+}
+
+@media only screen and (max-width: 75em) {
+  .container {
+    -webkit-columns: 3;
+            columns: 3;
+    width: calc(100% - 40px);
+    padding: 20px 20px 20px 0;
+  }
+}
+
+@media only screen and (max-width: 48em) {
+  .container {
+    -webkit-columns: 2;
+            columns: 2;
+  }
+}
+
+@media only screen and (max-width: 32em) {
+  .container {
+    -webkit-columns: 1;
+            columns: 1;
+    width: calc(100% - 60px);
+  }
+}
+
+.container .box {
+  width: 100%;
+  margin: 0 0 20px;
+  padding: 10px;
+  background: #fff;
+  overflow: hidden;
+  -webkit-column-break-inside: avoid;
+          break-inside: avoid;
+}
+
+.container .box img {
+  max-width: 100%;
+}
+
+.container .box h2 {
+  margin: 10px 0 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+.container .box p {
+  margin: 0;
+  padding: 0 0 10px;
+  font-size: 16px;
+}
+/*# sourceMappingURL=style.css.map */

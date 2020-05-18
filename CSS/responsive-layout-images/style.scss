@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+
+// Responsive Breakpoint
+$bp-largest: 75em;  //1200px
+$bp-large: 62em;    //992px
+$bp-medium: 48em;   //768px
+$bp-small: 32em;    //512px
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    background: #333;
+    
+}
+.container {
+    width: 1200px;
+    margin: 20px auto;
+    columns: 4;
+    column-gap: 40px;
+
+    @media only screen and (max-width: $bp-largest){
+        columns: 3;
+        width: calc(100% - 40px);
+        padding: 20px 20px 20px 0;
+    }
+
+    @media only screen and (max-width: $bp-medium){
+        columns: 2;
+    }
+
+    @media only screen and (max-width: $bp-small){
+        columns: 1;
+        width: calc(100% - 60px);
+    }
+
+    .box {
+        width: 100%;
+        margin: 0 0 20px;
+        padding: 10px;
+        background: #fff;
+        overflow: hidden;
+        break-inside: avoid;
+
+        img {
+            max-width: 100%;
+        }
+
+        h2 {
+            margin: 10px 0 0;
+            padding: 0;
+            font-size: 20px;
+        }
+
+        p {
+            margin: 0;
+            padding: 0 0 10px;
+            font-size: 16px;
+        }
+    }
+}
