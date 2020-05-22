@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+  background: #15212d;
+}
+
+.container {
+  position: relative;
+  padding: 80px 120px;
+}
+
+@media only screen and (max-width: 62em) {
+  .container {
+    padding: 50px 100px;
+  }
+}
+
+@media only screen and (max-width: 48em) {
+  .container {
+    padding: 45px 80px;
+  }
+}
+
+@media only screen and (max-width: 42em) {
+  .container {
+    padding: 20px 30px;
+  }
+}
+
+.container h2 {
+  font-size: 2.5em;
+  font-weight: 600;
+  color: #767f88;
+  margin-bottom: 40px;
+  line-height: 1.1em;
+}
+
+@media only screen and (max-width: 62em) {
+  .container h2 {
+    font-size: 2em;
+  }
+}
+
+@media only screen and (max-width: 42em) {
+  .container h2 {
+    font-size: 1.5em;
+  }
+}
+
+.container .image {
+  margin: 0 auto;
+  width: 80%;
+  margin-bottom: 40px;
+}
+
+.container .image img {
+  width: 100%;
+}
+
+.container p {
+  font-size: 1.2em;
+  color: #767f88;
+  margin-bottom: 10px;
+  line-height: 1.4em;
+}
+
+@media only screen and (max-width: 42em) {
+  .container p {
+    font-size: 1.1em;
+    line-height: 1.2em;
+  }
+}
+
+.container p strong {
+  color: #bdbdbd;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  line-height: 1.4em;
+}
+
+@media only screen and (max-width: 42em) {
+  .container p strong {
+    line-height: 1.2em;
+  }
+}
+
+.container ul {
+  font-size: 1.2em;
+  color: #9e9e9e;
+  margin-bottom: 10px;
+  line-height: 1.2em;
+}
+
+@media only screen and (max-width: 42em) {
+  .container ul {
+    font-size: 1em;
+    line-height: 1.1em;
+  }
+}
+
+.container ul li {
+  margin-bottom: 20px;
+}
+
+.container ul li strong {
+  color: #bdbdbd;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  line-height: 1.4em;
+}
+
+@media only screen and (max-width: 42em) {
+  .container ul li strong {
+    letter-spacing: 1.1px;
+    line-height: 1.1em;
+  }
+}
+
+.scrollTop {
+  position: fixed;
+  bottom: 800px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  background: #ffffff url(assets/up.png);
+  border-radius: 50%;
+  background-size: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  z-index: 1000;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.scrollTop.active {
+  bottom: 40px;
+  visibility: visible;
+  opacity: 1;
+}
+/*# sourceMappingURL=style.css.map */
