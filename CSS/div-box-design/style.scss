@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap'); 
+
+//breakpoints
+$bp-large : 60em;   //960px
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #222;
+
+    @media only screen and (max-width: $bp-large){
+        flex-direction: column;
+    }
+}
+
+.squre {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 1.5px solid #fff;
+        border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+        transition: all .5s;
+
+        &:nth-child(1) {
+            animation: animate 6s linear infinite;
+        }
+
+        &:nth-child(2) {
+            animation: animate 4s linear infinite;
+        }
+
+        &:nth-child(3) {
+            animation: animate2 10s linear infinite;
+        }
+    }
+
+    &:hover {
+        span {
+            border: none;
+            background: rgba(0, 0, 255, .8);
+        }
+    }
+
+    .content {
+        position: relative;
+        padding: 40px 60px;
+        color: #ffffff;
+        text-align: center;
+        transition: .5s;
+        z-index: 1000;
+
+        h2 {
+            margin-bottom: 30px;
+        }
+
+        a {
+            position: relative;
+            display: inline-block;
+            margin-top: 10px;
+            border: 1.5px solid #fff;
+            margin-top: 30px;
+            padding: 6px 18px;
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: 600;
+            border-radius: 2px;
+            transition: all .5s;
+
+            &:hover {
+                background: #ffffff;
+                color: #333333;
+            }
+        }
+    }
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animate2 {
+    0% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
