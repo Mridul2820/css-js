@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Jost', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #091921;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    p {
+        color: #215e65;
+        font-size: 30px;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+
+    label {
+        position: relative;
+
+        input {
+            appearance: none;
+            cursor: pointer;
+        }
+        .fa {
+            position: relative;
+            width: 60px;
+            height: 60px;
+            background: #091921;
+            color: #6f6f6f;
+            line-height: 60px;
+            text-align: center;
+            margin: 0 4px;
+            font-size: 30px;
+            cursor: pointer;
+            border-radius: 50%;
+            box-shadow: -1px -1px 3px rgba(255, 255, 255, .1),
+                        2px 2px 6px rgba(0, 0, 0, .8);
+            transition: all .5s;
+
+            &:hover {
+                box-shadow: -1px -1px 3px rgba(255, 255, 255, .1),
+                            2px 2px 6px rgba(0, 0, 0, .8),
+                            inset -2px -2px 10px rgba(255, 255, 255, .05),
+                            inset 2px 2px 10px rgba(0, 0, 0, .5);
+            }
+        }
+
+        input:checked ~ .fa{
+            box-shadow: inset -1px -1px 3px rgba(255, 255, 255, .1),
+                        inset 2px 2px 6px rgba(0, 0, 0, 1);
+
+            
+            &.right {
+                color: #00fff1;
+                text-shadow: 0 0 5px #00fff1,
+                             0 0 20px #00fff1;
+            }
+
+            &.wrong {
+                color: #e53935;
+                text-shadow: 0 0 5px #e53935,
+                             0 0 20px #e53935;
+            }
+
+        }
+    }
+}
