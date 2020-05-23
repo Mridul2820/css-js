@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: none !important;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+section {
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  background: #ffffff;
+}
+
+section h2 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+section p {
+  font-size: 1.2em;
+}
+
+#cursor {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  mix-blend-mode: difference;
+  -webkit-transition: width .5s, height .5s;
+  transition: width .5s, height .5s;
+}
+
+#cursor:active {
+  width: 3220px;
+  height: 3220px;
+  -webkit-transition: width 5s, height 5s;
+  transition: width 5s, height 5s;
+}
+
+#cursor:active::before, #cursor:active::after {
+  opacity: 1;
+}
+
+#cursor::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 2px;
+  background: #000000;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#cursor::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 20px;
+  background: #000000;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+/*# sourceMappingURL=style.css.map */
