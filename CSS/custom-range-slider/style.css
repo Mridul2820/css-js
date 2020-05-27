@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+  background: #333;
+}
+
+.container {
+  position: relative;
+}
+
+.container #rangeValue {
+  position: relative;
+  display: block;
+  font-size: 10em;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 700;
+  z-index: 2;
+  text-align: center;
+}
+
+.container #rangeValue::after {
+  content: '%';
+}
+
+.container #fillRangeValue {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #00adff;
+  z-index: 1;
+}
+
+.container .range {
+  position: relative;
+  width: 500px;
+  height: 25px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: rgba(0, 0, 0, 0.8);
+  outline: none;
+  border-radius: 25px;
+  -webkit-box-shadow: 0 0 0 2px #151515, inset 0 0 5px #000;
+          box-shadow: 0 0 0 2px #151515, inset 0 0 5px #000;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.container .range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+          appearance: none;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background: #00adff;
+  border: 4px solid #222;
+  z-index: 2;
+  -webkit-box-shadow: -407px 0 0 400px #00adff;
+          box-shadow: -407px 0 0 400px #00adff;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Range Slider</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2 id="rangeValue"></h2>
+        <div id="fillRangeValue"></div>
+        <input 
+            type="range" 
+            class="range" 
+            name="" 
+            value="0" 
+            min="0" 
+            max="100" 
+            onmousemove="rangeSlider(this.value)"
+            onchange="rangeSlider(this.value)"
+        >
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
