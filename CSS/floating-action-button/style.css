@@ -74,6 +74,26 @@ body {
   transition: all .3s;
 }
 
+.action ul li img {
+  height: 25px;
+  width: 25px;
+  margin-right: 10px;
+  opacity: .8;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.action ul li img:hover {
+  opacity: 1;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.action ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
 .action.active span {
   -webkit-transform: rotate(135deg);
           transform: rotate(135deg);
@@ -107,17 +127,5 @@ body {
 
 .action.active li:not(:last-child) {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.action.active li img {
-  width: 25px;
-  margin-right: 10px;
-  opacity: .8;
-  -webkit-transition: all .5s;
-  transition: all .5s;
-}
-
-.action.active li img:hover {
-  opacity: 1;
 }
 /*# sourceMappingURL=style.css.map */
