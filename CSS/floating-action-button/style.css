@@ -49,7 +49,7 @@ body {
   position: absolute;
   bottom: 55px;
   background: #ffffff;
-  min-width: 250px;
+  min-width: 270px;
   padding: 20px;
   border-radius: 20px;
   opacity: 0;
@@ -69,7 +69,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10px 0;
+  padding: 8px 0;
   -webkit-transition: all .3s;
   transition: all .3s;
 }
@@ -81,6 +81,8 @@ body {
   opacity: .8;
   -webkit-transition: all .5s;
   transition: all .5s;
+  -webkit-transform: translateY(7px);
+          transform: translateY(7px);
 }
 
 .action ul li img:hover {

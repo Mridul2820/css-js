@@ -39,7 +39,7 @@ body {
         position: absolute;
         bottom: 55px;
         background: #ffffff;
-        min-width: 250px;
+        min-width: 270px;
         padding: 20px;
         border-radius: 20px;
         opacity: 0;
@@ -51,7 +51,7 @@ body {
             display: flex;
             justify-content: flex-start;
             align-items: center;
-            padding: 10px 0;
+            padding: 8px 0;
             transition: all .3s;
 
             img {
@@ -60,6 +60,7 @@ body {
                 margin-right: 10px;
                 opacity: .8;
                 transition: all .5s;
+                transform: translateY(7px);
 
 
                 &:hover {
