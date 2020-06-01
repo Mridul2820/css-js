@@ -1,3 +1,10 @@
+function toggleColor() {
+    const body = document.querySelector('body');
+    body.classList.toggle('light');
+}
+
+
+
 const deg = 6;
 const hr = document.querySelector('#hr');
 const min = document.querySelector('#min');
