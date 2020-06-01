@@ -21,13 +21,28 @@
             justify-content: center;
             flex-direction: column;
         }
+
+        .searchBox {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 10em;
+            width: 100%;
+            background: url(bg.png);
+            background-position: bottom;
+            background-size: cover;
+            z-index: 1000;
+        }
         
         .search {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             padding: 10px;
             width: 350px;
             line-height: 30px;
             font-size: 1.5em;
-            margin: 80px auto 0 auto;
+            margin: 50px auto 0 auto;
         }
 
         @media only screen and (max-width: 35em) {
@@ -36,15 +51,12 @@
             }
         }
 
-        .bottom-padding--big {
-            padding-bottom: 30em;
-        }
-
         .bottom-margin--small {
             margin-bottom: .5em;
         }
 
         .container {
+            padding: 10em 0 30em 0;
             margin: 2rem 7rem;
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -131,16 +143,19 @@
 </head>
 <body>    
 
-    <input 
-        type="text" 
-        class="search" 
-        id="searchInput" 
-        placeholder="Type Something"
-        onkeyup="searchFunction()"
-    >
+    <div class="searchBox">
+        <input 
+            type="text" 
+            class="search" 
+            id="searchInput" 
+            placeholder="Search"
+            onkeyup="searchFunction()"
+        >
+    </div>
 
 
-    <ul id="css-js" class="container bottom-padding--big">
+
+    <ul id="css-js" class="container">
         <h1 class="heading bottom-margin--small">CSS & JS</h1>
         <li class="project">
             <a target="_blank" href="./CSS/3d-background/index.html">
@@ -275,8 +290,8 @@
             </a>
         </li>
         <li class="project">
-            <a target="_blank" href="./CSS/li-box-design/index.html">
-                li Box Design
+            <a target="_blank" href="./CSS/div-box-design/index.html">
+                Div Box Design
             </a>
         </li> 
         <li class="project">
