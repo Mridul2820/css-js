@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+  background: #0c0c0c;
+}
+
+a {
+  position: relative;
+  padding: 20px 50px;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 200px;
+  overflow: hidden;
+}
+
+a span {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 8px;
+}
+
+a .liquid {
+  position: absolute;
+  left: 0;
+  top: -80px;
+  width: 200px;
+  height: 200px;
+  background: #4973ff;
+  -webkit-box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+a .liquid::before, a .liquid::after {
+  content: '';
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -75%);
+          transform: translate(-50%, -75%);
+}
+
+a .liquid::before {
+  border-radius: 45%;
+  background: #141414;
+  -webkit-animation: animate 5s linear infinite;
+          animation: animate 5s linear infinite;
+}
+
+a .liquid::after {
+  border-radius: 40%;
+  background: rgba(20, 20, 20, 0.5);
+  -webkit-animation: animate 10s linear infinite;
+          animation: animate 10s linear infinite;
+}
+
+a:hover .liquid {
+  top: -120px;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    -webkit-transform: translate(-50%, -75%) rotate(0deg);
+            transform: translate(-50%, -75%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -75%) rotate(360deg);
+            transform: translate(-50%, -75%) rotate(360deg);
+  }
+}
+
+@keyframes animate {
+  0% {
+    -webkit-transform: translate(-50%, -75%) rotate(0deg);
+            transform: translate(-50%, -75%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -75%) rotate(360deg);
+            transform: translate(-50%, -75%) rotate(360deg);
+  }
+}
+/*# sourceMappingURL=style.css.map */
