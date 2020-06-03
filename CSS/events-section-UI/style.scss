@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+// Responsive Breakpoint
+$bp-largest: 62em;      //992px
+$bp-large: 54em;        //864px
+$bp-medium: 45em;       //720px
+$bp-small: 37.5em;      //600px
+$bp-smallest: 25em;     //400px
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    background: url(assets/gen-1.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media only screen and (max-width: $bp-largest){
+        background-position: center;
+    }
+
+    @media only screen and (max-width: $bp-medium){
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .leftBox {
+        width: 45%;
+        height: 100%;
+        padding: 50px;
+
+        @media only screen and (max-width: $bp-large){
+            padding: 40px;
+        }
+
+        @media only screen and (max-width: $bp-medium){
+            width: 100%;
+            height: 100%;
+        }
+
+        @media only screen and (max-width: $bp-smallest){
+            padding: 30px;
+        }
+
+        .content {
+            color: #fff;
+            background: rgba(0, 0, 0, .5);
+            padding: 25px;
+            transition: all .5s;
+
+            &:hover {
+                background: #e91e63;
+            }
+
+            h1 {
+                font-size: 30px;
+                margin-bottom: 10px;
+
+                @media only screen and (max-width: $bp-large){
+                    font-size: 25px;
+                }
+
+                @media only screen and (max-width: $bp-small){
+                    font-size: 20px;
+                }
+            }
+
+            p {
+                font-size: 17px;
+
+                @media only screen and (max-width: $bp-small){
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+    .events {
+        overflow: scroll;
+        position: relative;
+        width: 55%;
+        height: 100%;
+        background: rgba(0, 0, 0, .5);
+
+        @media only screen and (max-width: $bp-medium){
+            width: 100%;
+            height: 100%;
+        }
+
+        ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 30px;
+
+            @media only screen and (max-width: $bp-smallest){
+                margin: 20px;
+            }
+
+            li {
+                list-style: none;
+                margin: 10px 0;
+                background: #262626;
+                display: flex;
+                align-items: center;
+                transition: all .5s;
+
+                .time {
+                    position: relative;
+                    padding: 30px;
+                    width: 20%;
+                    text-align: center;
+                    transition: all .5s;
+
+                    @media only screen and (max-width: $bp-smallest){
+                        width: 30%;
+                    }
+
+                    h2 {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        color: #fff;
+                        font-size: 30px;
+
+                        span {
+                            font-size: 40px;
+                        }
+                    }
+                }
+
+                &:hover {
+                    background: #e91e63;
+                }
+
+                .details {
+                    padding: 20px;
+                    background: #ffffff;
+                    width: 80%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+
+                    @media only screen and (max-width: $bp-smallest){
+                        padding: 13px;
+                        width: 70%;
+                    }
+
+                    h3 {
+                        position: relative;
+                        font-size: 22px;
+                    }
+
+                    p {
+                        position: relative;
+                        font-size: 16px;
+                    }
+
+                    a {
+                        width: 90px;
+                        display: inline-block;
+                        text-decoration: none;
+                        padding: 7px 10px;
+                        color: #e91e63;
+                        border: 2px solid #e91e63;
+                        margin-top: 10px;
+                        font-size: 12px;
+                        transition: all .5s;
+
+                        &:hover {
+                            background: #e91e63;
+                            color: #fff;
+                            border: 2px solid #262626;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
