@@ -1,7 +1,9 @@
 :root {
   --primary-color: #e50914;
-  --dark-color: #141414
-;
+  --dark-color: #141414;
+  --black-color: #000;
+  --white-color: #fff;
+  --dark-text: #999;
 }
 
 * {
@@ -15,7 +17,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   background: #000;
-  color: #999;
+  color: var(--dark-text);
 }
 
 ul {
@@ -50,6 +52,12 @@ img {
   background-size: cover;
 }
 
+@media only screen and (max-width: 60em) {
+  .showcase {
+    height: 70vh;
+  }
+}
+
 .showcase::after {
   content: '';
   position: absolute;
@@ -61,6 +69,14 @@ img {
   background: rgba(0, 0, 0, 0.6);
   -webkit-box-shadow: inset 100px 100px 250px #000, inset -100px -100px 250px #000;
           box-shadow: inset 100px 100px 250px #000, inset -100px -100px 250px #000;
+}
+
+@media only screen and (max-width: 45em) {
+  .showcase::after {
+    background: rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: inset 70px 80px 250px #000, inset -70px -80px 250px #000;
+            box-shadow: inset 70px 80px 250px #000, inset -70px -80px 250px #000;
+  }
 }
 
 .showcase .showcase-top {
@@ -76,6 +92,15 @@ img {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width: 60em) {
+  .showcase .showcase-top img {
+    top: 30%;
+    left: 5%;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
 }
 
 .showcase .showcase-top a {
@@ -114,6 +139,13 @@ img {
   margin: 0 0 1.5rem;
 }
 
+@media only screen and (max-width: 60em) {
+  .showcase .showcase-content h1 {
+    font-size: 2.7rem;
+    line-height: 1;
+  }
+}
+
 .showcase .showcase-content p {
   text-transform: uppercase;
   color: #fff;
@@ -121,6 +153,19 @@ img {
   font-size: 1.5rem;
   margin: 0 0 1.5rem;
   line-height: 1.25;
+}
+
+@media only screen and (max-width: 60em) {
+  .showcase .showcase-content p {
+    font-size: 1.2rem;
+    line-height: 1.1;
+  }
+}
+
+@media only screen and (max-width: 60em) {
+  .hide-sm {
+    display: none;
+  }
 }
 
 .tabs {
@@ -142,6 +187,227 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+}
+
+.tabs .container > div {
+  padding: 1.5rem;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.tabs .container > div:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+.tabs p {
+  font-size: 1.2rem;
+  padding-top: 0.5rem;
+}
+
+.tab-border {
+  border-bottom: 4px solid var(--primary-color);
+}
+
+.tab-content {
+  padding: 3rem 0;
+  background: var(--black-color);
+  color: var(--white-color);
+}
+
+#tab-1-content,
+#tab-2-content,
+#tab-3-content {
+  display: none;
+}
+
+.show {
+  display: block !important;
+}
+
+#tab-1-content .tab-1-content-inner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (max-width: 45em) {
+  #tab-1-content .tab-1-content-inner {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+
+#tab-2-content .tab-2-content-top {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+  grid-gap: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (max-width: 45em) {
+  #tab-2-content .tab-2-content-top {
+    display: block;
+    text-align: center;
+  }
+}
+
+#tab-2-content .tab-2-content-bottom {
+  margin-top: 2rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+@media only screen and (max-width: 45em) {
+  #tab-2-content .tab-2-content-bottom {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+#tab-3-content .tab-3-content-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#tab-3-content .table {
+  width: 100%;
+  margin-top: 2rem;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+#tab-3-content .table thead th {
+  text-transform: uppercase;
+  padding: 0.8rem;
+}
+
+#tab-3-content .table tbody tr td {
+  color: var(--dark-text);
+  padding: 0.8rem 1.2rem;
+  text-align: center;
+}
+
+#tab-3-content .table tbody tr td:first-child {
+  text-align: left;
+}
+
+#tab-3-content .table tbody tr:nth-child(odd) {
+  background: #222;
+}
+
+.footer, .footer a {
+  color: var(--dark-text);
+  font-size: .9rem;
+}
+
+.footer {
+  max-width: 75%;
+  margin: 1rem auto;
+  overflow: auto;
+}
+
+.footer p {
+  margin-bottom: 1.5rem;
+}
+
+.footer li {
+  line-height: 1.9;
+}
+
+.footer-cols {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+}
+
+@media only screen and (max-width: 60em) {
+  .footer-cols {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.container {
+  max-width: 70%;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
+}
+
+.text-xl {
+  font-size: 1.8rem;
+  margin-bottom: 1px;
+}
+
+@media only screen and (max-width: 60em) {
+  .text-xl {
+    font-size: 1.5rem;
+  }
+}
+
+.text-lg {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 60em) {
+  .text-lg {
+    font-size: 1.3rem;
+  }
+}
+
+.text-md {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 60em) {
+  .text-md {
+    font-size: 1rem;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-dark {
+  color: var(--dark-text);
 }
 
 .button {
@@ -176,9 +442,21 @@ img {
   text-transform: uppercase;
 }
 
+@media only screen and (max-width: 60em) {
+  .button-xl {
+    padding: 1.2rem 1.8rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+  }
+}
+
 .button-lg {
   padding: 1rem 1.3rem;
   font-size: 1rem;
   text-transform: uppercase;
+}
+
+.button-icon {
+  margin-left: 1rem;
 }
 /*# sourceMappingURL=style.css.map */
