@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@400;600&display=swap');
+
+:root {
+    --primary-color: #fdd835;
+    --secondary-color: #388e3c;
+    --white: #fff;
+    --black: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'MuseoModerno', cursive;
+    font-size: 17px;
+    color: var(--primary-color);
+    line-height: 1.6;
+}
+
+#showcase {
+    background: url(assets/Mohana.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 96vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+
+    h1 {
+        font-size: 45px;
+        line-height: 1.2;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .button {
+        font-size: 18px;
+        text-decoration: none;
+        color: var(--primary-color);
+        border: 1px solid var(--primary-color);
+        padding: 5px 15px;
+        margin-top: 20px;
+        font-weight: 600;
+        border-radius: 5px;
+        transition: all .5s;
+
+        &:hover {
+            background: var(--primary-color);
+            color: var(--black);
+        }
+    }
+}
+
+#section-a {
+    padding: 20px;
+    color: var(--black);
+    background: var(--primary-color);
+    text-align: center;
+}
+
+#section-b {
+    padding: 20px;
+    background: var(--secondary-color);
+}
+
+#section-c {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .box-1, .box-3 {
+        padding: 20px;
+        color: var(--black);
+        background: var(--primary-color);
+    }
+
+    .box-2 {
+        padding: 20px;
+        color: var(--white);
+        background: var(--black);
+        text-align: center;
+    }
+}
