@@ -9,7 +9,8 @@
 // Responsive Breakpoint
 $bp-large: 60em;        //960px
 $bp-medium: 45em;       //720px
-$bp-small: 37.5em;      //600px
+$bp-small: 38em;        //608px
+$bp-smallest: 28em;     //448px
 
 * {
     margin: 0;
@@ -93,6 +94,10 @@ img {
                 left: 5%;
                 transform: translate(0);
             }
+
+            @media only screen and (max-width: $bp-smallest){
+                width: 100px;
+            }
         }
 
         a {
@@ -100,6 +105,12 @@ img {
             top: 50%;
             right: 0;
             transform: translate(-50%,-50%);
+
+            @media only screen and (max-width: $bp-smallest){
+                top: 30%;
+                right: 5%;
+                transform: translate(0);
+            }
         }
     }
 
@@ -124,6 +135,10 @@ img {
                 font-size: 2.7rem;
                 line-height: 1;
             }
+
+            @media only screen and (max-width: $bp-smallest){
+                font-size: 2rem;
+            }
         }
 
         p {
@@ -137,6 +152,10 @@ img {
             @media only screen and (max-width: $bp-large){
                 font-size: 1.2rem;
                 line-height: 1.1;
+            }
+
+            @media only screen and (max-width: $bp-smallest){
+                font-size: .9rem;
             }
         }
     }
@@ -154,7 +173,9 @@ img {
     padding-top: 1rem;
     border-bottom: 3px solid #3d3d3d;
 
-
+    @media only screen and (max-width: $bp-smallest){
+        padding-top: 0;
+    }
 
     .container {
         display: grid;
@@ -167,6 +188,10 @@ img {
         &>div {
             padding: 1.5rem;
             transition: all .5s;
+
+            @media only screen and (max-width: $bp-smallest){
+                padding: 1rem;
+            }
 
             &:hover {
                 color: #fff;
@@ -190,6 +215,10 @@ img {
     padding: 3rem 0;
     background: var(--black-color);
     color: var(--white-color);
+
+    @media only screen and (max-width: $bp-smallest){
+        padding: 1rem 0;
+    }
 }
 
 // hide content initially 
@@ -253,6 +282,10 @@ img {
         justify-content: space-around;
         align-items: center;
 
+        @media only screen and (max-width: $bp-medium){
+            flex-direction: column;
+            text-align: center;
+        }
     }
 
     .table {
@@ -261,10 +294,20 @@ img {
         border-collapse: collapse;
         border-spacing: 0;
 
+        @media only screen and (max-width: $bp-smallest){
+            border-collapse: separate;
+            border-spacing: 2px;
+        }
+
         thead {
             th {
                 text-transform: uppercase;
                 padding: 0.8rem;
+
+                @media only screen and (max-width: $bp-smallest){
+                    font-size: .8rem;
+                    padding: 0.3rem;
+                }
             }
         }
 
@@ -274,6 +317,10 @@ img {
                     color: var(--dark-text);
                     padding: 0.8rem 1.2rem;
                     text-align: center;
+
+                    @media only screen and (max-width: $bp-smallest){
+                        padding: 0.8rem .5rem;
+                    }
 
                     &:first-child {
                         text-align: left;
@@ -324,7 +371,23 @@ img {
     margin: auto;
     overflow: hidden;
     padding: 0 2rem;
+
+    @media only screen and (max-width: $bp-smallest){
+        max-width: 90%;
+        padding: 0 .5rem;
+    }
 }
+
+.container-table {
+    @media only screen and (max-width: $bp-small){
+        max-width: 90% !important;
+    }
+
+    @media only screen and (max-width: $bp-smallest){
+        max-width: 95% !important;
+    }
+}
+
 
 // text styles
 .text-xl {
@@ -342,6 +405,10 @@ img {
 
     @media only screen and (max-width: $bp-large){
         font-size: 1.3rem;
+    }
+
+    @media only screen and (max-width: $bp-smallest){
+        font-size: 1.2rem;
     }
 }
 
@@ -395,7 +462,11 @@ img {
     @media only screen and (max-width: $bp-large){
         padding: 1.2rem 1.8rem;
         font-size: 1.2rem;
-        text-transform: uppercase;
+    }
+
+    @media only screen and (max-width: $bp-smallest){
+        font-size: 1rem;
+        padding: 1rem 1.2rem;
     }
 }
 

@@ -103,12 +103,27 @@ img {
   }
 }
 
+@media only screen and (max-width: 28em) {
+  .showcase .showcase-top img {
+    width: 100px;
+  }
+}
+
 .showcase .showcase-top a {
   position: absolute;
   top: 50%;
   right: 0;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width: 28em) {
+  .showcase .showcase-top a {
+    top: 30%;
+    right: 5%;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
 }
 
 .showcase .showcase-content {
@@ -146,6 +161,12 @@ img {
   }
 }
 
+@media only screen and (max-width: 28em) {
+  .showcase .showcase-content h1 {
+    font-size: 2rem;
+  }
+}
+
 .showcase .showcase-content p {
   text-transform: uppercase;
   color: #fff;
@@ -162,6 +183,12 @@ img {
   }
 }
 
+@media only screen and (max-width: 28em) {
+  .showcase .showcase-content p {
+    font-size: .9rem;
+  }
+}
+
 @media only screen and (max-width: 60em) {
   .hide-sm {
     display: none;
@@ -172,6 +199,12 @@ img {
   background: var(--dark-color);
   padding-top: 1rem;
   border-bottom: 3px solid #3d3d3d;
+}
+
+@media only screen and (max-width: 28em) {
+  .tabs {
+    padding-top: 0;
+  }
 }
 
 .tabs .container {
@@ -195,6 +228,12 @@ img {
   transition: all .5s;
 }
 
+@media only screen and (max-width: 28em) {
+  .tabs .container > div {
+    padding: 1rem;
+  }
+}
+
 .tabs .container > div:hover {
   color: #fff;
   cursor: pointer;
@@ -213,6 +252,12 @@ img {
   padding: 3rem 0;
   background: var(--black-color);
   color: var(--white-color);
+}
+
+@media only screen and (max-width: 28em) {
+  .tab-content {
+    padding: 1rem 0;
+  }
 }
 
 #tab-1-content,
@@ -302,6 +347,16 @@ img {
           align-items: center;
 }
 
+@media only screen and (max-width: 45em) {
+  #tab-3-content .tab-3-content-top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+}
+
 #tab-3-content .table {
   width: 100%;
   margin-top: 2rem;
@@ -309,15 +364,35 @@ img {
   border-spacing: 0;
 }
 
+@media only screen and (max-width: 28em) {
+  #tab-3-content .table {
+    border-collapse: separate;
+    border-spacing: 2px;
+  }
+}
+
 #tab-3-content .table thead th {
   text-transform: uppercase;
   padding: 0.8rem;
+}
+
+@media only screen and (max-width: 28em) {
+  #tab-3-content .table thead th {
+    font-size: .8rem;
+    padding: 0.3rem;
+  }
 }
 
 #tab-3-content .table tbody tr td {
   color: var(--dark-text);
   padding: 0.8rem 1.2rem;
   text-align: center;
+}
+
+@media only screen and (max-width: 28em) {
+  #tab-3-content .table tbody tr td {
+    padding: 0.8rem .5rem;
+  }
 }
 
 #tab-3-content .table tbody tr td:first-child {
@@ -369,6 +444,25 @@ img {
   padding: 0 2rem;
 }
 
+@media only screen and (max-width: 28em) {
+  .container {
+    max-width: 90%;
+    padding: 0 .5rem;
+  }
+}
+
+@media only screen and (max-width: 38em) {
+  .container-table {
+    max-width: 90% !important;
+  }
+}
+
+@media only screen and (max-width: 28em) {
+  .container-table {
+    max-width: 95% !important;
+  }
+}
+
 .text-xl {
   font-size: 1.8rem;
   margin-bottom: 1px;
@@ -388,6 +482,12 @@ img {
 @media only screen and (max-width: 60em) {
   .text-lg {
     font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 28em) {
+  .text-lg {
+    font-size: 1.2rem;
   }
 }
 
@@ -446,7 +546,13 @@ img {
   .button-xl {
     padding: 1.2rem 1.8rem;
     font-size: 1.2rem;
-    text-transform: uppercase;
+  }
+}
+
+@media only screen and (max-width: 28em) {
+  .button-xl {
+    font-size: 1rem;
+    padding: 1rem 1.2rem;
   }
 }
 
