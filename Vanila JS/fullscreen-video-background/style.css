@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=MuseoModerno:wght@400;600&display=swap");
+:root {
+  --primary-color: #225470;
+  --secondary-color: #34b3a0;
+  --dark-color: #333;
+  --white: #fff;
+  --black: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'MuseoModerno', cursive;
+  font-size: 1rem;
+  color: var(--dark-color);
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+.v-header {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: var(--white);
+}
+
+.container {
+  max-width: 960px;
+  padding: 0 1rem;
+  margin: auto;
+  text-align: center;
+}
+
+.fullscreen-video-wrap {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.fullscreen-video-wrap video {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.header-overlay {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--primary-color);
+  z-index: 1;
+  opacity: .75;
+}
+
+.header-content {
+  z-index: 2;
+}
+
+.header-content h1 {
+  font-size: 50px;
+  margin-bottom: 0;
+}
+
+.header-content p {
+  font-size: 1.5rem;
+  display: block;
+  padding-bottom: 2rem;
+}
+
+.header-content .button {
+  border: 2px solid var(--secondary-color);
+  color: var(--secondary-color);
+  font-size: 1.2rem;
+  padding: .5rem 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.header-content .button:hover {
+  background: var(--secondary-color);
+  color: var(--black);
+}
+
+.section {
+  padding: 20px 0;
+}
+
+.section-b {
+  background: var(--dark-color);
+  color: var(--white);
+}
