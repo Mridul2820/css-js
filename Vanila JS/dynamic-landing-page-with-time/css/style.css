@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=MuseoModerno:wght@400;600&display=swap");
+:root {
+  --primary-color: #fdd835;
+  --secondary-color: #388e3c;
+  --dark-color: #333;
+  --white: #fff;
+  --black: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'MuseoModerno', cursive;
+  color: var(--black);
+  line-height: 1.5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+#date {
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 45em) {
+  #date {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 38em) {
+  #date {
+    font-size: 1.7rem;
+  }
+}
+
+@media only screen and (max-width: 28em) {
+  #date {
+    font-size: 1.3rem;
+  }
+}
+
+#time {
+  font-size: 6rem;
+}
+
+@media only screen and (max-width: 45em) {
+  #time {
+    font-size: 5.3rem;
+  }
+}
+
+@media only screen and (max-width: 38em) {
+  #time {
+    font-size: 4.5rem;
+  }
+}
+
+@media only screen and (max-width: 28em) {
+  #time {
+    font-size: 3.5rem;
+  }
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 45em) {
+  h1 {
+    font-size: 1.9rem;
+  }
+}
+
+@media only screen and (max-width: 38em) {
+  h1 {
+    font-size: 1.7rem;
+  }
+}
+
+@media only screen and (max-width: 28em) {
+  h1 {
+    font-size: 1.4rem;
+  }
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  opacity: .8;
+}
+
+@media only screen and (max-width: 45em) {
+  h2 {
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (max-width: 38em) {
+  h2 {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 28em) {
+  h2 {
+    font-size: 1rem;
+  }
+}

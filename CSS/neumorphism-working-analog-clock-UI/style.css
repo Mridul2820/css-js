@@ -169,4 +169,3 @@ body.light .toggleClass {
 body.light .toggleClass::before {
   content: 'Dark Mode';
 }
-/*# sourceMappingURL=style.css.map */
