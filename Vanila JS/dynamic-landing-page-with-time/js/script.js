@@ -54,7 +54,7 @@ function setBgAndGreet() {
         document.body.style.backgroundImage = "url('assets/afternoon.jpg')";
         greeting.textContent = 'Good Afternoon';
     }
-    else if (hour => 16 && hour <= 20) {
+    else if (hour >= 16 && hour <= 20) {
         // evening
         document.body.style.backgroundImage = "url('assets/evening.jpg')";
         greeting.textContent = 'Good Evening';
