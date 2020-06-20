@@ -1,0 +1,149 @@
+// Responsive Breakpoint
+$bp-large-1: 72em;      //1152px
+$bp-large-2: 66em;      //1056px
+$bp-large-3: 60em;      //960px
+$bp-medium-1: 54em;     //864px
+$bp-medium-2: 48em;     //768px
+$bp-medium-3: 42em;     //672px
+$bp-small-1: 36em;      //576px
+$bp-small-2: 30em;      //480px
+$bp-small-3: 24em;      //384px
+$bp-small-4: 20em;      //320px
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flower,
+.leaves,
+.taxi,
+.paragliding {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    position: relative;
+    width: 50%;
+    height: 100vh;
+    overflow: hidden;
+
+    @media only screen and (max-width: $bp-large-1){
+        height: 92vh;
+    }
+
+    @media only screen and (max-width: $bp-large-2){
+        height: 84vh;
+    }
+
+    @media only screen and (max-width: $bp-large-3){
+        height: 76vh;
+    }
+
+    @media only screen and (max-width: $bp-medium-1){
+        height: 68vh;
+    }
+
+    @media only screen and (max-width: $bp-medium-2){
+        height: 60vh;
+    }
+
+    @media only screen and (max-width: $bp-medium-3){
+        height: 52vh;
+    }
+
+    @media only screen and (max-width: $bp-small-1){
+        height: 44vh;
+    }
+
+    @media only screen and (max-width: $bp-small-2){
+        height: 36vh;
+    }
+
+    @media only screen and (max-width: $bp-small-3){
+        height: 28vh;
+    }
+
+    @media only screen and (max-width: $bp-small-4){
+        height: 25vh;
+    }
+
+
+    img {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.flower {
+    .box {
+
+        &:nth-child(2) {
+            img {
+                filter: grayscale(1) contrast(1);
+
+                &:nth-child(2) {
+                    filter: grayscale(1) contrast(5) brightness(2);
+                    mix-blend-mode: hard-light;
+                }
+            }
+        }
+    }
+}
+
+.leaves {
+    .box {
+
+        &:nth-child(2) {
+            img {
+                filter: grayscale(1) contrast(1);
+
+                &:nth-child(2) {
+                    filter: grayscale(1) contrast(5) brightness(2);
+                    mix-blend-mode: hard-light;
+                }
+            }
+        }
+    }
+}
+
+.taxi {
+
+    .box {
+
+        &:nth-child(2) {
+            img {
+                filter: grayscale(1) contrast(1);
+
+                &:nth-child(2) {
+                    filter: grayscale(1) contrast(5) brightness(2);
+                    mix-blend-mode: hard-light;
+                }
+            }
+        }
+    }
+}
+
+.paragliding {
+
+    .box {
+
+        &:nth-child(2) {
+            img {
+                filter: grayscale(1) contrast(1.5);
+
+                &:nth-child(2) {
+                    filter: grayscale(1) contrast(5) brightness(2);
+                    mix-blend-mode: hard-light;
+                }
+            }
+        }
+    }
+}

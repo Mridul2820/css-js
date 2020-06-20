@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.flower,
+.leaves,
+.taxi,
+.paragliding {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.box {
+  position: relative;
+  width: 50%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 72em) {
+  .box {
+    height: 92vh;
+  }
+}
+
+@media only screen and (max-width: 66em) {
+  .box {
+    height: 84vh;
+  }
+}
+
+@media only screen and (max-width: 60em) {
+  .box {
+    height: 76vh;
+  }
+}
+
+@media only screen and (max-width: 54em) {
+  .box {
+    height: 68vh;
+  }
+}
+
+@media only screen and (max-width: 48em) {
+  .box {
+    height: 60vh;
+  }
+}
+
+@media only screen and (max-width: 42em) {
+  .box {
+    height: 52vh;
+  }
+}
+
+@media only screen and (max-width: 36em) {
+  .box {
+    height: 44vh;
+  }
+}
+
+@media only screen and (max-width: 30em) {
+  .box {
+    height: 36vh;
+  }
+}
+
+@media only screen and (max-width: 24em) {
+  .box {
+    height: 28vh;
+  }
+}
+
+@media only screen and (max-width: 20em) {
+  .box {
+    height: 25vh;
+  }
+}
+
+.box img {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.flower .box:nth-child(2) img {
+  -webkit-filter: grayscale(1) contrast(1);
+          filter: grayscale(1) contrast(1);
+}
+
+.flower .box:nth-child(2) img:nth-child(2) {
+  -webkit-filter: grayscale(1) contrast(5) brightness(2);
+          filter: grayscale(1) contrast(5) brightness(2);
+  mix-blend-mode: hard-light;
+}
+
+.leaves .box:nth-child(2) img {
+  -webkit-filter: grayscale(1) contrast(1);
+          filter: grayscale(1) contrast(1);
+}
+
+.leaves .box:nth-child(2) img:nth-child(2) {
+  -webkit-filter: grayscale(1) contrast(5) brightness(2);
+          filter: grayscale(1) contrast(5) brightness(2);
+  mix-blend-mode: hard-light;
+}
+
+.taxi .box:nth-child(2) img {
+  -webkit-filter: grayscale(1) contrast(1);
+          filter: grayscale(1) contrast(1);
+}
+
+.taxi .box:nth-child(2) img:nth-child(2) {
+  -webkit-filter: grayscale(1) contrast(5) brightness(2);
+          filter: grayscale(1) contrast(5) brightness(2);
+  mix-blend-mode: hard-light;
+}
+
+.paragliding .box:nth-child(2) img {
+  -webkit-filter: grayscale(1) contrast(1.5);
+          filter: grayscale(1) contrast(1.5);
+}
+
+.paragliding .box:nth-child(2) img:nth-child(2) {
+  -webkit-filter: grayscale(1) contrast(5) brightness(2);
+          filter: grayscale(1) contrast(5) brightness(2);
+  mix-blend-mode: hard-light;
+}
