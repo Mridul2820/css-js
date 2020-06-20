@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Pacifico', cursive;
+  overflow-x: hidden;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section h2 {
+  font-size: 5em;
+  color: #fff;
+}
+
+@media only screen and (max-width: 60em) {
+  section h2 {
+    font-size: 4.2em;
+  }
+}
+
+@media only screen and (max-width: 48em) {
+  section h2 {
+    font-size: 3.5em;
+  }
+}
+
+@media only screen and (max-width: 30em) {
+  section h2 {
+    font-size: 3em;
+  }
+}
+
+.box {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+}
+
+@media only screen and (max-width: 42em) {
+  .box {
+    padding: 100px 70px;
+  }
+}
+
+@media only screen and (max-width: 30em) {
+  .box {
+    padding: 100px 30px;
+  }
+}
+
+.box h2 {
+  font-size: 3em;
+}
+
+@media only screen and (max-width: 60em) {
+  .box h2 {
+    font-size: 2.5em;
+  }
+}
+
+@media only screen and (max-width: 48em) {
+  .box h2 {
+    font-size: 2em;
+  }
+}
+
+@media only screen and (max-width: 42em) {
+  .box h2 {
+    font-size: 1.5em;
+  }
+}
+
+.box .logo {
+  max-width: 250px;
+}
+
+@media only screen and (max-width: 48em) {
+  .box .logo {
+    max-width: 220px;
+  }
+}
+
+@media only screen and (max-width: 42em) {
+  .box .logo {
+    max-width: 180px;
+  }
+}
+
+.box2 {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  background: #000000;
+}
+
+@media only screen and (max-width: 42em) {
+  .box2 {
+    padding: 100px 70px;
+  }
+}
+
+@media only screen and (max-width: 30em) {
+  .box2 {
+    padding: 100px 30px;
+  }
+}
+
+.box2 h2 {
+  font-size: 3em;
+  color: #fff;
+}
+
+@media only screen and (max-width: 60em) {
+  .box2 h2 {
+    font-size: 2.5em;
+  }
+}
+
+@media only screen and (max-width: 48em) {
+  .box2 h2 {
+    font-size: 2em;
+  }
+}
+
+@media only screen and (max-width: 42em) {
+  .box2 h2 {
+    font-size: 1.5em;
+  }
+}

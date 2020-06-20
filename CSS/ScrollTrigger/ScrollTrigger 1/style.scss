@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+// Responsive Breakpoint
+$bp-largest: 68.25em;   //1100px
+$bp-large: 60em;        //960px
+$bp-medium: 48em;       //768px
+$bp-small: 42em;        //672px
+$bp-smallest: 30em;     //480px
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Pacifico', cursive;
+    overflow-x: hidden;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+        font-size: 5em;
+        color: #fff;
+
+        @media only screen and (max-width: $bp-large){
+            font-size: 4.2em;
+        }
+
+        @media only screen and (max-width: $bp-medium){
+            font-size: 3.5em;
+        }
+
+        @media only screen and (max-width: $bp-smallest){
+            font-size: 3em;
+        }
+    }
+}
+
+.box {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+
+    @media only screen and (max-width: $bp-small){
+        padding: 100px 70px;
+    }
+
+    @media only screen and (max-width: $bp-smallest){
+        padding: 100px 30px;
+    }
+
+    h2 {
+        font-size: 3em;
+
+        @media only screen and (max-width: $bp-large){
+            font-size: 2.5em;
+        }
+
+        @media only screen and (max-width: $bp-medium){
+            font-size: 2em;
+        }
+
+        @media only screen and (max-width: $bp-small){
+            font-size: 1.5em;
+        }
+    }
+
+    .logo {
+        max-width: 250px;
+
+        @media only screen and (max-width: $bp-medium){
+            max-width: 220px;
+        }
+
+        @media only screen and (max-width: $bp-small){
+            max-width: 180px;
+        }
+    }
+}
+
+.box2 {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    background: #000000;
+
+    @media only screen and (max-width: $bp-small){
+        padding: 100px 70px;
+    }
+
+    @media only screen and (max-width: $bp-smallest){
+        padding: 100px 30px;
+    }
+
+    h2 {
+        font-size: 3em;
+        color: #fff;
+
+        @media only screen and (max-width: $bp-large){
+            font-size: 2.5em;
+        }
+        
+        @media only screen and (max-width: $bp-medium){
+            font-size: 2em;
+        }
+
+        @media only screen and (max-width: $bp-small){
+            font-size: 1.5em;
+        }
+    }
+}
