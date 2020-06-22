@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'MuseoModerno', cursive;
+}
+
+body {
+  background: #061c2d;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section .reveal {
+  position: relative;
+  color: #fff;
+  font-size: 2em;
+  padding: 0 10px;
+  font-weight: 500;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-transition-delay: .5s;
+          transition-delay: .5s;
+}
+
+section .reveal.active {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+
+section .reveal.active::before {
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition-delay: .5s;
+          transition-delay: .5s;
+}
+
+section .reveal::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #1b5e20;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+
+section .reveal:nth-child(2) {
+  font-weight: 300;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+section .reveal:nth-child(2)::before {
+  background: #ffeb3b;
+}
+
+section img {
+  position: relative;
+  left: -100px;
+  display: block;
+  max-width: 300px;
+  margin-left: 10px;
+  margin-top: 20px;
+  opacity: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+section img.active {
+  left: 0;
+  opacity: 1;
+}
