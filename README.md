@@ -9,7 +9,7 @@ Some Projects On Vanila.JS and CSS based
 ```markdown
 
 - CSS & JS
+- GSAP ScrollTrigger
 - Swiper.js
-- Vanila JS
 
 ```
