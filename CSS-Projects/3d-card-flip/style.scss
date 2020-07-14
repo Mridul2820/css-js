@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #1e1e1e;
+}
+
+.container {
+    width: 1000px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .card {
+        position: relative;
+        height: 200px;
+        width: 200px;
+        margin: 10px;
+
+        .face {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transition: .5s;
+        }
+
+        .face.face1 {
+            background: #333333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1;
+            transform-origin: bottom;
+
+            img {
+                max-width: 100px;
+            }
+
+            h3 {
+                margin: 10px 0 0;
+                color: #fff;
+                text-align: center;
+                font-size: 1.3em;
+                font-weight: 700;
+            }
+        }
+
+        &:hover {
+            .face.face1 {
+                transform: translateY(-100%) rotateX(90deg);
+                background: #ff0057;
+            }
+        }
+
+        .face.face2 {
+            background: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            transform-origin: top;
+            transform: translateY(100%) rotateX(90deg);
+        }
+
+        &:hover {
+            .face.face2 {
+                transform: translateY(0) rotateX(0deg);
+                // background: #ff0057;
+            }
+        }
+    }
+}
