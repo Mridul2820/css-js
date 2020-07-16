@@ -31,8 +31,22 @@ body {
   height: 200px;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
-  -webkit-animation: animate 20s linear infinite;
-          animation: animate 20s linear infinite;
+  -webkit-animation: animateAngle 20s linear infinite;
+          animation: animateAngle 20s linear infinite;
+}
+
+@media only screen and (max-width: 45em) {
+  .box {
+    -webkit-animation: animateStraight  20s linear infinite;
+            animation: animateStraight  20s linear infinite;
+  }
+}
+
+@media only screen and (max-width: 25em) {
+  .box {
+    width: 180px;
+    height: 180px;
+  }
 }
 
 .box span {
@@ -49,6 +63,20 @@ body {
           transform: rotateX(calc(var(--i) * 45deg)) translateZ(300px);
 }
 
+@media only screen and (max-width: 45em) {
+  .box span {
+    -webkit-transform: rotateX(calc(var(--i) * 45deg)) translateZ(280px);
+            transform: rotateX(calc(var(--i) * 45deg)) translateZ(280px);
+  }
+}
+
+@media only screen and (max-width: 25em) {
+  .box span {
+    -webkit-transform: rotateX(calc(var(--i) * 45deg)) translateZ(240px);
+            transform: rotateX(calc(var(--i) * 45deg)) translateZ(240px);
+  }
+}
+
 .box span img {
   position: absolute;
   top: 0;
@@ -59,7 +87,7 @@ body {
      object-fit: cover;
 }
 
-@-webkit-keyframes animate {
+@-webkit-keyframes animateAngle {
   0% {
     -webkit-transform: perspective(1000px) rotateX(0deg) rotateY(35deg);
             transform: perspective(1000px) rotateX(0deg) rotateY(35deg);
@@ -70,7 +98,7 @@ body {
   }
 }
 
-@keyframes animate {
+@keyframes animateAngle {
   0% {
     -webkit-transform: perspective(1000px) rotateX(0deg) rotateY(35deg);
             transform: perspective(1000px) rotateX(0deg) rotateY(35deg);
@@ -78,5 +106,27 @@ body {
   100% {
     -webkit-transform: perspective(1000px) rotateX(360deg) rotateY(35deg);
             transform: perspective(1000px) rotateX(360deg) rotateY(35deg);
+  }
+}
+
+@-webkit-keyframes animateStraight {
+  0% {
+    -webkit-transform: perspective(1000px) rotateX(0deg);
+            transform: perspective(1000px) rotateX(0deg);
+  }
+  100% {
+    -webkit-transform: perspective(1000px) rotateX(360deg);
+            transform: perspective(1000px) rotateX(360deg);
+  }
+}
+
+@keyframes animateStraight {
+  0% {
+    -webkit-transform: perspective(1000px) rotateX(0deg);
+            transform: perspective(1000px) rotateX(0deg);
+  }
+  100% {
+    -webkit-transform: perspective(1000px) rotateX(360deg);
+            transform: perspective(1000px) rotateX(360deg);
   }
 }

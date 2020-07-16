@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
 
+$bp-angle : 45em;   //720px
+$bp-small : 25em;   //400px
+
 * {
     margin: 0;
     padding: 0;
@@ -22,7 +25,16 @@ body {
     width: 200px;
     height: 200px;
     transform-style: preserve-3d;
-    animation: animate 20s linear infinite;
+    animation: animateAngle 20s linear infinite;
+
+    @media only screen and (max-width: $bp-angle){
+        animation: animateStraight  20s linear infinite;
+    }
+
+    @media only screen and (max-width: $bp-small){
+        width: 180px;
+        height: 180px;
+    }
 
     span {
         position: absolute;
@@ -33,6 +45,14 @@ body {
         transform-origin: center;
         transform-style: preserve-3d;
         transform: rotateX(calc(var(--i) * 45deg)) translateZ(300px);
+
+        @media only screen and (max-width: $bp-angle){
+            transform: rotateX(calc(var(--i) * 45deg)) translateZ(280px);
+        }
+    
+        @media only screen and (max-width: $bp-small){
+            transform: rotateX(calc(var(--i) * 45deg)) translateZ(240px);
+        }
 
         img {
             position: absolute;
@@ -45,12 +65,22 @@ body {
     }
 }
 
-@keyframes animate {
+@keyframes animateAngle {
     0% {
         transform: perspective(1000px) rotateX(0deg) rotateY(35deg);
     }
 
     100% {
         transform: perspective(1000px) rotateX(360deg) rotateY(35deg);
+    }
+}
+
+@keyframes animateStraight {
+    0% {
+        transform: perspective(1000px) rotateX(0deg);
+    }
+
+    100% {
+        transform: perspective(1000px) rotateX(360deg);
     }
 }
