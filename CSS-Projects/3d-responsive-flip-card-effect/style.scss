@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    transform-style: preserve-3d;
+    // width: 1300px;
+
+    .card {
+        position: relative;
+        width: 300px;
+        height: 300px;
+        margin: 20px;
+        transform-style: preserve-3d;
+        perspective: 1000px;
+
+        @media only screen and (max-width: 375px){
+            width: 260px;
+            height: 260px;
+        }
+
+        &:hover {
+            .box {
+                transform: rotateY(180deg);
+            }
+        }
+
+        .box {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: 1s ease;
+
+            .imgBox {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+
+                img {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .contentBox {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: #333333;
+                backface-visibility: hidden;
+                transform-style: preserve-3d;
+                transform: rotateY(180deg);
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                div {
+                    transform-style: preserve-3d;
+                    padding: 20px;
+                    background: linear-gradient(45deg, #fe0061, #ffeb3b);
+                    transform: translateZ(100px);
+
+                    h2 {
+                        color: #fff;
+                        font-size: 20px;
+                        letter-spacing: 1px;
+                    }
+
+                    p {
+                        line-height: 1.5;
+                    }
+                }
+            }
+        }
+    }
+}
