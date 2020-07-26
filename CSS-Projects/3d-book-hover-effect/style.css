@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+section .book {
+  position: relative;
+  width: 205px;
+  height: 307px;
+  -webkit-box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+section .book:hover {
+  -webkit-box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
+  -webkit-transform: rotateY(35deg);
+          transform: rotateY(35deg);
+}
+
+section .book:active {
+  -webkit-box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+section .book::before {
+  content: '';
+  position: absolute;
+  width: 75px;
+  height: 100%;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  background: url(assets/harry-potter-sides.jpg);
+  background-position: center;
+  background-size: cover;
+  -webkit-transform: rotateY(90deg) rotateX(180deg);
+          transform: rotateY(90deg) rotateX(180deg);
+}
+
+section .book::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  background: url(assets/Harry-potter-Back-Cover.jpg);
+  background-position: center;
+  background-size: cover;
+  -webkit-transform: rotateY(180deg) translateZ(75px);
+          transform: rotateY(180deg) translateZ(75px);
+}
+
+section .book img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
