@@ -2,21 +2,14 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: 'Open Sans Condensed', sans-serif;
 }
 
 body {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   min-height: 100vh;
   background: #2e7d32;
   overflow: hidden;
@@ -29,11 +22,7 @@ h1 {
   line-height: 1.1em;
   outline: none;
   text-align: center;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  -webkit-transform: rotate(-10deg) skewX(20deg);
-          transform: rotate(-10deg) skewX(20deg);
+  user-select: none;
+  transform: rotate(-10deg) skewX(20deg);
   text-shadow: -1px 1px #cacaca, -2px 2px #cacaca, -3px 3px #cacaca, -4px 4px #cacaca, -5px 5px #cacaca, -6px 6px #cacaca, -7px 7px #cacaca, -8px 8px #cacaca, -9px 9px #cacaca, -10px 10px #cacaca, -11px 11px #cacaca, -12px 12px #cacaca, -20px 20px rgba(0, 0, 0, 0.2);
 }

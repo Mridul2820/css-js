@@ -1,20 +1,13 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   min-height: 100vh;
   background: #000;
 }
@@ -29,8 +22,7 @@ body {
 
 .loader:hover {
   background: #03e9f4;
-  -webkit-box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 100px #03e9f4;
-          box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 100px #03e9f4;
+  box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 100px #03e9f4;
 }
 
 .loader span {
@@ -43,12 +35,9 @@ body {
   left: -100%;
   width: 100%;
   height: 40px;
-  background: -webkit-gradient(linear, left top, right top, from(transparent), to(#03e9f4));
   background: linear-gradient(90deg, transparent, #03e9f4);
-  -webkit-animation: animate1 1s linear infinite;
-          animation: animate1 1s linear infinite;
-  -webkit-animation-delay: 0;
-          animation-delay: 0;
+  animation: animate1 1s linear infinite;
+  animation-delay: 0;
 }
 
 .loader span:nth-child(2) {
@@ -56,12 +45,9 @@ body {
   right: 0;
   width: 40px;
   height: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#03e9f4));
   background: linear-gradient(180deg, transparent, #03e9f4);
-  -webkit-animation: animate2 1s linear infinite;
-          animation: animate2 1s linear infinite;
-  -webkit-animation-delay: .5s;
-          animation-delay: .5s;
+  animation: animate2 1s linear infinite;
+  animation-delay: .5s;
 }
 
 .loader span:nth-child(3) {
@@ -69,12 +55,9 @@ body {
   left: -100%;
   width: 100%;
   height: 40px;
-  background: -webkit-gradient(linear, right top, left top, from(transparent), to(#03e9f4));
   background: linear-gradient(270deg, transparent, #03e9f4);
-  -webkit-animation: animate3 1s linear infinite;
-          animation: animate3 1s linear infinite;
-  -webkit-animation-delay: 0;
-          animation-delay: 0;
+  animation: animate3 1s linear infinite;
+  animation-delay: 0;
 }
 
 .loader span:nth-child(4) {
@@ -82,21 +65,9 @@ body {
   left: 0;
   width: 40px;
   height: 100%;
-  background: -webkit-gradient(linear, left bottom, left top, from(transparent), to(#03e9f4));
   background: linear-gradient(0deg, transparent, #03e9f4);
-  -webkit-animation: animate4 1s linear infinite;
-          animation: animate4 1s linear infinite;
-  -webkit-animation-delay: .5s;
-          animation-delay: .5s;
-}
-
-@-webkit-keyframes animate1 {
-  0% {
-    left: -100%;
-  }
-  100% {
-    left: 100%;
-  }
+  animation: animate4 1s linear infinite;
+  animation-delay: .5s;
 }
 
 @keyframes animate1 {
@@ -105,15 +76,6 @@ body {
   }
   100% {
     left: 100%;
-  }
-}
-
-@-webkit-keyframes animate2 {
-  0% {
-    top: -100%;
-  }
-  100% {
-    top: 100%;
   }
 }
 
@@ -126,30 +88,12 @@ body {
   }
 }
 
-@-webkit-keyframes animate3 {
-  0% {
-    left: 100%;
-  }
-  100% {
-    left: -100%;
-  }
-}
-
 @keyframes animate3 {
   0% {
     left: 100%;
   }
   100% {
     left: -100%;
-  }
-}
-
-@-webkit-keyframes animate4 {
-  0% {
-    top: 100%;
-  }
-  100% {
-    top: -100%;
   }
 }
 

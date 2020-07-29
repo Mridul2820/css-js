@@ -2,8 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: 'Raleway', sans-serif;
 }
 
@@ -26,7 +25,6 @@ section::before {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  -webkit-transition: 5s;
   transition: 5s;
   pointer-events: none;
 }
@@ -39,7 +37,6 @@ section:active::before {
   position: absolute;
   bottom: 0;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   z-index: 10000;
 }

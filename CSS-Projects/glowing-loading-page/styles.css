@@ -2,34 +2,22 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: 'Open Sans Condensed', sans-serif;
 }
 
 body {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
   background: #000;
 }
 
 .loader {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-transform: translateY(-35px);
-          transform: translateY(-35px);
+  align-items: flex-end;
+  transform: translateY(-35px);
 }
 
 .loader span {
@@ -38,19 +26,11 @@ body {
   background: #111;
   margin: 0 10px;
   height: calc(20px * var(--i));
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-animation: animate 2s linear infinite;
-          animation: animate 2s linear infinite;
-  -webkit-animation-delay: calc(.25s * var(--i));
-          animation-delay: calc(.25s * var(--i));
+  justify-content: center;
+  align-items: flex-end;
+  animation: animate 2s linear infinite;
+  animation-delay: calc(.25s * var(--i));
 }
 
 .loader span i {
@@ -59,100 +39,43 @@ body {
   color: #fff;
   font-size: 50px;
   font-weight: 700;
-  -webkit-transform: translateY(70px);
-          transform: translateY(70px);
-  -webkit-animation: animate2 2s linear infinite;
-          animation: animate2 2s linear infinite;
-  -webkit-animation-delay: calc(.25s * var(--i));
-          animation-delay: calc(.25s * var(--i));
-}
-
-@-webkit-keyframes animate {
-  0% {
-    background: #fff;
-    -webkit-filter: blur(2px);
-            filter: blur(2px);
-    -webkit-box-shadow: 0 0 10px #00b3ff, 0 0 20px #00b3ff, 0 0 40px #00b3ff, 0 0 80px #00b3ff, 0 0 120px #00b3ff, 0 0 200px #00b3ff, 0 0 300px #00b3ff, 0 0 400px #00b3ff;
-            box-shadow: 0 0 10px #00b3ff, 0 0 20px #00b3ff, 0 0 40px #00b3ff, 0 0 80px #00b3ff, 0 0 120px #00b3ff, 0 0 200px #00b3ff, 0 0 300px #00b3ff, 0 0 400px #00b3ff;
-  }
-  25%, 75% {
-    background: #111;
-    -webkit-filter: blur(0px);
-            filter: blur(0px);
-    -webkit-box-shadow: none;
-            box-shadow: none;
-  }
-  100% {
-    background: #fff;
-    -webkit-filter: blur(2px);
-            filter: blur(2px);
-    -webkit-box-shadow: 0 0 10px #00b3ff, 0 0 20px #00b3ff, 0 0 40px #00b3ff, 0 0 80px #00b3ff, 0 0 120px #00b3ff, 0 0 200px #00b3ff, 0 0 300px #00b3ff, 0 0 400px #00b3ff;
-            box-shadow: 0 0 10px #00b3ff, 0 0 20px #00b3ff, 0 0 40px #00b3ff, 0 0 80px #00b3ff, 0 0 120px #00b3ff, 0 0 200px #00b3ff, 0 0 300px #00b3ff, 0 0 400px #00b3ff;
-  }
+  transform: translateY(70px);
+  animation: animate2 2s linear infinite;
+  animation-delay: calc(.25s * var(--i));
 }
 
 @keyframes animate {
   0% {
     background: #fff;
-    -webkit-filter: blur(2px);
-            filter: blur(2px);
-    -webkit-box-shadow: 0 0 10px #00b3ff, 0 0 20px #00b3ff, 0 0 40px #00b3ff, 0 0 80px #00b3ff, 0 0 120px #00b3ff, 0 0 200px #00b3ff, 0 0 300px #00b3ff, 0 0 400px #00b3ff;
-            box-shadow: 0 0 10px #00b3ff, 0 0 20px #00b3ff, 0 0 40px #00b3ff, 0 0 80px #00b3ff, 0 0 120px #00b3ff, 0 0 200px #00b3ff, 0 0 300px #00b3ff, 0 0 400px #00b3ff;
+    filter: blur(2px);
+    box-shadow: 0 0 10px #00b3ff, 0 0 20px #00b3ff, 0 0 40px #00b3ff, 0 0 80px #00b3ff, 0 0 120px #00b3ff, 0 0 200px #00b3ff, 0 0 300px #00b3ff, 0 0 400px #00b3ff;
   }
   25%, 75% {
     background: #111;
-    -webkit-filter: blur(0px);
-            filter: blur(0px);
-    -webkit-box-shadow: none;
-            box-shadow: none;
+    filter: blur(0px);
+    box-shadow: none;
   }
   100% {
     background: #fff;
-    -webkit-filter: blur(2px);
-            filter: blur(2px);
-    -webkit-box-shadow: 0 0 10px #00b3ff, 0 0 20px #00b3ff, 0 0 40px #00b3ff, 0 0 80px #00b3ff, 0 0 120px #00b3ff, 0 0 200px #00b3ff, 0 0 300px #00b3ff, 0 0 400px #00b3ff;
-            box-shadow: 0 0 10px #00b3ff, 0 0 20px #00b3ff, 0 0 40px #00b3ff, 0 0 80px #00b3ff, 0 0 120px #00b3ff, 0 0 200px #00b3ff, 0 0 300px #00b3ff, 0 0 400px #00b3ff;
-  }
-}
-
-@-webkit-keyframes animate2 {
-  0% {
-    color: #fff;
-    -webkit-filter: blur(2px);
-            filter: blur(2px);
-    text-shadow: 0 0 10px #00b3ff, 0 0 20px #00b3ff, 0 0 40px #00b3ff, 0 0 80px #00b3ff, 0 0 120px #00b3ff, 0 0 200px #00b3ff, 0 0 300px #00b3ff, 0 0 400px #00b3ff;
-  }
-  25%, 75% {
-    color: #111;
-    -webkit-filter: blur(0px);
-            filter: blur(0px);
-    text-shadow: none;
-  }
-  100% {
-    color: #fff;
-    -webkit-filter: blur(2px);
-            filter: blur(2px);
-    text-shadow: 0 0 10px #00b3ff, 0 0 20px #00b3ff, 0 0 40px #00b3ff, 0 0 80px #00b3ff, 0 0 120px #00b3ff, 0 0 200px #00b3ff, 0 0 300px #00b3ff, 0 0 400px #00b3ff;
+    filter: blur(2px);
+    box-shadow: 0 0 10px #00b3ff, 0 0 20px #00b3ff, 0 0 40px #00b3ff, 0 0 80px #00b3ff, 0 0 120px #00b3ff, 0 0 200px #00b3ff, 0 0 300px #00b3ff, 0 0 400px #00b3ff;
   }
 }
 
 @keyframes animate2 {
   0% {
     color: #fff;
-    -webkit-filter: blur(2px);
-            filter: blur(2px);
+    filter: blur(2px);
     text-shadow: 0 0 10px #00b3ff, 0 0 20px #00b3ff, 0 0 40px #00b3ff, 0 0 80px #00b3ff, 0 0 120px #00b3ff, 0 0 200px #00b3ff, 0 0 300px #00b3ff, 0 0 400px #00b3ff;
   }
   25%, 75% {
     color: #111;
-    -webkit-filter: blur(0px);
-            filter: blur(0px);
+    filter: blur(0px);
     text-shadow: none;
   }
   100% {
     color: #fff;
-    -webkit-filter: blur(2px);
-            filter: blur(2px);
+    filter: blur(2px);
     text-shadow: 0 0 10px #00b3ff, 0 0 20px #00b3ff, 0 0 40px #00b3ff, 0 0 80px #00b3ff, 0 0 120px #00b3ff, 0 0 200px #00b3ff, 0 0 300px #00b3ff, 0 0 400px #00b3ff;
   }
 }

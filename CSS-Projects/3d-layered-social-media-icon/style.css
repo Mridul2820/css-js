@@ -4,22 +4,14 @@
 }
 
 body {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   min-height: 100vh;
 }
 
 ul {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -29,8 +21,7 @@ ul li {
   width: 60px;
   height: 60px;
   margin: 0 30px;
-  -webkit-transform: rotate(-30deg) skew(25deg);
-          transform: rotate(-30deg) skew(25deg);
+  transform: rotate(-30deg) skew(25deg);
 }
 
 ul li:nth-child(1) span {
@@ -60,52 +51,39 @@ ul li span {
   width: 100%;
   height: 100%;
   background: #000;
-  -webkit-transition: all .5s;
   transition: all .5s;
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
   display: flex !important;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   color: #fff;
   font-size: 30px !important;
 }
 
 ul li:hover {
-  -webkit-box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.1);
-          box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.1);
 }
 
 ul li:hover span:nth-child(5) {
-  -webkit-transform: translate(40px, -40px);
-          transform: translate(40px, -40px);
+  transform: translate(40px, -40px);
   opacity: 1;
 }
 
 ul li:hover span:nth-child(4) {
-  -webkit-transform: translate(30px, -30px);
-          transform: translate(30px, -30px);
+  transform: translate(30px, -30px);
   opacity: .8;
 }
 
 ul li:hover span:nth-child(3) {
-  -webkit-transform: translate(20px, -20px);
-          transform: translate(20px, -20px);
+  transform: translate(20px, -20px);
   opacity: .6;
 }
 
 ul li:hover span:nth-child(2) {
-  -webkit-transform: translate(10px, -10px);
-          transform: translate(10px, -10px);
+  transform: translate(10px, -10px);
   opacity: .4;
 }
 
 ul li:hover span:nth-child(1) {
-  -webkit-transform: translate(0, 0);
-          transform: translate(0, 0);
+  transform: translate(0, 0);
   opacity: .2;
 }

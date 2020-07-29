@@ -13,15 +13,9 @@ section {
   left: -100px;
   bottom: -100px;
   right: -100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   background: #000;
 }
 
@@ -31,10 +25,8 @@ section video {
   left: 0;
   height: 100%;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -webkit-filter: blur(35px);
-          filter: blur(35px);
+  object-fit: cover;
+  filter: blur(35px);
 }
 
 section .sphere {
@@ -51,11 +43,9 @@ section .sphere video {
   left: 0;
   height: 100%;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 50%;
-  -webkit-filter: blur(0);
-          filter: blur(0);
+  filter: blur(0);
 }
 
 section .sphere::before {
@@ -67,8 +57,7 @@ section .sphere::before {
   width: 100%;
   z-index: 11;
   border-radius: 50%;
-  -webkit-box-shadow: inset 0 100px 100px rgba(255, 255, 255, 0.5), inset 0 -100px 100px black, inset 0 0 100px black;
-          box-shadow: inset 0 100px 100px rgba(255, 255, 255, 0.5), inset 0 -100px 100px black, inset 0 0 100px black;
+  box-shadow: inset 0 100px 100px rgba(255, 255, 255, 0.5), inset 0 -100px 100px black, inset 0 0 100px black;
 }
 
 section .sphere::after {

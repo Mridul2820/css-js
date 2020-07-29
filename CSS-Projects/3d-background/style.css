@@ -14,12 +14,9 @@ section {
 
 .pattern {
   position: relative;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  -webkit-perspective: 1000px;
-          perspective: 1000px;
-  -webkit-animation: animatebg 10s ease-in-out infinite;
-          animation: animatebg 10s ease-in-out infinite;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  animation: animatebg 10s ease-in-out infinite;
 }
 
 .pattern .face {
@@ -28,16 +25,13 @@ section {
   height: 50vh;
   background: url(assets/check.jpg);
   background-size: 100px 100px;
-  -webkit-animation: animate 1s linear infinite;
-          animation: animate 1s linear infinite;
+  animation: animate 1s linear infinite;
 }
 
 .pattern .face.face2 {
   height: 100vh;
-  -webkit-transform-origin: top;
-          transform-origin: top;
-  -webkit-transform: rotateX(70deg);
-          transform: rotateX(70deg);
+  transform-origin: top;
+  transform: rotateX(70deg);
 }
 
 .pattern .face1::before {
@@ -47,7 +41,6 @@ section {
   left: 0;
   width: 100%;
   height: 125px;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(transparent));
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), transparent);
 }
 
@@ -58,17 +51,7 @@ section {
   left: 0;
   width: 100%;
   height: 125px;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(transparent));
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), transparent);
-}
-
-@-webkit-keyframes animate {
-  0% {
-    background-position: 0;
-  }
-  100% {
-    background-position: 100px;
-  }
 }
 
 @keyframes animate {
@@ -80,24 +63,11 @@ section {
   }
 }
 
-@-webkit-keyframes animatebg {
-  0%, 100% {
-    -webkit-transform: scale(1.6) rotate(-15deg);
-            transform: scale(1.6) rotate(-15deg);
-  }
-  50% {
-    -webkit-transform: scale(1.6) rotate(15deg);
-            transform: scale(1.6) rotate(15deg);
-  }
-}
-
 @keyframes animatebg {
   0%, 100% {
-    -webkit-transform: scale(1.6) rotate(-15deg);
-            transform: scale(1.6) rotate(-15deg);
+    transform: scale(1.6) rotate(-15deg);
   }
   50% {
-    -webkit-transform: scale(1.6) rotate(15deg);
-            transform: scale(1.6) rotate(15deg);
+    transform: scale(1.6) rotate(15deg);
   }
 }

@@ -2,25 +2,15 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
   font-family: 'Quicksand', sans-serif;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
   background: #000000;
 }
@@ -30,8 +20,7 @@ h1 {
   bottom: 35%;
   left: 50%;
   color: #fff;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   font-weight: 700;
 }
 
@@ -39,10 +28,8 @@ h1 {
   position: relative;
   width: 200px;
   height: 200px;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  -webkit-animation: animate 20s linear infinite;
-          animation: animate 20s linear infinite;
+  transform-style: preserve-3d;
+  animation: animate 20s linear infinite;
 }
 
 .box span {
@@ -51,12 +38,9 @@ h1 {
   left: 0;
   height: 100%;
   width: 100%;
-  -webkit-transform-origin: center;
-          transform-origin: center;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  -webkit-transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
-          transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
+  transform-origin: center;
+  transform-style: preserve-3d;
+  transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
   -webkit-box-reflect: below 0px linear-gradient(transparent, transparent, #0004);
 }
 
@@ -66,28 +50,14 @@ h1 {
   left: 0;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-@-webkit-keyframes animate {
-  0% {
-    -webkit-transform: perspective(1000px) rotateY(0deg);
-            transform: perspective(1000px) rotateY(0deg);
-  }
-  100% {
-    -webkit-transform: perspective(1000px) rotateY(360deg);
-            transform: perspective(1000px) rotateY(360deg);
-  }
+  object-fit: cover;
 }
 
 @keyframes animate {
   0% {
-    -webkit-transform: perspective(1000px) rotateY(0deg);
-            transform: perspective(1000px) rotateY(0deg);
+    transform: perspective(1000px) rotateY(0deg);
   }
   100% {
-    -webkit-transform: perspective(1000px) rotateY(360deg);
-            transform: perspective(1000px) rotateY(360deg);
+    transform: perspective(1000px) rotateY(360deg);
   }
 }

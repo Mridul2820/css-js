@@ -2,14 +2,12 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
 
 body {
   min-height: 100vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(#7d6cfc), to(#c635ea));
   background: linear-gradient(#7d6cfc, #c635ea);
 }
 
@@ -22,26 +20,18 @@ body {
   cursor: pointer;
   background: #ffffff;
   border-radius: 50%;
-  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
 }
 
 .action span {
   position: relative;
   width: 100%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   color: #a13dea;
   font-size: 2.5em;
-  -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
 
@@ -54,23 +44,15 @@ body {
   border-radius: 20px;
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: all .3s;
   transition: all .3s;
 }
 
 .action ul li {
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: flex-start;
+  align-items: center;
   padding: 8px 0;
-  -webkit-transition: all .3s;
   transition: all .3s;
 }
 
@@ -79,16 +61,13 @@ body {
   width: 25px;
   margin-right: 10px;
   opacity: .8;
-  -webkit-transition: all .5s;
   transition: all .5s;
-  -webkit-transform: translateY(7px);
-          transform: translateY(7px);
+  transform: translateY(7px);
 }
 
 .action ul li img:hover {
   opacity: 1;
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .action ul li a {
@@ -97,8 +76,7 @@ body {
 }
 
 .action.active span {
-  -webkit-transform: rotate(135deg);
-          transform: rotate(135deg);
+  transform: rotate(135deg);
 }
 
 .action.active ul {
@@ -109,17 +87,10 @@ body {
 
 .action.active li {
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: flex-start;
+  align-items: center;
   padding: 10px 0;
-  -webkit-transition: all .5s;
   transition: all .5s;
 }
 

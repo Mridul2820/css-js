@@ -2,21 +2,14 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: 'Open Sans Condensed', sans-serif;
 }
 
 body {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   min-height: 100vh;
   background: #f1f1f1;
   overflow: hidden;
@@ -29,8 +22,7 @@ body {
   line-height: .9em;
   text-align: center;
   letter-spacing: 2px;
-  -webkit-transform: rotate(-28deg) skew(25deg);
-          transform: rotate(-28deg) skew(25deg);
+  transform: rotate(-28deg) skew(25deg);
 }
 
 #text::before {
@@ -40,7 +32,6 @@ body {
   left: -35px;
   color: rgba(0, 0, 0, 0.3);
   text-shadow: none;
-  -webkit-filter: blur(8px);
-          filter: blur(8px);
+  filter: blur(8px);
   z-index: -1;
 }

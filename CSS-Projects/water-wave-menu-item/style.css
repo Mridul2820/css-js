@@ -2,21 +2,14 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: 'Titillium Web', sans-serif;
 }
 
 body {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   min-height: 100vh;
   background: #111;
 }
@@ -49,9 +42,7 @@ ul li a::before {
   -webkit-background-clip: text;
   background-clip: text;
   background-repeat: repeat-x;
-  -webkit-animation: animate 2s linear infinite;
-          animation: animate 2s linear infinite;
-  -webkit-transition: all .5s;
+  animation: animate 2s linear infinite;
   transition: all .5s;
   width: 0;
   overflow: hidden;
@@ -60,15 +51,6 @@ ul li a::before {
 
 ul li a:hover::before {
   width: 100%;
-}
-
-@-webkit-keyframes animate {
-  0% {
-    background-position: 0;
-  }
-  100% {
-    background-position: 200px;
-  }
 }
 
 @keyframes animate {

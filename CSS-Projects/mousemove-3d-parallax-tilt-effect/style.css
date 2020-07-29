@@ -2,40 +2,25 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: 'Open Sans Condensed', sans-serif;
 }
 
 body {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   min-height: 100vh;
 }
 
 .container {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   padding: 50px 0;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
+  transform-style: preserve-3d;
 }
 
 .container .box {
@@ -45,8 +30,7 @@ body {
   margin: 60px 0;
   background: #000;
   margin: 70px 20px;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
+  transform-style: preserve-3d;
 }
 
 .container .box .imgbox {
@@ -67,15 +51,11 @@ body {
   left: 50px;
   right: 50px;
   background: #43a047;
-  -webkit-transform: translateZ(20px) scaleY(0);
-          transform: translateZ(20px) scaleY(0);
+  transform: translateZ(20px) scaleY(0);
   padding: 40px 25px;
-  -webkit-transform-origin: top;
-          transform-origin: top;
-  -webkit-transition: all .5s;
+  transform-origin: top;
   transition: all .5s;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
+  transform-style: preserve-3d;
   text-align: center;
 }
 
@@ -91,11 +71,9 @@ body {
 }
 
 .container .box:hover {
-  -webkit-box-shadow: 0 50px 80px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 50px 80px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 50px 80px rgba(0, 0, 0, 0.2);
 }
 
 .container .box:hover .contentbox {
-  -webkit-transform: translateZ(50px) scaleY(1);
-          transform: translateZ(50px) scaleY(1);
+  transform: translateZ(50px) scaleY(1);
 }

@@ -2,8 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: 'Raleway', sans-serif;
 }
 
@@ -138,7 +137,6 @@ body {
   z-index: 1000;
   visibility: hidden;
   opacity: 0;
-  -webkit-transition: .5s;
   transition: .5s;
 }
 

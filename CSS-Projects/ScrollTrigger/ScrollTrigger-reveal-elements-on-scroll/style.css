@@ -2,8 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: 'MuseoModerno', cursive;
 }
 
@@ -15,15 +14,9 @@ section {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 section .reveal {
@@ -32,28 +25,20 @@ section .reveal {
   font-size: 2em;
   padding: 0 10px;
   font-weight: 500;
-  -webkit-transform-origin: left;
-          transform-origin: left;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  -webkit-transition: .5s;
+  transform-origin: left;
+  transform: scaleX(0);
   transition: .5s;
-  -webkit-transition-delay: .5s;
-          transition-delay: .5s;
+  transition-delay: .5s;
 }
 
 section .reveal.active {
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
-  -webkit-transition-delay: 0s;
-          transition-delay: 0s;
+  transform: scaleX(1);
+  transition-delay: 0s;
 }
 
 section .reveal.active::before {
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  -webkit-transition-delay: .5s;
-          transition-delay: .5s;
+  transform: scaleX(0);
+  transition-delay: .5s;
 }
 
 section .reveal::before {
@@ -64,12 +49,9 @@ section .reveal::before {
   width: 100%;
   height: 100%;
   background: #1b5e20;
-  -webkit-transform-origin: right;
-          transform-origin: right;
-  -webkit-transition: .5s;
+  transform-origin: right;
   transition: .5s;
-  -webkit-transition-delay: 0s;
-          transition-delay: 0s;
+  transition-delay: 0s;
 }
 
 section .reveal:nth-child(2) {
@@ -92,7 +74,6 @@ section img {
   margin-left: 10px;
   margin-top: 20px;
   opacity: 0;
-  -webkit-transition: .5s;
   transition: .5s;
 }
 

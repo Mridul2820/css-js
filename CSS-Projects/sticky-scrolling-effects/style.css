@@ -2,21 +2,14 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: 'Open Sans Condensed', sans-serif;
 }
 
 section {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
   font-weight: 700;
   font-size: 7em;
@@ -27,18 +20,12 @@ section {
 
 h2 {
   position: relative;
-  background: -webkit-gradient(linear, left bottom, left top, from(#ff0076), color-stop(#cc00ff), color-stop(#ffae00), color-stop(#1fae99), to(#00f));
   background: linear-gradient(0deg, #ff0076, #cc00ff, #ffae00, #1fae99, #00f);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 h2 span {
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   line-height: 100vh;

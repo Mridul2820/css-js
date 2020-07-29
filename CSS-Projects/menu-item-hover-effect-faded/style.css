@@ -6,15 +6,9 @@
 }
 
 body {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
   background: #0d0f1b;
   overflow: hidden;
@@ -22,13 +16,8 @@ body {
 
 ul {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 ul:hover li a {
@@ -44,15 +33,13 @@ ul li::before {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   color: #fff;
   font-size: 6em;
   font-weight: 700;
   pointer-events: none;
   opacity: 0;
   letter-spacing: 20px;
-  -webkit-transition: .5s;
   transition: .5s;
   white-space: nowrap;
 }
@@ -73,7 +60,6 @@ ul li a {
   text-transform: uppercase;
   letter-spacing: 2px;
   overflow: hidden;
-  -webkit-transition: all .5s;
   transition: all .5s;
 }
 
@@ -84,17 +70,13 @@ ul li a::before {
   left: -100px;
   width: 80px;
   height: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(rgba(255, 255, 255, 0.8)), to(transparent));
   background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.8), transparent);
-  -webkit-transform: skewX(35deg);
-          transform: skewX(35deg);
-  -webkit-transition: 0s;
+  transform: skewX(35deg);
   transition: 0s;
 }
 
 ul li a:hover {
-  -webkit-transform: scale(1.4);
-          transform: scale(1.4);
+  transform: scale(1.4);
   z-index: 1000;
   background: #ff3f81;
   opacity: 1;
@@ -102,8 +84,6 @@ ul li a:hover {
 
 ul li a:hover::before {
   left: calc(100% + 100px);
-  -webkit-transition: all .5s;
   transition: all .5s;
-  -webkit-transition-delay: .2s;
-          transition-delay: .2s;
+  transition-delay: .2s;
 }

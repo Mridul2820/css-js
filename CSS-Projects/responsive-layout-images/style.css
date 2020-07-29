@@ -2,8 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -14,16 +13,13 @@ body {
 .container {
   width: 1200px;
   margin: 20px auto;
-  -webkit-columns: 4;
-          columns: 4;
-  -webkit-column-gap: 40px;
-          column-gap: 40px;
+  columns: 4;
+  column-gap: 40px;
 }
 
 @media only screen and (max-width: 75em) {
   .container {
-    -webkit-columns: 3;
-            columns: 3;
+    columns: 3;
     width: calc(100% - 40px);
     padding: 20px 20px 20px 0;
   }
@@ -31,15 +27,13 @@ body {
 
 @media only screen and (max-width: 48em) {
   .container {
-    -webkit-columns: 2;
-            columns: 2;
+    columns: 2;
   }
 }
 
 @media only screen and (max-width: 32em) {
   .container {
-    -webkit-columns: 1;
-            columns: 1;
+    columns: 1;
     width: calc(100% - 60px);
   }
 }
@@ -50,8 +44,7 @@ body {
   padding: 10px;
   background: #fff;
   overflow: hidden;
-  -webkit-column-break-inside: avoid;
-          break-inside: avoid;
+  break-inside: avoid;
 }
 
 .container .box img {

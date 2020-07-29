@@ -1,33 +1,22 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   min-height: 100vh;
 }
 
 .container {
   position: relative;
   width: 1200px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .container .box {
@@ -37,7 +26,6 @@ body {
   margin: 20px 0;
   background: #fff;
   overflow: hidden;
-  -webkit-transition: all .5s;
   transition: all .5s;
 }
 
@@ -50,7 +38,6 @@ body {
   width: 50%;
   background: #fff;
   z-index: 1;
-  -webkit-transition: all .5s;
   transition: all .5s;
 }
 
@@ -63,7 +50,6 @@ body {
   width: 50%;
   background: #fff;
   z-index: 1;
-  -webkit-transition: all .5s;
   transition: all .5s;
 }
 
@@ -73,8 +59,7 @@ body {
   left: 0;
   height: 100%;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .container .box:hover::before {

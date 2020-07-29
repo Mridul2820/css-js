@@ -2,8 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -12,15 +11,9 @@ body {
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   min-height: 100vh;
 }
 
@@ -28,8 +21,7 @@ body {
   width: 400px;
   padding: 40px;
   background: rgba(0, 0, 0, 0.7);
-  -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
   border-radius: 5px;
 }
 
@@ -74,7 +66,6 @@ body {
   color: #ffffff;
   letter-spacing: 1px;
   pointer-events: none;
-  -webkit-transition: .5s;
   transition: .5s;
 }
 

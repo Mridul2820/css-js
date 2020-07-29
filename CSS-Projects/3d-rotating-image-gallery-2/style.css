@@ -2,25 +2,15 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
   font-family: 'Quicksand', sans-serif;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
   background: #000000;
 }
@@ -29,16 +19,13 @@ body {
   position: relative;
   width: 200px;
   height: 200px;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  -webkit-animation: animateAngle 20s linear infinite;
-          animation: animateAngle 20s linear infinite;
+  transform-style: preserve-3d;
+  animation: animateAngle 20s linear infinite;
 }
 
 @media only screen and (max-width: 45em) {
   .box {
-    -webkit-animation: animateStraight  20s linear infinite;
-            animation: animateStraight  20s linear infinite;
+    animation: animateStraight  20s linear infinite;
   }
 }
 
@@ -55,25 +42,20 @@ body {
   left: 0;
   height: 100%;
   width: 100%;
-  -webkit-transform-origin: center;
-          transform-origin: center;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  -webkit-transform: rotateX(calc(var(--i) * 45deg)) translateZ(300px);
-          transform: rotateX(calc(var(--i) * 45deg)) translateZ(300px);
+  transform-origin: center;
+  transform-style: preserve-3d;
+  transform: rotateX(calc(var(--i) * 45deg)) translateZ(300px);
 }
 
 @media only screen and (max-width: 45em) {
   .box span {
-    -webkit-transform: rotateX(calc(var(--i) * 45deg)) translateZ(280px);
-            transform: rotateX(calc(var(--i) * 45deg)) translateZ(280px);
+    transform: rotateX(calc(var(--i) * 45deg)) translateZ(280px);
   }
 }
 
 @media only screen and (max-width: 25em) {
   .box span {
-    -webkit-transform: rotateX(calc(var(--i) * 45deg)) translateZ(240px);
-            transform: rotateX(calc(var(--i) * 45deg)) translateZ(240px);
+    transform: rotateX(calc(var(--i) * 45deg)) translateZ(240px);
   }
 }
 
@@ -83,50 +65,23 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-@-webkit-keyframes animateAngle {
-  0% {
-    -webkit-transform: perspective(1000px) rotateX(0deg) rotateY(35deg);
-            transform: perspective(1000px) rotateX(0deg) rotateY(35deg);
-  }
-  100% {
-    -webkit-transform: perspective(1000px) rotateX(360deg) rotateY(35deg);
-            transform: perspective(1000px) rotateX(360deg) rotateY(35deg);
-  }
+  object-fit: cover;
 }
 
 @keyframes animateAngle {
   0% {
-    -webkit-transform: perspective(1000px) rotateX(0deg) rotateY(35deg);
-            transform: perspective(1000px) rotateX(0deg) rotateY(35deg);
+    transform: perspective(1000px) rotateX(0deg) rotateY(35deg);
   }
   100% {
-    -webkit-transform: perspective(1000px) rotateX(360deg) rotateY(35deg);
-            transform: perspective(1000px) rotateX(360deg) rotateY(35deg);
-  }
-}
-
-@-webkit-keyframes animateStraight {
-  0% {
-    -webkit-transform: perspective(1000px) rotateX(0deg);
-            transform: perspective(1000px) rotateX(0deg);
-  }
-  100% {
-    -webkit-transform: perspective(1000px) rotateX(360deg);
-            transform: perspective(1000px) rotateX(360deg);
+    transform: perspective(1000px) rotateX(360deg) rotateY(35deg);
   }
 }
 
 @keyframes animateStraight {
   0% {
-    -webkit-transform: perspective(1000px) rotateX(0deg);
-            transform: perspective(1000px) rotateX(0deg);
+    transform: perspective(1000px) rotateX(0deg);
   }
   100% {
-    -webkit-transform: perspective(1000px) rotateX(360deg);
-            transform: perspective(1000px) rotateX(360deg);
+    transform: perspective(1000px) rotateX(360deg);
   }
 }

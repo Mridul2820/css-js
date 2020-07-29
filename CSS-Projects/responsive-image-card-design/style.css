@@ -2,23 +2,15 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: 'Open Sans Condensed', sans-serif;
 }
 
 body {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   min-height: 100vh;
   background: #010615;
 }
@@ -27,18 +19,11 @@ body {
   position: relative;
   width: 300px;
   height: 300px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   margin: 30px;
   background: #060c21;
-  -webkit-transition: all .5s;
   transition: all .5s;
 }
 
@@ -62,8 +47,7 @@ body {
   bottom: -2px;
   background: #fff;
   z-index: -2;
-  -webkit-filter: blur(40px);
-          filter: blur(40px);
+  filter: blur(40px);
 }
 
 .box::before, .box::after {
@@ -84,14 +68,12 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .box .imgbox img {
   max-width: 100%;
   opacity: .2;
-  -webkit-transition: all .5s;
   transition: all .5s;
 }
 
@@ -103,17 +85,10 @@ body {
   height: 90px;
   background: rgba(0, 0, 0, 0.4);
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   opacity: 0;
-  -webkit-transition: all .5s;
   transition: all .5s;
 }
 

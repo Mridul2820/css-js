@@ -2,8 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: 'Open Sans Condensed', sans-serif;
 }
 
@@ -16,8 +15,7 @@ section {
   background: url(assets/communityday-may2020.jpg);
   background-size: cover;
   background-attachment: fixed;
-  -webkit-clip-path: circle(0px at center);
-          clip-path: circle(0px at center);
+  clip-path: circle(0px at center);
 }
 
 .container {

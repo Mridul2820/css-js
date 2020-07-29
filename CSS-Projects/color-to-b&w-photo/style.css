@@ -1,23 +1,16 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .flower,
 .leaves,
 .taxi,
 .paragliding {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .box {
@@ -93,50 +86,41 @@
   left: 0;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .flower .box:nth-child(2) img {
-  -webkit-filter: grayscale(1) contrast(1);
-          filter: grayscale(1) contrast(1);
+  filter: grayscale(1) contrast(1);
 }
 
 .flower .box:nth-child(2) img:nth-child(2) {
-  -webkit-filter: grayscale(1) contrast(5) brightness(2);
-          filter: grayscale(1) contrast(5) brightness(2);
+  filter: grayscale(1) contrast(5) brightness(2);
   mix-blend-mode: hard-light;
 }
 
 .leaves .box:nth-child(2) img {
-  -webkit-filter: grayscale(1) contrast(1);
-          filter: grayscale(1) contrast(1);
+  filter: grayscale(1) contrast(1);
 }
 
 .leaves .box:nth-child(2) img:nth-child(2) {
-  -webkit-filter: grayscale(1) contrast(5) brightness(2);
-          filter: grayscale(1) contrast(5) brightness(2);
+  filter: grayscale(1) contrast(5) brightness(2);
   mix-blend-mode: hard-light;
 }
 
 .taxi .box:nth-child(2) img {
-  -webkit-filter: grayscale(1) contrast(1);
-          filter: grayscale(1) contrast(1);
+  filter: grayscale(1) contrast(1);
 }
 
 .taxi .box:nth-child(2) img:nth-child(2) {
-  -webkit-filter: grayscale(1) contrast(5) brightness(2);
-          filter: grayscale(1) contrast(5) brightness(2);
+  filter: grayscale(1) contrast(5) brightness(2);
   mix-blend-mode: hard-light;
 }
 
 .paragliding .box:nth-child(2) img {
-  -webkit-filter: grayscale(1) contrast(1.5);
-          filter: grayscale(1) contrast(1.5);
+  filter: grayscale(1) contrast(1.5);
 }
 
 .paragliding .box:nth-child(2) img:nth-child(2) {
-  -webkit-filter: grayscale(1) contrast(5) brightness(2);
-          filter: grayscale(1) contrast(5) brightness(2);
+  filter: grayscale(1) contrast(5) brightness(2);
   mix-blend-mode: hard-light;
 }

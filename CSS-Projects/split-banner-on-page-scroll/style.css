@@ -2,8 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: 'Open Sans Condensed', sans-serif;
 }
 
@@ -32,13 +31,11 @@ section .side {
 }
 
 section .side#side1 {
-  -webkit-clip-path: polygon(0% 0%, 57.4% 0%, 44.8% 100%, 0% 100%);
-          clip-path: polygon(0% 0%, 57.4% 0%, 44.8% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 57.4% 0%, 44.8% 100%, 0% 100%);
 }
 
 section .side#side2 {
-  -webkit-clip-path: polygon(100% 0, 56.4% 0%, 43.8% 100%, 100% 100%);
-          clip-path: polygon(100% 0, 56.4% 0%, 43.8% 100%, 100% 100%);
+  clip-path: polygon(100% 0, 56.4% 0%, 43.8% 100%, 100% 100%);
 }
 
 .contentbox {
