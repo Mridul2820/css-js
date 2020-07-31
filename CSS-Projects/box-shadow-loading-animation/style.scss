@@ -1,0 +1,51 @@
+:root {
+    --primary-color : #2196f3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: var(--primary-color);
+}
+
+.loader {
+    position: relative;
+    display: flex;
+
+    span {
+        width: 50px;
+        height: 300px;
+        margin: 0 20px;
+        background: var(--primary-color);
+        animation: animate 1.4s linear infinite;
+        animation-delay: calc(.2s * var(--i));
+    }
+}
+
+@keyframes animate {
+    0% {
+        box-shadow: 0 0 0 rgba(0, 0, 0, .5);
+        opacity: 0;
+        transform: translate(-50px) scale(1);
+    }
+
+    50% {
+        box-shadow: 0 20px 50px rgba(0, 0, 0, .5);
+        opacity: 1;
+        transform: translate(0px) scale(1.2);
+    }
+
+    100% {
+        box-shadow: 0 0 0 rgba(0, 0, 0, .5);
+        opacity: 0;
+        transform: translate(50px) scale(1);
+    }
+}
