@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+h1 {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+    font-size: 8em;
+    text-shadow:  -10px 10px 20px rgba(0, 0, 0, .1);
+    line-height: 1em;
+    transition: all .5s;
+    cursor: default;
+
+    &:hover {
+        text-shadow:  -1px 1px 0px rgba(0, 0, 0, 1), 1px -1px 0px rgba(0, 0, 0, 1);
+    }
+}
