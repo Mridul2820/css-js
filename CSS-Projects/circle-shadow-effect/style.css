@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #011000;
+}
+
+.cirle {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background: transparent;
+  border-radius: 50%;
+  box-shadow: 0 0 0 30px rgba(37, 255, 11, 0.2), 0 0 0 60px rgba(37, 255, 11, 0.2), 0 0 0 90px rgba(37, 255, 11, 0.2), 0 0 0 120px rgba(37, 255, 11, 0.2), 0 0 0 150px rgba(37, 255, 11, 0.2), 0 0 0 180px rgba(37, 255, 11, 0.1);
+}
