@@ -2,13 +2,20 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   min-height: 100vh;
   background: #111;
 }
@@ -32,17 +39,21 @@ body {
 }
 
 .container .box:nth-child(1):hover ~ .box:nth-child(2) {
-  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+          clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
 }
 
 .container .box:nth-child(2) {
   background: url(assets/sunsate_29_apr_from_helipad.jpg);
   background-size: cover;
   z-index: 2;
+  -webkit-transition: all .5s;
   transition: all .5s;
-  clip-path: polygon(0 0, 100% 0, 100% 0, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 0, 0 100%);
 }
 
 .container .box:nth-child(2):hover {
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }

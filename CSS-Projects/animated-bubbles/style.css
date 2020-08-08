@@ -2,7 +2,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -11,9 +12,15 @@ body {
 
 section {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 100vh;
   width: 100%;
   overflow: hidden;
@@ -31,8 +38,10 @@ section span {
   background: transparent;
   border-radius: 50%;
   pointer-events: none;
-  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.5);
-  animation: animate 4s linear infinite;
+  -webkit-box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.5);
+          box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.5);
+  -webkit-animation: animate 4s linear infinite;
+          animation: animate 4s linear infinite;
 }
 
 section span::before {
@@ -40,21 +49,40 @@ section span::before {
   position: absolute;
   width: 100%;
   height: 100%;
-  transform: scale(0.25) translate(-70%, -70%);
+  -webkit-transform: scale(0.25) translate(-70%, -70%);
+          transform: scale(0.25) translate(-70%, -70%);
   background: radial-gradient(#fff, transparent);
   border-radius: 50%;
 }
 
-@keyframes animate {
+@-webkit-keyframes animate {
   0% {
-    transform: translateY(0%);
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
     opacity: 1;
   }
   99% {
     opacity: 1;
   }
   100% {
-    transform: translateY(-1200%);
+    -webkit-transform: translateY(-1200%);
+            transform: translateY(-1200%);
+    opacity: 0;
+  }
+}
+
+@keyframes animate {
+  0% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(-1200%);
+            transform: translateY(-1200%);
     opacity: 0;
   }
 }

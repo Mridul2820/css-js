@@ -6,9 +6,15 @@
 }
 
 body {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   min-height: 100vh;
   background: #000;
   overflow: hidden;
@@ -34,12 +40,14 @@ ul li a::before, ul li a::after {
   position: absolute;
   top: 0;
   left: 0;
+  -webkit-transition: .5s;
   transition: .5s;
 }
 
 ul li a:hover {
   color: #fff;
   -webkit-text-stroke: 1px #000;
+  -webkit-transition: .5s;
   transition: .5s;
 }
 
@@ -47,12 +55,14 @@ ul li a:hover::before {
   color: #0ff;
   z-index: 1;
   -webkit-text-stroke: 1px #000;
-  transform: translate(8px, -8px);
+  -webkit-transform: translate(8px, -8px);
+          transform: translate(8px, -8px);
 }
 
 ul li a:hover::after {
   color: #f00;
   z-index: 2;
   -webkit-text-stroke: 1px #000;
-  transform: translate(16px, -16px);
+  -webkit-transform: translate(16px, -16px);
+          transform: translate(16px, -16px);
 }

@@ -1,13 +1,20 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   min-height: 100vh;
   background: #f4faff;
   overflow: hidden;
@@ -20,12 +27,21 @@ body {
   background: #0588e4 url(assets/earth.png);
   background-size: cover;
   border-radius: 50%;
-  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: .5s;
   transition: .5s;
-  animation: animate 12s linear infinite;
+  -webkit-animation: animate 12s linear infinite;
+          animation: animate 12s linear infinite;
 }
 
 .earth::before {
@@ -38,25 +54,39 @@ body {
   border-radius: 50%;
   overflow: hidden;
   z-index: 1;
-  animation: animate 8s linear infinite;
+  -webkit-animation: animate 8s linear infinite;
+          animation: animate 8s linear infinite;
 }
 
 .earth:active {
-  transform: scale(4.5);
+  -webkit-transform: scale(4.5);
+          transform: scale(4.5);
 }
 
 .earth:active img {
-  transform: rotate(-90deg) scale(0.2);
+  -webkit-transform: rotate(-90deg) scale(0.2);
+          transform: rotate(-90deg) scale(0.2);
 }
 
 .earth img {
-  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
   position: absolute;
   width: 200px;
   right: 10%;
   z-index: 1;
+  -webkit-transition: .5s;
   transition: .5s;
   pointer-events: none;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 719px 0;
+  }
 }
 
 @keyframes animate {

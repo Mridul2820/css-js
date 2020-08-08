@@ -2,15 +2,22 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: 'Balsamiq Sans', cursive;
   font-weight: normal;
 }
 
 body {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   min-height: 100vh;
   background: #101010;
 }
@@ -18,27 +25,40 @@ body {
 .container {
   position: relative;
   width: 900px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .container .card {
   position: relative;
   width: 250px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#1b1b1b), color-stop(#222), to(#1b1b1b));
   background: linear-gradient(0deg, #1b1b1b, #222, #1b1b1b);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 300px;
   border-radius: 4px;
   text-align: center;
   overflow: hidden;
+  -webkit-transition: .5s;
   transition: .5s;
 }
 
 .container .card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  -webkit-box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
 }
 
 .container .card:hover .parcent .number h2 {
@@ -78,7 +98,8 @@ body {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  box-shadow: inset 0 0 50px #000;
+  -webkit-box-shadow: inset 0 0 50px #000;
+          box-shadow: inset 0 0 50px #000;
   background: #222222;
   z-index: 1000;
 }
@@ -89,9 +110,15 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 50%;
 }
 
@@ -99,6 +126,7 @@ body {
   color: #777;
   font-weight: 700;
   font-size: 40px;
+  -webkit-transition: .5s;
   transition: .5s;
 }
 
@@ -114,6 +142,7 @@ body {
   font-weight: 700;
   font-size: 18px;
   letter-spacing: 1px;
+  -webkit-transition: .5s;
   transition: .5s;
 }
 
@@ -144,7 +173,8 @@ circle {
   stroke: #191919;
   stroke-width: 10;
   stroke-linecap: round;
-  transform: translate(5px, 5px);
+  -webkit-transform: translate(5px, 5px);
+          transform: translate(5px, 5px);
 }
 
 circle:nth-child(2) {

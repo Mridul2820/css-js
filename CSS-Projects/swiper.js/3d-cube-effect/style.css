@@ -40,7 +40,8 @@ body {
 }
 
 .swiper-slide .details {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .swiper-slide .details h3 {

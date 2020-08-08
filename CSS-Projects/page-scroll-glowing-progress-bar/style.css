@@ -2,7 +2,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: 'Open Sans Condensed', sans-serif;
 }
 
@@ -33,8 +34,10 @@ section p {
   right: 0;
   width: 10px;
   border-radius: 10px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#fcb045), to(#833ab4));
   background: linear-gradient(to top, #fcb045, #833ab4);
-  animation: animate 5s linear infinite;
+  -webkit-animation: animate 5s linear infinite;
+          animation: animate 5s linear infinite;
 }
 
 #progressbar::before {
@@ -44,8 +47,10 @@ section p {
   left: 0;
   width: 100%;
   height: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(#fcb045), to(#833ab4));
   background: linear-gradient(to top, #fcb045, #833ab4);
-  filter: blur(10px);
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
 }
 
 #progressbar::after {
@@ -55,8 +60,10 @@ section p {
   left: 0;
   width: 100%;
   height: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(#fcb045), to(#833ab4));
   background: linear-gradient(to top, #fcb045, #833ab4);
-  filter: blur(30px);
+  -webkit-filter: blur(30px);
+          filter: blur(30px);
 }
 
 #scrollpath {
@@ -68,11 +75,24 @@ section p {
   background: rgba(255, 255, 255, 0.05);
 }
 
-@keyframes animate {
+@-webkit-keyframes animate {
   0%, 100% {
-    filter: hue-rotate(0deg);
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
   }
   50% {
-    filter: hue-rotate(360deg);
+    -webkit-filter: hue-rotate(360deg);
+            filter: hue-rotate(360deg);
+  }
+}
+
+@keyframes animate {
+  0%, 100% {
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
+  }
+  50% {
+    -webkit-filter: hue-rotate(360deg);
+            filter: hue-rotate(360deg);
   }
 }

@@ -1,7 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -15,5 +16,6 @@ section {
   background: url(assets/bg1.jpg);
   background-size: cover;
   background-position: center;
-  clip-path: circle(150px at var(--x) var(--y));
+  -webkit-clip-path: circle(150px at var(--x) var(--y));
+          clip-path: circle(150px at var(--x) var(--y));
 }

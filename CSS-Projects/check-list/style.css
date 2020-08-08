@@ -2,14 +2,21 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: 'Oswald', sans-serif;
 }
 
 body {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   min-height: 100vh;
   background: #001925;
 }
@@ -56,6 +63,7 @@ body {
 .list span {
   position: relative;
   left: 40px;
+  -webkit-transition: .5s;
   transition: .5s;
 }
 
@@ -67,9 +75,14 @@ body {
   width: 100%;
   height: 2px;
   background: #fff;
-  transform: translateY(-50%) scaleX(0);
-  transform-origin: right;
+  -webkit-transform: translateY(-50%) scaleX(0);
+          transform: translateY(-50%) scaleX(0);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
   transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
 }
 
 .list input[type="checkbox"]:checked ~ i {
@@ -78,7 +91,8 @@ body {
   border-right: none;
   height: 15px;
   width: 25px;
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .list input[type="checkbox"]:checked ~ span {
@@ -86,7 +100,12 @@ body {
 }
 
 .list input[type="checkbox"]:checked ~ span::before {
-  transform: translateY(-50%) scaleX(1);
-  transform-origin: left;
+  -webkit-transform: translateY(-50%) scaleX(1);
+          transform: translateY(-50%) scaleX(1);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
   transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
 }

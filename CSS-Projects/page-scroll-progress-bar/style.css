@@ -2,7 +2,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: 'Open Sans Condensed', sans-serif;
 }
 
@@ -33,5 +34,6 @@ section p {
   right: 0;
   width: 15px;
   border-radius: 10px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#fcb045), color-stop(#fd1d1d), to(#833ab4));
   background: linear-gradient(to top, #fcb045, #fd1d1d, #833ab4);
 }

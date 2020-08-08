@@ -1,19 +1,28 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: 'Open Sans Condensed', sans-serif;
 }
 
 body {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   min-height: 100vh;
   background: #1b141a;
 }
 
 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -51,14 +60,17 @@ ul li::before, ul li::after {
   height: 100%;
   background: #000;
   border-radius: 50%;
-  filter: blur(20px);
+  -webkit-filter: blur(20px);
+          filter: blur(20px);
   opacity: 0;
+  -webkit-transition: 1s;
   transition: 1s;
   z-index: -1;
 }
 
 ul li::after {
-  filter: blur(40px);
+  -webkit-filter: blur(40px);
+          filter: blur(40px);
 }
 
 ul li:hover::before, ul li:hover::after {
@@ -81,12 +93,15 @@ ul li a {
 
 ul li a .fa {
   text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  -webkit-transition: .5s;
   transition: .5s;
-  transform: rotate(0deg) scale(0.8);
+  -webkit-transform: rotate(0deg) scale(0.8);
+          transform: rotate(0deg) scale(0.8);
   opacity: .2;
 }
 
 ul li a:hover .fa {
   opacity: 1;
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }

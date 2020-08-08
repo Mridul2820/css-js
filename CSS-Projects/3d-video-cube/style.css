@@ -1,7 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -20,8 +21,10 @@ section video {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  filter: blur(20px);
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-filter: blur(20px);
+          filter: blur(20px);
 }
 
 section .box {
@@ -30,7 +33,8 @@ section .box {
   left: calc(50% - 200px);
   width: 400px;
   height: 400px;
-  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
 }
 
 section .box .sides {
@@ -39,8 +43,10 @@ section .box .sides {
   left: 0;
   height: 100%;
   width: 100%;
-  transform-style: preserve-3d;
-  transform: rotateX(-20deg) rotateY(25deg) translate3d(-75px, -50px, 150px);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: rotateX(-20deg) rotateY(25deg) translate3d(-75px, -50px, 150px);
+          transform: rotateX(-20deg) rotateY(25deg) translate3d(-75px, -50px, 150px);
 }
 
 section .box .sides span {
@@ -60,22 +66,28 @@ section .box .sides span video {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  filter: blur(0);
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-filter: blur(0);
+          filter: blur(0);
 }
 
 section .box .sides span:nth-child(1) {
-  transform: rotateX(0deg) translate3d(0, 0, 200px);
+  -webkit-transform: rotateX(0deg) translate3d(0, 0, 200px);
+          transform: rotateX(0deg) translate3d(0, 0, 200px);
 }
 
 section .box .sides span:nth-child(2) {
-  transform: rotateY(90deg) translate3d(0, 0, -200px);
+  -webkit-transform: rotateY(90deg) translate3d(0, 0, -200px);
+          transform: rotateY(90deg) translate3d(0, 0, -200px);
 }
 
 section .box .sides span:nth-child(2) video {
-  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }
 
 section .box .sides span:nth-child(3) {
-  transform: rotateX(90deg) translate3d(0, 0, 200px);
+  -webkit-transform: rotateX(90deg) translate3d(0, 0, 200px);
+          transform: rotateX(90deg) translate3d(0, 0, 200px);
 }

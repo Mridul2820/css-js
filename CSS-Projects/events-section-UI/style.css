@@ -2,7 +2,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -11,9 +12,15 @@ section {
   height: 100vh;
   background: url(assets/gen-1.jpg);
   background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media only screen and (max-width: 62em) {
@@ -24,7 +31,10 @@ section {
 
 @media only screen and (max-width: 45em) {
   section {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     height: 100%;
   }
 }
@@ -58,6 +68,7 @@ section .leftBox .content {
   color: #fff;
   background: rgba(0, 0, 0, 0.5);
   padding: 25px;
+  -webkit-transition: all .5s;
   transition: all .5s;
 }
 
@@ -108,10 +119,19 @@ section .events {
 }
 
 section .events ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 30px;
 }
 
@@ -125,8 +145,13 @@ section .events ul li {
   list-style: none;
   margin: 10px 0;
   background: #262626;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all .5s;
   transition: all .5s;
 }
 
@@ -135,6 +160,7 @@ section .events ul li .time {
   padding: 30px;
   width: 20%;
   text-align: center;
+  -webkit-transition: all .5s;
   transition: all .5s;
 }
 
@@ -145,10 +171,19 @@ section .events ul li .time {
 }
 
 section .events ul li .time h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   color: #fff;
   font-size: 30px;
 }
@@ -166,8 +201,13 @@ section .events ul li .details {
   background: #ffffff;
   width: 80%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 @media only screen and (max-width: 25em) {
@@ -196,6 +236,7 @@ section .events ul li .details a {
   border: 2px solid #e91e63;
   margin-top: 10px;
   font-size: 12px;
+  -webkit-transition: all .5s;
   transition: all .5s;
 }
 

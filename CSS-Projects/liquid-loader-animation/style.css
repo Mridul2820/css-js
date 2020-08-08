@@ -4,9 +4,15 @@
 }
 
 body {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   min-height: 100vh;
   background: #010b10;
 }
@@ -20,7 +26,8 @@ svg {
   position: relative;
   width: 200px;
   height: 200px;
-  filter: url(#gooey);
+  -webkit-filter: url(#gooey);
+          filter: url(#gooey);
 }
 
 .loader span {
@@ -30,8 +37,10 @@ svg {
   height: 100%;
   width: 100%;
   display: block;
-  animation: animate 4s ease-in-out infinite;
-  animation-delay: calc(.2s * var(--i));
+  -webkit-animation: animate 4s ease-in-out infinite;
+          animation: animate 4s ease-in-out infinite;
+  -webkit-animation-delay: calc(.2s * var(--i));
+          animation-delay: calc(.2s * var(--i));
 }
 
 .loader span::before {
@@ -42,15 +51,30 @@ svg {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  box-shadow: 0 0 30px #03a9f4;
+  -webkit-box-shadow: 0 0 30px #03a9f4;
+          box-shadow: 0 0 30px #03a9f4;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fce4ec), to(#03a9f4));
   background: linear-gradient(#fce4ec, #03a9f4);
+}
+
+@-webkit-keyframes animate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50%, 100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
 @keyframes animate {
   0% {
-    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   50%, 100% {
-    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }

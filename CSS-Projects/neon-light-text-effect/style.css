@@ -8,9 +8,15 @@
 body {
   background: url(assets/wood-black.jpg);
   background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   min-height: 100vh;
 }
 
@@ -31,7 +37,8 @@ body {
   padding: 0 20px;
   z-index: -1;
   color: #ff005b;
-  filter: blur(20px);
+  -webkit-filter: blur(20px);
+          filter: blur(20px);
 }
 
 .neon::before {
@@ -44,5 +51,6 @@ body {
   background: #fe3a80;
   z-index: -2;
   opacity: .5;
-  filter: blur(40px);
+  -webkit-filter: blur(40px);
+          filter: blur(40px);
 }

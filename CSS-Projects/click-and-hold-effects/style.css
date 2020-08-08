@@ -2,7 +2,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   cursor: none !important;
   font-family: 'Open Sans Condensed', sans-serif;
 }
@@ -29,14 +30,17 @@ section p {
   height: 20px;
   background: #ffffff;
   border-radius: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   mix-blend-mode: difference;
+  -webkit-transition: width .5s, height .5s;
   transition: width .5s, height .5s;
 }
 
 #cursor:active {
   width: 3220px;
   height: 3220px;
+  -webkit-transition: width 5s, height 5s;
   transition: width 5s, height 5s;
 }
 
@@ -52,8 +56,10 @@ section p {
   width: 20px;
   height: 2px;
   background: #000000;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   opacity: 0;
+  -webkit-transition: .5s;
   transition: .5s;
 }
 
@@ -65,7 +71,9 @@ section p {
   width: 2px;
   height: 20px;
   background: #000000;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   opacity: 0;
+  -webkit-transition: .5s;
   transition: .5s;
 }

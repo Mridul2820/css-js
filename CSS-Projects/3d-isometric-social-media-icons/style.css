@@ -5,14 +5,25 @@
 }
 
 body {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   min-height: 100vh;
 }
 
 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 60px 0;
 }
@@ -29,8 +40,11 @@ ul li a {
   height: 80px;
   background: #fff;
   text-align: center;
-  transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0, 0);
-  box-shadow: -20px 20px 10px rgba(0, 0, 0, 0.5);
+  -webkit-transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0, 0);
+          transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0, 0);
+  -webkit-box-shadow: -20px 20px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: -20px 20px 10px rgba(0, 0, 0, 0.5);
+  -webkit-transition: .5s;
   transition: .5s;
 }
 
@@ -42,8 +56,10 @@ ul li a::before {
   height: 100%;
   width: 20px;
   background: #b1b1b1;
+  -webkit-transition: .5s;
   transition: .5s;
-  transform: rotate(0deg) skewY(-45deg);
+  -webkit-transform: rotate(0deg) skewY(-45deg);
+          transform: rotate(0deg) skewY(-45deg);
 }
 
 ul li a::after {
@@ -54,13 +70,17 @@ ul li a::after {
   height: 20px;
   width: 100%;
   background: #b1b1b1;
+  -webkit-transition: .5s;
   transition: .5s;
-  transform: rotate(0deg) skewX(-45deg);
+  -webkit-transform: rotate(0deg) skewX(-45deg);
+          transform: rotate(0deg) skewX(-45deg);
 }
 
 ul li a:hover {
-  transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(20px, -20px);
-  box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.5);
+  -webkit-transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(20px, -20px);
+          transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(20px, -20px);
+  -webkit-box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.5);
+          box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.5);
 }
 
 ul li a i {
@@ -71,6 +91,7 @@ ul li a .fa {
   font-size: 40px;
   color: #262626;
   line-height: 80px;
+  -webkit-transition: .5s;
   transition: .5s;
 }
 

@@ -2,7 +2,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -11,6 +12,7 @@ body {
 
 .error {
   min-height: 100vh;
+  background: -webkit-gradient(linear, left bottom, left top, from(#fff), to(#03a9f4));
   background: linear-gradient(0deg, #fff, #03a9f4);
 }
 
@@ -18,9 +20,15 @@ body {
   position: relative;
   width: 100%;
   height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .sky h2 {
@@ -49,18 +57,21 @@ body {
 
 .sky h2 span {
   display: inline-block;
-  animation: animate 2s ease-in-out infinite;
+  -webkit-animation: animate 2s ease-in-out infinite;
+          animation: animate 2s ease-in-out infinite;
 }
 
 .sky h2 span:nth-child(even) {
-  animation-delay: -1s;
+  -webkit-animation-delay: -1s;
+          animation-delay: -1s;
 }
 
 .field {
   padding: 100px;
   height: 40vh;
   background: #6e2308;
-  box-shadow: inset 0 20px 10px #51680c;
+  -webkit-box-shadow: inset 0 20px 10px #51680c;
+          box-shadow: inset 0 20px 10px #51680c;
   text-align: center;
 }
 
@@ -104,6 +115,7 @@ body {
   display: inline-block;
   text-decoration: none;
   font-size: 20px;
+  -webkit-transition: .3s;
   transition: .3s;
 }
 
@@ -129,7 +141,8 @@ body {
 @media only screen and (max-width: 35em) {
   .plane {
     right: 50%;
-    transform: translateX(50%);
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
   }
 }
 
@@ -147,7 +160,17 @@ body {
   height: 20px;
   background: url(assets/grass.png);
   background-position: bottom;
-  animation: animateGrass .2s linear infinite;
+  -webkit-animation: animateGrass .2s linear infinite;
+          animation: animateGrass .2s linear infinite;
+}
+
+@-webkit-keyframes animateGrass {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 94px 0;
+  }
 }
 
 @keyframes animateGrass {
@@ -159,11 +182,24 @@ body {
   }
 }
 
-@keyframes animate {
+@-webkit-keyframes animate {
   0%, 100% {
-    transform: translateY(-50px);
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
   }
   50% {
-    transform: translateY(50px);
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+}
+
+@keyframes animate {
+  0%, 100% {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+  }
+  50% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
   }
 }

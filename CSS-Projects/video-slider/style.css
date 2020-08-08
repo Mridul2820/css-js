@@ -1,7 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html, body {
@@ -22,19 +23,28 @@ section video {
   left: 0;
   height: 100%;
   width: 100%;
-  object-fit: cover;
-  transform: scaleX(1.04) scaleY(1.13);
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transform: scaleX(1.04) scaleY(1.13);
+          transform: scaleX(1.04) scaleY(1.13);
 }
 
 section .navigation {
   position: absolute;
   bottom: 40px;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   z-index: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 section .navigation li {
@@ -45,6 +55,7 @@ section .navigation li {
   background: #fff;
   padding: 3px 3px 0;
   opacity: .8;
+  -webkit-transition: .5s;
   transition: .5s;
 }
 
@@ -54,6 +65,7 @@ section .navigation li:hover {
 
 section .navigation li img {
   width: 140px;
+  -webkit-transition: .5s;
   transition: .5s;
 }
 

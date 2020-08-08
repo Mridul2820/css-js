@@ -14,9 +14,15 @@ section {
   width: 100%;
   height: 100vh;
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 section:before {
@@ -25,6 +31,7 @@ section:before {
   bottom: 0;
   width: 100%;
   height: 100px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#0a2a43), to(transparent));
   background: linear-gradient(to top, #0a2a43, transparent);
   z-index: 10000000;
 }
@@ -47,7 +54,8 @@ section img {
   left: 0;
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   pointer-events: none;
 }
 

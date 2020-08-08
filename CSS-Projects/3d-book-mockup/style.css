@@ -2,14 +2,21 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: 'Open Sans Condensed', sans-serif;
 }
 
 body {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   min-height: 100vh;
   background: url(assets/floor.jpg);
   background-attachment: fixed;
@@ -22,14 +29,19 @@ body {
   width: 300px;
   height: 450px;
   background: #fff;
-  transform: rotate(-37.5deg) skew(10deg);
-  box-shadow: -35px 35px 50px black;
+  -webkit-transform: rotate(-37.5deg) skew(10deg);
+          transform: rotate(-37.5deg) skew(10deg);
+  -webkit-box-shadow: -35px 35px 50px black;
+          box-shadow: -35px 35px 50px black;
+  -webkit-transition: .5s;
   transition: .5s;
 }
 
 .book:hover {
-  transform: rotate(-37.5deg) skew(10deg) translate(20px, -20px);
-  box-shadow: -50px 50px 100px black;
+  -webkit-transform: rotate(-37.5deg) skew(10deg) translate(20px, -20px);
+          transform: rotate(-37.5deg) skew(10deg) translate(20px, -20px);
+  -webkit-box-shadow: -50px 50px 100px black;
+          box-shadow: -50px 50px 100px black;
 }
 
 .book::before {
@@ -40,8 +52,10 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  transform: skewY(-45deg) translate(-30px, -15px);
-  box-shadow: inset -10px 0 20px rgba(0, 0, 0, 0.2);
+  -webkit-transform: skewY(-45deg) translate(-30px, -15px);
+          transform: skewY(-45deg) translate(-30px, -15px);
+  -webkit-box-shadow: inset -10px 0 20px rgba(0, 0, 0, 0.2);
+          box-shadow: inset -10px 0 20px rgba(0, 0, 0, 0.2);
 }
 
 .book::after {
@@ -52,8 +66,10 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
-  transform: skewX(-45deg) translate(15px, 30px);
-  box-shadow: inset -10px 0 20px rgba(0, 0, 0, 0.2);
+  -webkit-transform: skewX(-45deg) translate(15px, 30px);
+          transform: skewX(-45deg) translate(15px, 30px);
+  -webkit-box-shadow: inset -10px 0 20px rgba(0, 0, 0, 0.2);
+          box-shadow: inset -10px 0 20px rgba(0, 0, 0, 0.2);
 }
 
 .book h2 {
