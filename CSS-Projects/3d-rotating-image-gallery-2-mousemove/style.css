@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  background: #000000;
+}
+
+.box {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: perspective(1000px) rotateX(0deg) rotateY(35deg);
+          transform: perspective(1000px) rotateX(0deg) rotateY(35deg);
+}
+
+@media only screen and (max-width: 25em) {
+  .box {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+.box span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: rotateX(calc(var(--i) * 45deg)) translateZ(300px);
+          transform: rotateX(calc(var(--i) * 45deg)) translateZ(300px);
+}
+
+@media only screen and (max-width: 45em) {
+  .box span {
+    -webkit-transform: rotateX(calc(var(--i) * 45deg)) translateZ(280px);
+            transform: rotateX(calc(var(--i) * 45deg)) translateZ(280px);
+  }
+}
+
+@media only screen and (max-width: 25em) {
+  .box span {
+    -webkit-transform: rotateX(calc(var(--i) * 45deg)) translateZ(240px);
+            transform: rotateX(calc(var(--i) * 45deg)) translateZ(240px);
+  }
+}
+
+.box span img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@-webkit-keyframes animateAngle {
+  0% {
+    -webkit-transform: perspective(1000px) rotateX(0deg) rotateY(35deg);
+            transform: perspective(1000px) rotateX(0deg) rotateY(35deg);
+  }
+  100% {
+    -webkit-transform: perspective(1000px) rotateX(360deg) rotateY(35deg);
+            transform: perspective(1000px) rotateX(360deg) rotateY(35deg);
+  }
+}
+
+@keyframes animateAngle {
+  0% {
+    -webkit-transform: perspective(1000px) rotateX(0deg) rotateY(35deg);
+            transform: perspective(1000px) rotateX(0deg) rotateY(35deg);
+  }
+  100% {
+    -webkit-transform: perspective(1000px) rotateX(360deg) rotateY(35deg);
+            transform: perspective(1000px) rotateX(360deg) rotateY(35deg);
+  }
+}

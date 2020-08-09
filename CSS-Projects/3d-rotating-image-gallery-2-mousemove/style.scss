@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+
+$bp-angle : 45em;   //720px
+$bp-small : 25em;   //400px
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000000;
+}
+
+.box {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    transform: perspective(1000px) rotateX(0deg) rotateY(35deg);
+
+
+    @media only screen and (max-width: $bp-small){
+        width: 180px;
+        height: 180px;
+    }
+
+    span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        transform-origin: center;
+        transform-style: preserve-3d;
+        transform: rotateX(calc(var(--i) * 45deg)) translateZ(300px);
+
+        @media only screen and (max-width: $bp-angle){
+            transform: rotateX(calc(var(--i) * 45deg)) translateZ(280px);
+        }
+    
+        @media only screen and (max-width: $bp-small){
+            transform: rotateX(calc(var(--i) * 45deg)) translateZ(240px);
+        }
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+@keyframes animateAngle {
+    0% {
+        transform: perspective(1000px) rotateX(0deg) rotateY(35deg);
+    }
+
+    100% {
+        transform: perspective(1000px) rotateX(360deg) rotateY(35deg);
+    }
+}
