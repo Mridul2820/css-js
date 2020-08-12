@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: url(assets/bg.jpg);
+    background-size: cover;
+    background-position: center;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: url(assets/splash.jpg);
+        background-size: 1800px;
+        background-position: center;
+        mix-blend-mode: screen;
+    }
+}
