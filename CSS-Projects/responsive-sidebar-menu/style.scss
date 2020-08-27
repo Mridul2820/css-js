@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap');
+
+// Responsive Breakpoint
+$bp-largest: 75em;  //1200px
+$bp-large: 62.5em;  //1000px
+$bp-medium: 50em;   //800px
+$bp-small: 37.5em;  //600px
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: #150019;
+}
+
+.navigation {
+    position: fixed;
+    width: 60px;
+    height: 100%;
+    background: #3e0748;
+    transition: .5s;
+    overflow: hidden;
+
+    @media only screen and (max-width: $bp-medium){
+        left: -60px;
+    }
+
+    &.active,
+    &:hover {
+        width: 260px;
+
+        @media only screen and (max-width: $bp-medium){
+            left: 0px;
+            width: 100%;
+        }
+    }
+
+    ul {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        list-style: none;
+
+        li {
+            position: relative;
+            width: 100%;
+            transition: .5s;
+
+
+            &:hover {
+                background: #ea1d63;
+            }
+
+            a {
+                text-decoration: none;
+                position: relative;
+                display: flex;
+                width: 100%;
+                color: #fff;
+
+                .icon {
+                    position: relative;
+                    display: block;
+                    min-width: 60px;
+                    height: 60px;
+                    line-height: 60px;
+                    text-align: center;
+                    font-size: 24px;
+                }
+
+                .title {
+                    position: relative;
+                    display: block;
+                    padding: 0 10px;
+                    height: 60px;
+                    min-width: 200px;
+                    line-height: 60px;
+                    text-align: start;
+                }
+            }
+        }
+    }
+}
+
+.toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background: #330748;
+    cursor: pointer;
+    transition: .5s;
+
+    &.active,
+    &:hover {
+        background: #ea1d63;
+    }
+
+    &::before {
+        content: '\f0c9';
+        font-family: fontAwesome;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        line-height: 60px;
+        text-align: center;
+        font-size: 25px;
+        color: #fff;
+    }
+
+    &.active::before {
+        content: '\f00d';
+    }
+}
