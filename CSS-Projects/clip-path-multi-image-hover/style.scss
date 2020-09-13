@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #111;
+}
+
+.container {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    background: #222222;
+    border: 4px solid #fff;
+
+    .clip{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: .5s;
+
+        .content {
+            position: absolute;
+            bottom: -100%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 70%;
+            padding: 5px 20px;
+            background: #fff;
+            opacity: 0;
+            transition: .5s;
+        }
+
+        &:hover {
+            .content {
+                bottom: 0;
+                opacity: 1;
+            }
+        }
+
+        &.clip1 {
+            background: url(assets/Mohana.jpg);
+            background-size: cover;
+            clip-path: polygon(0 0, 55% 0,20% 100%, 0% 100%);
+        }
+
+        &.clip2 {
+            background: url(assets/Digha-gate.jpg);
+            background-size: cover;
+            clip-path: polygon(55% 0, 100% 0, 45% 100%, 20% 100%);
+        }
+
+        &.clip3 {
+            background: url(assets/sunsate-helipad.jpg);
+            background-size: cover;
+            clip-path: polygon(100% 0, 100% 0, 100% 100%, 45% 100%);
+        }
+    }
+
+    &:hover {
+        .clip {
+            clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+        }
+    }
+
+    .clip:hover {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+}
+
