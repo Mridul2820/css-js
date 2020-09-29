@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Epilogue', sans-serif;
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+
+    .section {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        scroll-snap-align: start;
+
+        &:nth-child(1) {
+            background:  url(assets/img-1.jpg);
+            background-size: cover;
+            background-attachment: fixed; 
+        }
+
+        &:nth-child(2) {
+            background:  url(assets/img-2.jpg);
+            background-size: cover;
+            background-attachment: fixed; 
+        }
+
+        &:nth-child(3) {
+            background:  url(assets/img-3.jpg);
+            background-size: cover;
+            background-attachment: fixed; 
+        }
+
+        &:nth-child(4) {
+            background:  url(assets/img-4.jpg);
+            background-size: cover;
+            background-attachment: fixed; 
+        }
+
+
+        &:nth-child(5) {
+            background:  url(assets/img-5.jpg);
+            background-size: cover;
+            background-attachment: fixed; 
+        }
+
+        &:nth-child(6) {
+            background:  url(assets/img-6.jpg);
+            background-size: cover;
+            background-attachment: fixed; 
+        }
+
+        &:nth-child(7) {
+            background:  url(assets/img-7.jpg);
+            background-size: cover;
+            background-attachment: fixed; 
+        }
+
+        &:nth-child(8) {
+            background:  url(assets/img-8.jpg);
+            background-size: cover;
+            background-attachment: fixed; 
+        }
+
+        .content {
+            position: absolute;
+            bottom: 50px;
+            left: 50px;
+            max-width: 700px;
+
+            h2 {
+                background: #ffffff;
+                color: #111111;
+                font-weight: 600;
+                display: inline-block;
+                padding: 10px 20px;
+                font-size: 2em;
+            }
+
+            p {
+                background:rgba($color: #fff, $alpha: .5);
+                color: #111111;
+                font-weight: 400;
+                padding: 10px 20px;
+                margin-top: 10px;
+            }
+        }
+    }
+}
