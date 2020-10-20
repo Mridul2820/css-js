@@ -66,9 +66,62 @@ Some Projects On Vanila.JS and CSS based
 ◾ [Button Hover Effect 2](https://mridul2820.github.io/css-js/CSS-Projects/button-hover-effect-2/index.html)
 <br/>
 
-◾ [](https://mridul2820.github.io/css-js/CSS-Projects//index.html)
+◾ [Card Hover Effect](https://mridul2820.github.io/css-js/CSS-Projects/card-hover-effect/index.html)
+<br/>
+◾ [Circular Progress Bar](https://mridul2820.github.io/css-js/CSS-Projects/circular-progress-bar/index.html)
+<br/>
+◾ [Click And Hold Effects](https://mridul2820.github.io/css-js/CSS-Projects/click-and-hold-effects/index.html)
+<br/>
+◾ [Check List](https://mridul2820.github.io/css-js/CSS-Projects/check-list/index.html)
+<br/>
+◾ [Circle Shadow Effect](https://mridul2820.github.io/css-js/CSS-Projects/circle-shadow-effect/index.html)
+<br/>
+◾ [Clip Path Image Hover](https://mridul2820.github.io/css-js/CSS-Projects/clip-path-image-hover/index.html)
+<br/>
+◾ [Clip Path Image Hover Text](https://mridul2820.github.io/css-js/CSS-Projects/clip-path-image-hover-text/index.html)
+<br/>
+◾ [Clip Path Mousemove Effect](https://mridul2820.github.io/css-js/CSS-Projects/clip-path-mousemove-effect/index.html)
+<br/>
+◾ [Clip Path Multi Image Hover](https://mridul2820.github.io/css-js/CSS-Projects/clip-path-multi-image-hover/index.html)
+<br/>
+◾ [Clipped Text Video Banner](https://mridul2820.github.io/css-js/CSS-Projects/clipped-text-video-banner/index.html)
+<br/>
+◾ [Cloud Banner Animation](https://mridul2820.github.io/css-js/CSS-Projects/cloud-banner-animation/index.html)
+<br/>
+◾ [Color To Black & White](https://mridul2820.github.io/css-js/CSS-Projects/color-to-b&w-photo/index.html)
+<br/>
+◾ [Comet Effects on Mousemove](https://mridul2820.github.io/css-js/CSS-Projects/comet-effects-on-mousemove/index.html)
+<br/>
+◾ [Curved Header](https://mridul2820.github.io/css-js/CSS-Projects/curved-header/index.html)
+<br/>
+◾ [Custom Range Slider](https://mridul2820.github.io/css-js/CSS-Projects/custom-range-slider/index.html)
 <br/>
 
+
+◾ [](https://mridul2820.github.io/css-js/CSS-Projects//index.html)
+<br/>
+◾ [](https://mridul2820.github.io/css-js/CSS-Projects//index.html)
+<br/>
+◾ [](https://mridul2820.github.io/css-js/CSS-Projects//index.html)
+<br/>
+◾ [](https://mridul2820.github.io/css-js/CSS-Projects//index.html)
+<br/>
+◾ [](https://mridul2820.github.io/css-js/CSS-Projects//index.html)
+<br/>
+◾ [](https://mridul2820.github.io/css-js/CSS-Projects//index.html)
+<br/>
+◾ [](https://mridul2820.github.io/css-js/CSS-Projects//index.html)
+<br/>
+◾ [](https://mridul2820.github.io/css-js/CSS-Projects//index.html)
+<br/>
+◾ [](https://mridul2820.github.io/css-js/CSS-Projects//index.html)
+<br/>
+◾ [](https://mridul2820.github.io/css-js/CSS-Projects//index.html)
+<br/>
+◾ [](https://mridul2820.github.io/css-js/CSS-Projects//index.html)
+<br/>
+◾ [](https://mridul2820.github.io/css-js/CSS-Projects//index.html)
+<br/>
 
 ## ✔ ScrollTrigger
 
