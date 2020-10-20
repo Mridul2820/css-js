@@ -47,9 +47,29 @@ Some Projects On Vanila.JS and CSS based
 <br/>
 
 
-◾ [](https://mridul2820.github.io/css-js/CSS-Projects/3d-background/index.html)
+◾ [Animated Bubbles](https://mridul2820.github.io/css-js/CSS-Projects/animated-bubbles/index.html)
+<br/>
+◾ [Animated Eyes Follow Mouse Cursor](https://mridul2820.github.io/css-js/CSS-Projects/animated-eyes-follow-cursor/index.html)
+<br/>
+◾ [Animated SVG icon](https://mridul2820.github.io/css-js/CSS-Projects/animated-svg/index.html)
 <br/>
 
+
+◾ [Background Parallax Effect on Mousemove](https://mridul2820.github.io/css-js/CSS-Projects/background-parallax-effect-on-mousemove/index.html)
+<br/>
+◾ [Box Shadow Hover Effect](https://mridul2820.github.io/css-js/CSS-Projects/box-shadow-hover-effect/index.html)
+<br/>
+◾ [Box Shadow Loading Animation](https://mridul2820.github.io/css-js/CSS-Projects/box-shadow-loading-animation/index.html)
+<br/>
+◾ [Bubble Animation](https://mridul2820.github.io/css-js/CSS-Projects/bubble-animation/index.html)
+<br/>
+◾ [Button Hover Effect 1](https://mridul2820.github.io/css-js/CSS-Projects/button-hover-effect-1/index.html)
+<br/>
+◾ [Button Hover Effect 2](https://mridul2820.github.io/css-js/CSS-Projects/button-hover-effect-2/index.html)
+<br/>
+
+◾ [](https://mridul2820.github.io/css-js/CSS-Projects//index.html)
+<br/>
 
 
 ## ✔ ScrollTrigger
