@@ -61,8 +61,6 @@ Some Projects On Vanila.JS and CSS based
 <br/>
 ◾ [Box Shadow Loading Animation](https://mridul2820.github.io/css-js/CSS-Projects/box-shadow-loading-animation/index.html)
 <br/>
-◾ [Bubble Animation](https://mridul2820.github.io/css-js/CSS-Projects/bubble-animation/index.html)
-<br/>
 ◾ [Button Hover Effect 1](https://mridul2820.github.io/css-js/CSS-Projects/button-hover-effect-1/index.html)
 <br/>
 ◾ [Button Hover Effect 2](https://mridul2820.github.io/css-js/CSS-Projects/button-hover-effect-2/index.html)
