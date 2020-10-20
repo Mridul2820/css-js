@@ -98,7 +98,35 @@ Some Projects On Vanila.JS and CSS based
 <br/>
 
 
-◾ [](https://mridul2820.github.io/css-js/CSS-Projects//index.html)
+◾ [Depth Of Field Card Hover Effects](https://mridul2820.github.io/css-js/CSS-Projects/depth-of-field-card-hover-effects/index.html)
+<br/>
+◾ [Div Box Design](https://mridul2820.github.io/css-js/CSS-Projects/div-box-design/index.html)
+<br/>
+
+
+◾ [Events Section UI](https://mridul2820.github.io/css-js/CSS-Projects/events-section-UI/index.html)
+<br/>
+
+
+◾ [Fadein and Fadeout Back To Top Button](https://mridul2820.github.io/css-js/CSS-Projects/fadein-and-fadeout-back-to-top-button/index.html)
+<br/>
+◾ [Falling Leaves](https://mridul2820.github.io/css-js/CSS-Projects/falling-leaves/index.html)
+<br/>
+◾ [Flat Long Shadow](https://mridul2820.github.io/css-js/CSS-Projects/flat-long-shadow/index.html)
+<br/>
+◾ [Float an Image With CSS Flex](https://mridul2820.github.io/css-js/CSS-Projects/float-an-image-with-css-flex/index.html)
+<br/>
+◾ [Floating Action Button ](https://mridul2820.github.io/css-js/CSS-Projects/floating-action-button/index.html)
+<br/>
+◾ [Flying Rocket with Flames Animation](https://mridul2820.github.io/css-js/CSS-Projects/flying-rocket-wth-flames-animation/index.html)
+<br/>
+◾ [Full Screen Scrolling](https://mridul2820.github.io/css-js/CSS-Projects/fullpage-scrolling/index.html)
+<br/>
+◾ [Fullscreen Video Fadeout](https://mridul2820.github.io/css-js/CSS-Projects/fullscreen-video-background-fadeout/index.html)
+<br/>
+
+
+◾ [Galaxy Paralax Scrolling](https://mridul2820.github.io/css-js/CSS-Projects/galaxy-paralax-scrolling/index.html)
 <br/>
 ◾ [](https://mridul2820.github.io/css-js/CSS-Projects//index.html)
 <br/>
@@ -114,14 +142,7 @@ Some Projects On Vanila.JS and CSS based
 <br/>
 ◾ [](https://mridul2820.github.io/css-js/CSS-Projects//index.html)
 <br/>
-◾ [](https://mridul2820.github.io/css-js/CSS-Projects//index.html)
-<br/>
-◾ [](https://mridul2820.github.io/css-js/CSS-Projects//index.html)
-<br/>
-◾ [](https://mridul2820.github.io/css-js/CSS-Projects//index.html)
-<br/>
-◾ [](https://mridul2820.github.io/css-js/CSS-Projects//index.html)
-<br/>
+
 
 ## ✔ ScrollTrigger
 
