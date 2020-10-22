@@ -5,7 +5,7 @@ Some Projects On Vanila.JS and CSS based
 ### ➡ Link of the Project [Menu](https://mridul2820.github.io/css-js/)
 
 
-### ↪ Individual Project Links ↩
+#### ↪ Individual Project Links ↩
 
 ## ✔ CSS & JS
 
