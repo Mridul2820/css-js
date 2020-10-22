@@ -128,10 +128,55 @@ Some Projects On Vanila.JS and CSS based
 
 ◾ [Galaxy Paralax Scrolling](https://mridul2820.github.io/css-js/CSS-Projects/galaxy-paralax-scrolling/index.html)
 <br/>
+◾ [Generate Gradient BG Automatically using Grade Js](https://mridul2820.github.io/css-js/CSS-Projects/generate-gradient-bg-automatically-using-grade.js/index.html)
+<br/>
+◾ [Glowing Apple Logo Animation](https://mridul2820.github.io/css-js/CSS-Projects/glowing-apple-logo-animation/index.html)
+<br/>
+◾ [Glowing Gradient Icon](https://mridul2820.github.io/css-js/CSS-Projects/glowing-gradient-icon/index.html)
+<br/>
+◾ [Glowing Loading Page](https://mridul2820.github.io/css-js/CSS-Projects/glowing-loading-page/index.html)
+<br/>
+◾ [Glowing Text On Hover](https://mridul2820.github.io/css-js/CSS-Projects/glowing-text-on-hover/index.html)
+<br/>
+
+
+◾ [Horizontal Page Scrolling](https://mridul2820.github.io/css-js/CSS-Projects/horizontal-page-scrolling/index.html)
+<br/>
+
+
+◾ [Icon Fill Hover Effect](https://mridul2820.github.io/css-js/CSS-Projects/icon-fill-hover-effect/index.html)
+<br/>
+◾ [Image Block Reveal](https://mridul2820.github.io/css-js/CSS-Projects/image-block-reveal/index.html)
+<br/>
+◾ [Image Liquid Distortion WebGL](https://mridul2820.github.io/css-js/CSS-Projects/image-liquid-distortion-webGL/index.html)
+<br/>
+◾ [Image Slider](https://mridul2820.github.io/css-js/CSS-Projects/image-slider/index.html)
+<br/>
+◾ [Isometric Cards Hover Effects ](https://mridul2820.github.io/css-js/CSS-Projects/isometric-cards-hover-effects/index.html)
+<br/>
+◾ [Infinite Stack Card Animation](https://mridul2820.github.io/css-js/CSS-Projects/infinite-stack-card-animation/index.html)
+<br/>
+◾ [Liquid Button Animation](https://mridul2820.github.io/css-js/CSS-Projects/liquid-button-animation/index.html)
+<br/>
+◾ [Liquid Loader Animation](https://mridul2820.github.io/css-js/CSS-Projects/liquid-loader-animation/index.html)
+<br/>
+◾ [List Item Hover Effect](https://mridul2820.github.io/css-js/CSS-Projects/list-item-hover-effect/index.html)
+<br/>
+◾ [Loading Animation](https://mridul2820.github.io/css-js/CSS-Projects/loading-animation/index.html)
+<br/>
+
+
 ◾ [](https://mridul2820.github.io/css-js/CSS-Projects//index.html)
 <br/>
 ◾ [](https://mridul2820.github.io/css-js/CSS-Projects//index.html)
 <br/>
+◾ [](https://mridul2820.github.io/css-js/CSS-Projects//index.html)
+<br/>
+◾ [](https://mridul2820.github.io/css-js/CSS-Projects//index.html)
+<br/>
+◾ [](https://mridul2820.github.io/css-js/CSS-Projects//index.html)
+<br/>
+
 ◾ [](https://mridul2820.github.io/css-js/CSS-Projects//index.html)
 <br/>
 ◾ [](https://mridul2820.github.io/css-js/CSS-Projects//index.html)
