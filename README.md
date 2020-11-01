@@ -138,6 +138,8 @@ Some Projects On Vanila.JS and CSS based
 <br/>
 ◾ [Glowing Text On Hover](https://mridul2820.github.io/css-js/CSS-Projects/glowing-text-on-hover/index.html)
 <br/>
+◾ [Gradient Drop Shadow](https://mridul2820.github.io/css-js/CSS-Projects/gradient-drop-shadow/index.html)
+<br/>
 
 
 ◾ [Horizontal Page Scrolling](https://mridul2820.github.io/css-js/CSS-Projects/horizontal-page-scrolling/index.html)
