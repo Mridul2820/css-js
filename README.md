@@ -120,6 +120,8 @@ Some Projects On Vanila.JS and CSS based
 <br/>
 ◾ [Flying Rocket with Flames Animation](https://mridul2820.github.io/css-js/CSS-Projects/flying-rocket-wth-flames-animation/index.html)
 <br/>
+◾ [Focus On Hover](https://mridul2820.github.io/css-js/CSS-Projects/focus-on-hover/index.html)
+<br/>
 ◾ [Full Screen Scrolling](https://mridul2820.github.io/css-js/CSS-Projects/fullpage-scrolling/index.html)
 <br/>
 ◾ [Fullscreen Video Fadeout](https://mridul2820.github.io/css-js/CSS-Projects/fullscreen-video-background-fadeout/index.html)

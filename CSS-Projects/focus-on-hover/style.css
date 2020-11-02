@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Epilogue', sans-serif;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section h2 {
+  position: relative;
+  color: #fff;
+  font-size: 10em;
+  font-weight: 700;
+  z-index: 2;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+section h2:hover {
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+section img {
+  position: absolute;
+  top: -20%;
+  left: -20%;
+  width: 140%;
+  height: 140%;
+  pointer-events: none;
+  -webkit-filter: blur(20px);
+          filter: blur(20px);
+  -webkit-transition: 2s;
+  transition: 2s;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+section h2:hover ~ img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+}
