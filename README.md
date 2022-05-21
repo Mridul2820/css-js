@@ -29,37 +29,23 @@ Some Projects On Vanila.JS and CSS based
 | 3D Swipe Slider Using Materialize | [Code](https://github.com/Mridul2820/css-js/tree/master/CSS-Projects/3d-swipe-slider-using-materialize) | [Demo](https://mridul2820.github.io/css-js/CSS-Projects/3d-swipe-slider-using-materialize/index.html) |
 | 3D Video Cube | [Code](https://github.com/Mridul2820/css-js/tree/master/CSS-Projects/3d-video-cube) | [Demo](https://mridul2820.github.io/css-js/CSS-Projects/3d-video-cube/index.html) |
 | 3D Video Sphere | [Code](https://github.com/Mridul2820/css-js/tree/master/CSS-Projects/3d-video-sphere) | [Demo](https://mridul2820.github.io/css-js/CSS-Projects/3d-video-sphere/index.html) |
+
+| Animated Bubbles | [Code](https://github.com/Mridul2820/css-js/tree/master/CSS-Projects/animated-bubbles) | [Demo](https://mridul2820.github.io/css-js/CSS-Projects/animated-bubbles/index.html) |
+| Animated Eyes Follow Mouse Cursor | [Code](https://github.com/Mridul2820/css-js/tree/master/CSS-Projects/animated-eyes-follow-cursor) | [Demo](https://mridul2820.github.io/css-js/CSS-Projects/animated-eyes-follow-cursor/index.html) |
+| Animated SVG icon | [Code](https://github.com/Mridul2820/css-js/tree/master/CSS-Projects/animated-svg) | [Demo](https://mridul2820.github.io/css-js/CSS-Projects/animated-svg/index.html) |
+| Background Parallax Effect on Mousemove | [Code](https://github.com/Mridul2820/css-js/tree/master/CSS-Projects/background-parallax-effect-on-mousemove) | [Demo](https://mridul2820.github.io/css-js/CSS-Projects/background-parallax-effect-on-mousemove/index.html) |
+| Box Shadow Hover Effect | [Code](https://github.com/Mridul2820/css-js/tree/master/CSS-Projects/box-shadow-hover-effect) | [Demo](https://mridul2820.github.io/css-js/CSS-Projects/box-shadow-hover-effect/index.html) |
+| Box Shadow Loading Animation | [Code](https://github.com/Mridul2820/css-js/tree/master/CSS-Projects/box-shadow-loading-animation) | [Demo](https://mridul2820.github.io/css-js/CSS-Projects/box-shadow-loading-animation/index.html) |
+| Button Hover Effect 1 | [Code](https://github.com/Mridul2820/css-js/tree/master/CSS-Projects/button-hover-effect-1) | [Demo](https://mridul2820.github.io/css-js/CSS-Projects/button-hover-effect-1/index.html) |
+| Button Hover Effect 2 | [Code](https://github.com/Mridul2820/css-js/tree/master/CSS-Projects/button-hover-effect-2) | [Demo](https://mridul2820.github.io/css-js/CSS-Projects/button-hover-effect-2/index.html) |
+| Card Hover Effect | [Code](https://github.com/Mridul2820/css-js/tree/master/CSS-Projects/card-hover-effect) | [Demo](https://mridul2820.github.io/css-js/CSS-Projects/card-hover-effect/index.html) |
+| Circular Progress Bar | [Code](https://github.com/Mridul2820/css-js/tree/master/CSS-Projects/circle-shadow-effect) | [Demo](https://mridul2820.github.io/css-js/CSS-Projects/circular-progress-bar/index.html) |
+| Click And Hold Effects | [Code](https://github.com/Mridul2820/css-js/tree/master/CSS-Projects/click-and-hold-effects) | [Demo](https://mridul2820.github.io/css-js/CSS-Projects/click-and-hold-effects/index.html) |
+| Check List | [Code](https://github.com/Mridul2820/css-js/tree/master/CSS-Projects/check-list) | [Demo](https://mridul2820.github.io/css-js/CSS-Projects/check-list/index.html) |
 |  | [Code]() | [Demo]() |
 
 
 
-◾ [Animated Bubbles](https://mridul2820.github.io/css-js/CSS-Projects/animated-bubbles/index.html)
-<br/>
-◾ [Animated Eyes Follow Mouse Cursor](https://mridul2820.github.io/css-js/CSS-Projects/animated-eyes-follow-cursor/index.html)
-<br/>
-◾ [Animated SVG icon](https://mridul2820.github.io/css-js/CSS-Projects/animated-svg/index.html)
-<br/>
-
-
-◾ [Background Parallax Effect on Mousemove](https://mridul2820.github.io/css-js/CSS-Projects/background-parallax-effect-on-mousemove/index.html)
-<br/>
-◾ [Box Shadow Hover Effect](https://mridul2820.github.io/css-js/CSS-Projects/box-shadow-hover-effect/index.html)
-<br/>
-◾ [Box Shadow Loading Animation](https://mridul2820.github.io/css-js/CSS-Projects/box-shadow-loading-animation/index.html)
-<br/>
-◾ [Button Hover Effect 1](https://mridul2820.github.io/css-js/CSS-Projects/button-hover-effect-1/index.html)
-<br/>
-◾ [Button Hover Effect 2](https://mridul2820.github.io/css-js/CSS-Projects/button-hover-effect-2/index.html)
-<br/>
-
-◾ [Card Hover Effect](https://mridul2820.github.io/css-js/CSS-Projects/card-hover-effect/index.html)
-<br/>
-◾ [Circular Progress Bar](https://mridul2820.github.io/css-js/CSS-Projects/circular-progress-bar/index.html)
-<br/>
-◾ [Click And Hold Effects](https://mridul2820.github.io/css-js/CSS-Projects/click-and-hold-effects/index.html)
-<br/>
-◾ [Check List](https://mridul2820.github.io/css-js/CSS-Projects/check-list/index.html)
-<br/>
 ◾ [Circle Shadow Effect](https://mridul2820.github.io/css-js/CSS-Projects/circle-shadow-effect/index.html)
 <br/>
 ◾ [Clip Path Image Hover](https://mridul2820.github.io/css-js/CSS-Projects/clip-path-image-hover/index.html)
