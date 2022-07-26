@@ -29,7 +29,6 @@ Some Projects On Vanila.JS and CSS based
 | 3D Swipe Slider Using Materialize | [Code](https://github.com/Mridul2820/css-js/tree/master/CSS-Projects/3d-swipe-slider-using-materialize) | [Demo](https://mridul2820.github.io/css-js/CSS-Projects/3d-swipe-slider-using-materialize/index.html) |
 | 3D Video Cube | [Code](https://github.com/Mridul2820/css-js/tree/master/CSS-Projects/3d-video-cube) | [Demo](https://mridul2820.github.io/css-js/CSS-Projects/3d-video-cube/index.html) |
 | 3D Video Sphere | [Code](https://github.com/Mridul2820/css-js/tree/master/CSS-Projects/3d-video-sphere) | [Demo](https://mridul2820.github.io/css-js/CSS-Projects/3d-video-sphere/index.html) |
-
 | Animated Bubbles | [Code](https://github.com/Mridul2820/css-js/tree/master/CSS-Projects/animated-bubbles) | [Demo](https://mridul2820.github.io/css-js/CSS-Projects/animated-bubbles/index.html) |
 | Animated Eyes Follow Mouse Cursor | [Code](https://github.com/Mridul2820/css-js/tree/master/CSS-Projects/animated-eyes-follow-cursor) | [Demo](https://mridul2820.github.io/css-js/CSS-Projects/animated-eyes-follow-cursor/index.html) |
 | Animated SVG icon | [Code](https://github.com/Mridul2820/css-js/tree/master/CSS-Projects/animated-svg) | [Demo](https://mridul2820.github.io/css-js/CSS-Projects/animated-svg/index.html) |
@@ -42,9 +41,9 @@ Some Projects On Vanila.JS and CSS based
 | Circular Progress Bar | [Code](https://github.com/Mridul2820/css-js/tree/master/CSS-Projects/circle-shadow-effect) | [Demo](https://mridul2820.github.io/css-js/CSS-Projects/circular-progress-bar/index.html) |
 | Click And Hold Effects | [Code](https://github.com/Mridul2820/css-js/tree/master/CSS-Projects/click-and-hold-effects) | [Demo](https://mridul2820.github.io/css-js/CSS-Projects/click-and-hold-effects/index.html) |
 | Check List | [Code](https://github.com/Mridul2820/css-js/tree/master/CSS-Projects/check-list) | [Demo](https://mridul2820.github.io/css-js/CSS-Projects/check-list/index.html) |
+
+
 |  | [Code]() | [Demo]() |
-
-
 
 ◾ [Circle Shadow Effect](https://mridul2820.github.io/css-js/CSS-Projects/circle-shadow-effect/index.html)
 <br/>
