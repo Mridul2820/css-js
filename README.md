@@ -269,13 +269,11 @@ Some Projects On Vanila.JS and CSS based
 
 ## ✔ ScrollTrigger
 
-◾ [ScrollTrigger Image Scroll ](https://mridul2820.github.io/css-js/CSS-Projects/ScrollTrigger/ScrollTrigger-image-scroll/index.html)
-<br/>
-◾ [ScrollTrigger Reveal Elements On Page Scroll](https://mridul2820.github.io/css-js/CSS-Projects/ScrollTrigger/ScrollTrigger-reveal-elements-on-scroll/index.html)
-<br/>
-◾ [ScrollTrigger Text Scroll](https://mridul2820.github.io/css-js/CSS-Projects/ScrollTrigger/ScrollTrigger-text-scroll/index.html)
-<br/>
-
+| Name | Code | Demo |
+| ----- | ----- | ----- |
+| ScrollTrigger Image Scroll | [Code](https://github.com/Mridul2820/css-js/tree/master/CSS-Projects/ScrollTrigger/ScrollTrigger-image-scroll) | [Demo](https://mridul2820.github.io/css-js/CSS-Projects/ScrollTrigger/ScrollTrigger-image-scroll/index.html) |
+| ScrollTrigger Reveal Elements On Page Scroll | [Code](https://github.com/Mridul2820/css-js/tree/master/CSS-Projects/ScrollTrigger/ScrollTrigger-reveal-elements-on-scroll) | [Demo](https://mridul2820.github.io/css-js/CSS-Projects/ScrollTrigger/ScrollTrigger-reveal-elements-on-scroll/index.html) |
+| ScrollTrigger Text Scroll | [Code](https://github.com/Mridul2820/css-js/tree/master/CSS-Projects/ScrollTrigger/ScrollTrigger-text-scroll) | [Demo](https://mridul2820.github.io/css-js/CSS-Projects/ScrollTrigger/ScrollTrigger-text-scroll/index.html) |
 
 ## ✔ Swiper.js
 ◾ [Swiper.js 3D Coverflow Effect ](https://mridul2820.github.io/css-js/CSS-Projects/swiper.js/3d-coverflow-effect/index.html)
