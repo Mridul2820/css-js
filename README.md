@@ -276,22 +276,16 @@ Some Projects On Vanila.JS and CSS based
 | ScrollTrigger Text Scroll | [Code](https://github.com/Mridul2820/css-js/tree/master/CSS-Projects/ScrollTrigger/ScrollTrigger-text-scroll) | [Demo](https://mridul2820.github.io/css-js/CSS-Projects/ScrollTrigger/ScrollTrigger-text-scroll/index.html) |
 
 ## ✔ Swiper.js
-◾ [Swiper.js 3D Coverflow Effect ](https://mridul2820.github.io/css-js/CSS-Projects/swiper.js/3d-coverflow-effect/index.html)
-<br/>
-◾ [Swiper.js 3D Cube Effect ](https://mridul2820.github.io/css-js/CSS-Projects/swiper.js/3d-cube-effect/index.html)
-<br/>
-◾ [Swiper.js 3D Flip Effect ](https://mridul2820.github.io/css-js/CSS-Projects/swiper.js/3d-flip-effect/index.html)
-<br/>
-◾ [Swiper.js Fade Effect ](https://mridul2820.github.io/css-js/CSS-Projects/swiper.js/effect-fade/index.html)
-<br/>
-◾ [Swiper.js 3D Pagination Progress](https://mridul2820.github.io/css-js/CSS-Projects/swiper.js/pagination-progress/index.html)
-<br/>
-◾ [Swiper.js 3D Slides Per Coloumn](https://mridul2820.github.io/css-js/CSS-Projects/swiper.js/slides-per-column/index.html)
-<br/>
-◾ [Swiper.js 3D Slides Per View](https://mridul2820.github.io/css-js/CSS-Projects/swiper.js/slides-per-view/index.html)
-<br/>
-◾ [Swiper.js 3D Thumbs Gallery With Loop Mode](https://mridul2820.github.io/css-js/CSS-Projects/swiper.js/thumbs-gallery-with-loop-mode/index.html)
-<br/>
-◾ [Swiper.js 3D With Zoom](https://mridul2820.github.io/css-js/CSS-Projects/swiper.js/with-zoom/index.html)
-<br/>
+
+| Name | Code | Demo |
+| ----- | ----- | ----- |
+| Swiper.js 3D Coverflow Effect | [Code](https://github.com/Mridul2820/css-js/tree/master/CSS-Projects/swiper.js/3d-coverflow-effect) | [Demo](https://mridul2820.github.io/css-js/CSS-Projects/swiper.js/3d-coverflow-effect/index.html) |
+| Swiper.js 3D Cube Effect | [Code](https://github.com/Mridul2820/css-js/tree/master/CSS-Projects/swiper.js/3d-cube-effect) | [Demo](https://mridul2820.github.io/css-js/CSS-Projects/swiper.js/3d-cube-effect/index.html) |
+| Swiper.js 3D Flip Effect | [Code](https://github.com/Mridul2820/css-js/tree/master/CSS-Projects/swiper.js/3d-flip-effect) | [Demo](https://mridul2820.github.io/css-js/CSS-Projects/swiper.js/3d-flip-effect/index.html) |
+| Swiper.js Fade Effect | [Code](https://github.com/Mridul2820/css-js/tree/master/CSS-Projects/swiper.js/effect-fade) | [Demo](https://mridul2820.github.io/css-js/CSS-Projects/swiper.js/effect-fade/index.html) |
+| Swiper.js 3D Pagination Progress | [Code](https://github.com/Mridul2820/css-js/tree/master/CSS-Projects/swiper.js/pagination-progress) | [Demo](https://mridul2820.github.io/css-js/CSS-Projects/swiper.js/pagination-progress/index.html) |
+| Swiper.js 3D Slides Per Coloumn | [Code](https://github.com/Mridul2820/css-js/tree/master/CSS-Projects/swiper.js/slides-per-column) | [Demo](https://mridul2820.github.io/css-js/CSS-Projects/swiper.js/slides-per-column/index.html) |
+| Swiper.js 3D Slides Per View | [Code](https://github.com/Mridul2820/css-js/tree/master/CSS-Projects/swiper.js/slides-per-view) | [Demo](https://mridul2820.github.io/css-js/CSS-Projects/swiper.js/slides-per-view/index.html) |
+| Swiper.js 3D Thumbs Gallery With Loop Mode | [Code](https://github.com/Mridul2820/css-js/tree/master/CSS-Projects/swiper.js/thumbs-gallery-with-loop-mode) | [Demo](https://mridul2820.github.io/css-js/CSS-Projects/swiper.js/thumbs-gallery-with-loop-mode/index.html) |
+| Swiper.js 3D With Zoom | [Code](https://github.com/Mridul2820/css-js/tree/master/CSS-Projects/swiper.js/with-zoom) | [Demo](https://mridul2820.github.io/css-js/CSS-Projects/swiper.js/with-zoom/index.html) |
 
