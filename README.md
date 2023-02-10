@@ -241,8 +241,6 @@ Some Projects On Vanila.JS and CSS based
 <br/>
 ◾ [Transform Effects on Scroll 1](https://mridul2820.github.io/css-js/CSS-Projects/transform-effects-on-scroll-1/index.html)
 <br/>
-◾ [Transform Effects on Scroll 2](https://mridul2820.github.io/css-js/CSS-Projects/transform-effects-on-scroll-2/index.html)
-<br/>
 ◾ [Transform Effects on Scroll 3](https://mridul2820.github.io/css-js/CSS-Projects/transform-effects-on-scroll-3/index.html)
 <br/>
 ◾ [Transform Effects on Scroll 4](https://mridul2820.github.io/css-js/CSS-Projects/transform-effects-on-scroll-4/index.html)
