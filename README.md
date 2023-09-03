@@ -52,7 +52,6 @@ Some Projects On Vanila.JS and CSS based
 | Comet Effects on Mousemove | [Code](https://github.com/Mridul2820/css-js/tree/master/CSS-Projects/comet-effects-on-mousemove) | [Demo](https://mridul2820.github.io/css-js/CSS-Projects/comet-effects-on-mousemove/index.html) |
 | Curved Header | [Code](https://github.com/Mridul2820/css-js/tree/master/CSS-Projects/curved-header) | [Demo](https://mridul2820.github.io/css-js/CSS-Projects/curved-header/index.html) |
 | Custom Range Slider | [Code](https://github.com/Mridul2820/css-js/tree/master/CSS-Projects/custom-range-slider) | [Demo](https://mridul2820.github.io/css-js/CSS-Projects/custom-range-slider/index.html) |
-| Depth Of Field Card Hover Effects | [Code](https://github.com/Mridul2820/css-js/tree/master/CSS-Projects/depth-of-field-card-hover-effects) | [Demo](https://mridul2820.github.io/css-js/CSS-Projects/depth-of-field-card-hover-effects/index.html) |
 | Div Box Design | [Code](https://github.com/Mridul2820/css-js/tree/master/CSS-Projects/div-box-design) | [Demo](https://mridul2820.github.io/css-js/CSS-Projects/div-box-design/index.html) |
 | Events Section UI | [Code](https://github.com/Mridul2820/css-js/tree/master/CSS-Projects/events-section-UI) | [Demo](https://mridul2820.github.io/css-js/CSS-Projects/events-section-UI/index.html) |
 | Fadein and Fadeout Back To Top Button | [Code](https://github.com/Mridul2820/css-js/tree/master/CSS-Projects/fadein-and-fadeout-back-to-top-button) | [Demo](https://mridul2820.github.io/css-js/CSS-Projects/fadein-and-fadeout-back-to-top-button/index.html) |
